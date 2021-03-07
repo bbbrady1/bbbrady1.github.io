@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bbbrady1.github.io/about/</loc>
+    <loc>http://localhost/about/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/thermodynamic-data/fuel-system/</loc>
+    <loc>http://localhost/thermodynamic-data/fuel-system/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/thermodynamic-data/oxidizer-system/</loc>
+    <loc>http://localhost/thermodynamic-data/oxidizer-system/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/thermodynamic-data/combustion-system/</loc>
+    <loc>http://localhost/thermodynamic-data/combustion-system/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/thermodynamic-data/</loc>
+    <loc>http://localhost/thermodynamic-data/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/categories/</loc>
+    <loc>http://localhost/categories/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/references/</loc>
+    <loc>http://localhost/references/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/tags/</loc>
+    <loc>http://localhost/tags/</loc>
   </url><url>
-    <loc>https://bbbrady1.github.io/</loc>
+    <loc>http://localhost/</loc>
   </url>
 </urlset>
