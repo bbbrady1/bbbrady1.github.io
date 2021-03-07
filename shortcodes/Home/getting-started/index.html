@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ToC Tree">
+<meta name="description" content="Getting Started">
 
-<title>ToC Tree | Geekdocs</title>
+<title>Getting Started | Geekdocs</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -31,7 +31,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost/toc-tree/index.xml" title="Geekdocs" />
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
 </head>
@@ -123,7 +122,7 @@
             
             
                 <span class="flex">
-                    <a href="/Home/getting-started/" class="gdoc-nav__entry ">
+                    <a href="/Home/getting-started/" class="gdoc-nav__entry is-active">
                         Getting Started
                     </a>
                 </span>
@@ -740,7 +739,7 @@
             
             
                 <span class="flex">
-                    <a href="/toc-tree/" class="gdoc-nav__entry is-active">
+                    <a href="/toc-tree/" class="gdoc-nav__entry ">
                         ToC Tree
                     </a>
                 </span>
@@ -912,7 +911,15 @@
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Geekdocs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>ToC Tree</span><meta itemprop='position' content='2' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Geekdocs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Home/' href='/Home/'><span itemprop='name'>Home</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Getting Started</span><meta itemprop='position' content='3' /></li>
+    
+
     
 
     
@@ -923,157 +930,116 @@
     
 </div>
 
+
     <article class="gdoc-markdown">
-        <h1>ToC Tree</h1>
-        <p>This is just a demo section for the <!-- spellchecker-disable --><a class="gdoc-markdown__link" href="/shortcodes/toc-tree/">toc-tree</a><!-- spellchecker-enable --> shortcode.</p>
+        <h1>Getting Started</h1>
+        <p>This page tells you how to get started with the Geekdoc theme, including installation and basic configuration.</p>
 <!-- spellchecker-disable -->
 
 
 
-  <div class="gdoc-toc gdoc-toc__level--6">
-    
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/" class="gdoc-toc__entry">Level 1</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-1/" class="gdoc-toc__entry">Level 1.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-2/" class="gdoc-toc__entry">Level 1.2</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-3/" class="gdoc-toc__entry">Level 1.3</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-3/level-1-3-1/" class="gdoc-toc__entry">Level 1.3.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/" class="gdoc-toc__entry">Level 2</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/level-2-1/" class="gdoc-toc__entry">Level 2.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/level-2-2/" class="gdoc-toc__entry">Level 2.2</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-    
-  </ul>
-
-  </div>
-
-
-
+  <div class="gdoc-toc gdoc-toc__level--6"><nav id="TableOfContents"><ul>
+        <li><a href="#install-requirements">Install requirements</a></li>
+        <li><a href="#using-the-theme">Using the theme</a>
+          <ul>
+            <li><a href="#option-1-download-pre-build-release-bundle">Option 1: Download pre-build release bundle</a></li>
+            <li><a href="#option-2-clone-the-github-repository">Option 2: Clone the GitHub repository</a></li>
+          </ul>
+        </li>
+      </ul></nav><hr></div>
 
 
 <!-- spellchecker-enable -->
+<div class="gdoc-page__anchorwrap">
+    <h2 id="install-requirements">
+        Install requirements
+        <a data-clipboard-text="http://localhost/Home/getting-started/#install-requirements" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Install requirements" href="#install-requirements">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h2>
+</div><p>You need a recent version of Hugo for local builds and previews of sites that use Geekdoc. As we are using <a class="gdoc-markdown__link" href="https://gulpjs.com/">gulp</a> as pre-processor the normal version of Hugo is sufficient. If you prefer the extended version of Hugo anyway this will work as well. For comprehensive Hugo documentation, see <a class="gdoc-markdown__link" href="https://gohugo.io/documentation/">gohugo.io</a>.</p>
+<p>If you want to use the theme from a cloned branch instead of a release tarball you&rsquo;ll need to install <code>gulp</code> locally and run the default pipeline once to create all required assets.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># install required packages from package.json</span>
+npm install
 
+<span class="c1"># run gulp pipeline to build required assets</span>
+npx gulp default
+</code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="using-the-theme">
+        Using the theme
+        <a data-clipboard-text="http://localhost/Home/getting-started/#using-the-theme" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Using the theme" href="#using-the-theme">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h2>
+</div><p>To prepare your new site environment just a few steps are required:</p>
+<ol>
+<li>
+<p>Create a new empty Hugo site.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell">hugo new site demosite
+</code></pre></div></li>
+<li>
+<p>Switch to the root of the new site.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">cd</span> demosite
+</code></pre></div></li>
+<li>
+<p>Install the Geekdoc theme from a <a class="gdoc-markdown__link" href="#option-1-download-pre-build-release-bundle">release bundle</a> (recommended) or from <a class="gdoc-markdown__link" href="#option-2-clone-the-github-repository">Git branch</a>.</p>
+</li>
+<li>
+<p>Create the minimal required Hugo configuration <code>config.toml</code>. For all configuration options see <a class="gdoc-markdown__link" href="/usage/configuration/">here</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Toml" data-lang="Toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://localhost&#34;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Geekdocs&#34;</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;hugo-geekdoc&#34;</span>
+
+<span class="nx">pluralizeListTitles</span> <span class="p">=</span> <span class="kc">false</span>
+
+<span class="c"># Geekdoc required configuration</span>
+<span class="nx">pygmentsUseClasses</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">pygmentsCodeFences</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">disablePathToLower</span> <span class="p">=</span> <span class="kc">true</span>
+
+<span class="c"># Needed for mermaid shortcodes</span>
+<span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">renderer</span><span class="p">]</span>
+    <span class="c"># Needed for mermaid shortcode</span>
+    <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">true</span>
+  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
+    <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">1</span>
+    <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">9</span>
+</code></pre></div></li>
+<li>
+<p>Test your site.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell">hugo server -D
+</code></pre></div></li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="option-1-download-pre-build-release-bundle">
+        Option 1: Download pre-build release bundle
+        <a data-clipboard-text="http://localhost/Home/getting-started/#option-1-download-pre-build-release-bundle" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Option 1: Download pre-build release bundle" href="#option-1-download-pre-build-release-bundle">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h3>
+</div><p>Download and extract the latest release bundle into the theme directory.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell">mkdir -p themes/hugo-geekdoc/
+curl -L https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz <span class="p">|</span> tar -xz -C themes/hugo-geekdoc/ --strip-components<span class="o">=</span><span class="m">1</span>
+</code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="option-2-clone-the-github-repository">
+        Option 2: Clone the GitHub repository
+        <a data-clipboard-text="http://localhost/Home/getting-started/#option-2-clone-the-github-repository" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Option 2: Clone the GitHub repository" href="#option-2-clone-the-github-repository">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h3>
+</div><blockquote class="gdoc-hint info">
+  <strong>Info</strong><br>
+Keep in mind this method is not recommended and needs some extra steps to get it working.
+If you want to use the Theme as submodule keep in mind that your build process need to
+run the described steps as well.
+</blockquote>
+
+<p>Clone the Geekdoc git repository.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell">git clone https://github.com/thegeeklab/hugo-geekdoc.git themes/geekdoc
+</code></pre></div><p>Build required theme assets e.g. CSS files and SVG sprites with <code>gulp</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell">npx gulp default
+</code></pre></div>
 
     </article>
 

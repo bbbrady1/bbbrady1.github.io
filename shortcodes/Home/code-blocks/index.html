@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ToC Tree">
+<meta name="description" content="Code Blocks">
 
-<title>ToC Tree | Geekdocs</title>
+<title>Code Blocks | Geekdocs</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -31,7 +31,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost/toc-tree/index.xml" title="Geekdocs" />
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
 </head>
@@ -175,7 +174,7 @@
             
             
                 <span class="flex">
-                    <a href="/Home/code-blocks/" class="gdoc-nav__entry ">
+                    <a href="/Home/code-blocks/" class="gdoc-nav__entry is-active">
                         Code Blocks
                     </a>
                 </span>
@@ -740,7 +739,7 @@
             
             
                 <span class="flex">
-                    <a href="/toc-tree/" class="gdoc-nav__entry is-active">
+                    <a href="/toc-tree/" class="gdoc-nav__entry ">
                         ToC Tree
                     </a>
                 </span>
@@ -912,7 +911,15 @@
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Geekdocs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>ToC Tree</span><meta itemprop='position' content='2' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Geekdocs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Home/' href='/Home/'><span itemprop='name'>Home</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Code Blocks</span><meta itemprop='position' content='3' /></li>
+    
+
     
 
     
@@ -923,156 +930,112 @@
     
 </div>
 
+
     <article class="gdoc-markdown">
-        <h1>ToC Tree</h1>
-        <p>This is just a demo section for the <!-- spellchecker-disable --><a class="gdoc-markdown__link" href="/shortcodes/toc-tree/">toc-tree</a><!-- spellchecker-enable --> shortcode.</p>
+        <h1>Code Blocks</h1>
+        <p>There are multiple ways to add code blocks. Most of them works out of the box only the Hugo shortcode <code>&lt;highlight&gt;</code> need some configuration to work properly.</p>
 <!-- spellchecker-disable -->
 
 
 
-  <div class="gdoc-toc gdoc-toc__level--6">
-    
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/" class="gdoc-toc__entry">Level 1</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-1/" class="gdoc-toc__entry">Level 1.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-2/" class="gdoc-toc__entry">Level 1.2</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-3/" class="gdoc-toc__entry">Level 1.3</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-3/level-1-3-1/" class="gdoc-toc__entry">Level 1.3.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/" class="gdoc-toc__entry">Level 2</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/level-2-1/" class="gdoc-toc__entry">Level 2.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/level-2-2/" class="gdoc-toc__entry">Level 2.2</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-    
-  </ul>
-
-  </div>
-
-
-
+  <div class="gdoc-toc gdoc-toc__level--6"><nav id="TableOfContents"><ul>
+        <li><a href="#inline-code">Inline code</a></li>
+        <li><a href="#code-blocks">Code blocks</a></li>
+        <li><a href="#highlight-shortcode">Highlight shortcode</a></li>
+      </ul></nav><hr></div>
 
 
 <!-- spellchecker-enable -->
+<div class="gdoc-page__anchorwrap">
+    <h2 id="inline-code">
+        Inline code
+        <a data-clipboard-text="http://localhost/Home/code-blocks/#inline-code" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Inline code" href="#inline-code">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h2>
+</div><p>To display an inline shortcode use single quotes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">`some code`
+</code></pre></div><p><strong>Example:</strong> <code>some code</code></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="code-blocks">
+        Code blocks
+        <a data-clipboard-text="http://localhost/Home/code-blocks/#code-blocks" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Code blocks" href="#code-blocks">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h2>
+</div><p>Code blocks can be uses without language specification:</p>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="s">```
+</span><span class="s"></span>some code
+<span class="s">```</span>
+</code></pre></div><p><strong>Example:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">some code
+</code></pre></div><p>&hellip; or if you need language specific syntax highlighting:</p>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="s">```Shell
+</span><span class="s"></span><span class="c1"># some code</span>
+<span class="nb">echo</span> <span class="s2">&#34;Hello world&#34;</span>
+<span class="s">```</span>
+</code></pre></div><p><strong>Example:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># some code</span>
+<span class="nb">echo</span> <span class="s2">&#34;Hello World&#34;</span>
+</code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="highlight-shortcode">
+        Highlight shortcode
+        <a data-clipboard-text="http://localhost/Home/code-blocks/#highlight-shortcode" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Highlight shortcode" href="#highlight-shortcode">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h2>
+</div><p>Hugo has a build-in shortcode for syntax highlighting. To work properly with this theme, you have to set following options in your site configuration:</p>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid" id="tabs-uniqueid-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid-0" class="gdoc-tabs__label">
+      TOML
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre class="chroma"><code class="language-TOML" data-lang="TOML"><span class="nx">pygmentsUseClasses</span><span class="p">=</span><span class="kc">true</span>
+<span class="nx">pygmentsCodeFences</span><span class="p">=</span><span class="kc">true</span>
+</code></pre></div>
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid" id="tabs-uniqueid-1"
+       />
+    <label for="tabs-uniqueid-1" class="gdoc-tabs__label">
+      YAML
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre class="chroma"><code class="language-YAML" data-lang="YAML"><span class="nt">pygmentsUseClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="nt">pygmentsCodeFences</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></code></pre></div>
+    </div>
+  
+</div>
+
+<p>You can use it like every other shortcode:</p>
+<!-- prettier-ignore -->
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">highlight</span> <span class="na">Shell</span> <span class="err">&#34;</span><span class="na">linenos</span><span class="o">=</span><span class="s">table&#34;</span> <span class="p">&gt;</span>}}
+<span class="gh"># some code
+</span><span class="gh"></span>echo &#34;Hello World&#34;
+{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">highlight</span> <span class="p">&gt;</span>}}
+</code></pre></div><p><strong>Example:</strong></p>
+<!-- markdownlint-disable -->
+<!-- prettier-ignore-start -->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1"># some code</span>
+<span class="nb">echo</span> <span class="s2">&#34;Hello World&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<!-- prettier-ignore-end-->
+<!-- markdownlint-enable -->
 
 
     </article>

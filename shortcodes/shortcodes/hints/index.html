@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ToC Tree">
+<meta name="description" content="Hints">
 
-<title>ToC Tree | Geekdocs</title>
+<title>Hints | Geekdocs</title>
 
 <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -31,7 +31,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost/toc-tree/index.xml" title="Geekdocs" />
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
 </head>
@@ -351,7 +350,7 @@
             
             
                 <span class="flex">
-                    <a href="/shortcodes/hints/" class="gdoc-nav__entry ">
+                    <a href="/shortcodes/hints/" class="gdoc-nav__entry is-active">
                         Hints
                     </a>
                 </span>
@@ -740,7 +739,7 @@
             
             
                 <span class="flex">
-                    <a href="/toc-tree/" class="gdoc-nav__entry is-active">
+                    <a href="/toc-tree/" class="gdoc-nav__entry ">
                         ToC Tree
                     </a>
                 </span>
@@ -912,7 +911,15 @@
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Geekdocs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>ToC Tree</span><meta itemprop='position' content='2' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Geekdocs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/shortcodes/' href='/shortcodes/'><span itemprop='name'>Shortcodes</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Hints</span><meta itemprop='position' content='3' /></li>
+    
+
     
 
     
@@ -923,156 +930,47 @@
     
 </div>
 
+
     <article class="gdoc-markdown">
-        <h1>ToC Tree</h1>
-        <p>This is just a demo section for the <!-- spellchecker-disable --><a class="gdoc-markdown__link" href="/shortcodes/toc-tree/">toc-tree</a><!-- spellchecker-enable --> shortcode.</p>
-<!-- spellchecker-disable -->
+        <h1>Hints</h1>
+        <p>Hint shortcode can be used as hint/alerts/notification block.
+There are four colors to choose: <code>info</code>, <code>ok</code>, <code>warning</code> and <code>danger</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-tpl" data-lang="tpl"><span class="cp">{{</span><span class="o">&lt;</span> <span class="na">hint</span> <span class="o">[</span><span class="na">info</span><span class="o">|</span><span class="na">warning</span><span class="o">|</span><span class="na">danger</span><span class="o">]</span> <span class="o">&gt;</span><span class="cp">}}</span><span class="x">
+</span><span class="x">**Markdown content**\
+</span><span class="x">Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+</span><span class="x"> Ornateness bland it ex enc, est yeti am bongo detract re.
+</span><span class="x"></span><span class="cp">{{</span><span class="o">&lt;</span> <span class="o">/</span><span class="na">hint</span> <span class="o">&gt;</span><span class="cp">}}</span><span class="x">
+</span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="example">
+        Example
+        <a data-clipboard-text="http://localhost/shortcodes/hints/#example" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Example" href="#example">
+            <svg class="icon link"><use xlink:href="#link"></use></svg>
+        </a>
+    </h2>
+</div><blockquote class="gdoc-hint info">
+  <strong>Markdown content</strong><br>
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+Ornateness bland it ex enc, est yeti am bongo detract re.
+</blockquote>
 
+<blockquote class="gdoc-hint ok">
+  <strong>Markdown content</strong><br>
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+Ornateness bland it ex enc, est yeti am bongo detract re.
+</blockquote>
 
+<blockquote class="gdoc-hint warning">
+  <strong>Markdown content</strong><br>
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+Ornateness bland it ex enc, est yeti am bongo detract re.
+</blockquote>
 
-  <div class="gdoc-toc gdoc-toc__level--6">
-    
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/" class="gdoc-toc__entry">Level 1</a>
-        </span>
-      
+<blockquote class="gdoc-hint danger">
+  <strong>Markdown content</strong><br>
+Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture.
+Ornateness bland it ex enc, est yeti am bongo detract re.
+</blockquote>
 
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-1/" class="gdoc-toc__entry">Level 1.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-2/" class="gdoc-toc__entry">Level 1.2</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-3/" class="gdoc-toc__entry">Level 1.3</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-1/level-1-3/level-1-3-1/" class="gdoc-toc__entry">Level 1.3.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/" class="gdoc-toc__entry">Level 2</a>
-        </span>
-      
-
-      
-      
-        
-  <ul>
-    
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/level-2-1/" class="gdoc-toc__entry">Level 2.1</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-      
-      <li>
-      
-        <span>
-          <a href="/toc-tree/level-2/level-2-2/" class="gdoc-toc__entry">Level 2.2</a>
-        </span>
-      
-
-      
-      
-      </li>
-      
-      
-    
-  </ul>
-
-      
-      </li>
-      
-      
-    
-  </ul>
-
-  </div>
-
-
-
-
-
-<!-- spellchecker-enable -->
 
 
     </article>
