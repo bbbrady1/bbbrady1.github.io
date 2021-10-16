@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="6.1 LTMCC Cooling Channels">
+
+<title>6.1 LTMCC Cooling Channels | CryoRocket.com</title>
+
+<link rel="icon" href="../../favicon/favicon-32x32.png" type="image/x-icon">
+
+<link rel="preload" as="font" href="../../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" href="../../main-f5793ba4b9.min.css" as="style">
+<link rel="stylesheet" href="../../main-f5793ba4b9.min.css" media="all">
+
+<link rel="preload" href="../../mobile-2eb10ce87d.min.css" as="style">
+<link rel="stylesheet" href="../../mobile-2eb10ce87d.min.css" media="screen and (max-width: 45rem)">
+
+<link rel="preload" href="../../print-f79fc3e5d7.min.css" as="style">
+<link rel="stylesheet" href="../../print-f79fc3e5d7.min.css" media="print">
+
+<link rel="preload" href="../../custom.css" as="style">
+<link rel="stylesheet" href="../../custom.css" media="all">
+
+<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.526v2.947H5.755l8.351 8.421-2.105 2.105-12-12 12-12 2.105 2.105-8.351 8.421H24z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M5.965 10.526V6.035L0 12l5.965 5.965v-4.491H24v-2.947H5.965z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M18.035 10.526V6.035L24 12l-5.965 5.965v-4.491H0v-2.947h18.035z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="bitbucket" xmlns="http://www.w3.org/2000/svg"><path d="M15.905 13.355c.189 1.444-1.564 2.578-2.784 1.839-1.375-.602-1.375-2.784-.034-3.403 1.151-.705 2.818.223 2.818 1.564zm1.907-.361c-.309-2.44-3.076-4.056-5.328-3.042-1.426.636-2.389 2.148-2.32 3.747.086 2.097 2.08 3.815 4.176 3.626s3.729-2.234 3.472-4.331zm4.108-9.315c-.756-.997-2.045-1.169-3.179-1.358-3.214-.516-6.513-.533-9.727.034-1.066.172-2.269.361-2.939 1.323 1.1 1.031 2.664 1.186 4.073 1.358 2.544.327 5.156.344 7.699.017 1.426-.172 3.008-.309 4.073-1.375zm.979 17.788c-.481 1.684-.206 3.953-1.994 4.932-3.076 1.701-6.806 1.89-10.191 1.289-1.787-.327-3.884-.894-4.864-2.578-.43-1.65-.705-3.334-.98-5.018l.103-.275.309-.155c5.121 3.386 12.288 3.386 17.427 0 .808.241.206 1.22.189 1.805zM26.01 4.951c-.584 3.764-1.255 7.51-1.908 11.257-.189 1.1-1.255 1.719-2.148 2.183-3.214 1.615-6.96 1.89-10.483 1.512-2.389-.258-4.829-.894-6.771-2.389-.911-.705-.911-1.908-1.083-2.922-.602-3.523-1.289-7.046-1.719-10.604.206-1.547 1.942-2.217 3.231-2.698C6.848.654 8.686.362 10.508.19c3.884-.378 7.854-.241 11.618.859 1.341.395 2.784.945 3.695 2.097.412.533.275 1.203.189 1.805z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15.268 4.392q.868 0 1.532.638t.664 1.506v17.463l-7.659-3.268-7.608 3.268V6.536q0-.868.664-1.506t1.532-.638h10.876zm4.34 14.144V4.392q0-.868-.638-1.532t-1.506-.664H6.537q0-.868.664-1.532T8.733 0h10.876q.868 0 1.532.664t.664 1.532v17.412z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M9.917 24.5a1.75 1.75 0 10-3.501.001 1.75 1.75 0 003.501-.001zm0-21a1.75 1.75 0 10-3.501.001A1.75 1.75 0 009.917 3.5zm11.666 2.333a1.75 1.75 0 10-3.501.001 1.75 1.75 0 003.501-.001zm1.75 0a3.502 3.502 0 01-1.75 3.026c-.055 6.581-4.721 8.039-7.82 9.023-2.898.911-3.846 1.349-3.846 3.117v.474a3.502 3.502 0 011.75 3.026c0 1.932-1.568 3.5-3.5 3.5s-3.5-1.568-3.5-3.5c0-1.294.711-2.424 1.75-3.026V6.526A3.502 3.502 0 014.667 3.5c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5a3.502 3.502 0 01-1.75 3.026v9.06c.93-.456 1.914-.766 2.807-1.039 3.391-1.075 5.323-1.878 5.359-5.687a3.502 3.502 0 01-1.75-3.026c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M27.192 28.844V11.192H4.808v17.652h22.384zm0-25.689q1.277 0 2.253.976t.976 2.253v22.459q0 1.277-.976 2.216t-2.253.939H4.808q-1.352 0-2.291-.901t-.939-2.253V6.385q0-1.277.939-2.253t2.291-.976h1.577V.001h3.23v3.155h12.769V.001h3.23v3.155h1.577zm-3.155 11.267v3.155h-3.23v-3.155h3.23zm-6.46 0v3.155h-3.155v-3.155h3.155zm-6.384 0v3.155h-3.23v-3.155h3.23z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M2.866 28.209h26.269v3.79H2.866v-3.79zm26.268-16.925L16 24.418 2.866 11.284h7.493V.001h11.283v11.283h7.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M28.845 9.615v-3.23L16 14.422 3.155 6.385v3.23L16 17.577zm0-6.46q1.277 0 2.216.977T32 6.385v19.23q0 1.277-.939 2.253t-2.216.977H3.155q-1.277 0-2.216-.977T0 25.615V6.385q0-1.277.939-2.253t2.216-.977h25.69z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="git" xmlns="http://www.w3.org/2000/svg"><path d="M27.472 12.753L15.247.529a1.803 1.803 0 00-2.55 0l-2.84 2.84 2.137 2.137a2.625 2.625 0 013.501 3.501l3.499 3.499a2.625 2.625 0 11-1.237 1.237l-3.499-3.499c-.083.04-.169.075-.257.106v7.3a2.626 2.626 0 11-1.75 0v-7.3a2.626 2.626 0 01-1.494-3.607L8.62 4.606l-8.09 8.09a1.805 1.805 0 000 2.551l12.225 12.224a1.803 1.803 0 002.55 0l12.168-12.168a1.805 1.805 0 000-2.551z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M16 .394c8.833 0 15.999 7.166 15.999 15.999 0 7.062-4.583 13.062-10.937 15.187-.813.146-1.104-.354-1.104-.771 0-.521.021-2.25.021-4.396 0-1.5-.5-2.458-1.083-2.958 3.562-.396 7.312-1.75 7.312-7.896 0-1.75-.625-3.167-1.646-4.291.167-.417.708-2.042-.167-4.25-1.333-.417-4.396 1.646-4.396 1.646a15.032 15.032 0 00-8 0S8.937 6.602 7.603 7.018c-.875 2.208-.333 3.833-.167 4.25-1.021 1.125-1.646 2.542-1.646 4.291 0 6.125 3.729 7.5 7.291 7.896-.458.417-.875 1.125-1.021 2.146-.917.417-3.25 1.125-4.646-1.333-.875-1.521-2.458-1.646-2.458-1.646-1.562-.021-.104.979-.104.979 1.042.479 1.771 2.333 1.771 2.333.938 2.854 5.396 1.896 5.396 1.896 0 1.333.021 2.583.021 2.979 0 .417-.292.917-1.104.771C4.582 29.455-.001 23.455-.001 16.393-.001 7.56 7.165.394 15.998.394zM6.063 23.372c.042-.083-.021-.187-.146-.25-.125-.042-.229-.021-.271.042-.042.083.021.187.146.25.104.062.229.042.271-.042zm.646.709c.083-.062.062-.208-.042-.333-.104-.104-.25-.146-.333-.062-.083.062-.062.208.042.333.104.104.25.146.333.062zm.625.937c.104-.083.104-.25 0-.396-.083-.146-.25-.208-.354-.125-.104.062-.104.229 0 .375s.271.208.354.146zm.875.875c.083-.083.042-.271-.083-.396-.146-.146-.333-.167-.417-.062-.104.083-.062.271.083.396.146.146.333.167.417.062zm1.187.521c.042-.125-.083-.271-.271-.333-.167-.042-.354.021-.396.146s.083.271.271.312c.167.062.354 0 .396-.125zm1.313.104c0-.146-.167-.25-.354-.229-.187 0-.333.104-.333.229 0 .146.146.25.354.229.187 0 .333-.104.333-.229zm1.208-.208c-.021-.125-.187-.208-.375-.187-.187.042-.312.167-.292.312.021.125.187.208.375.167s.312-.167.292-.292z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gitlab" xmlns="http://www.w3.org/2000/svg"><path d="M1.629 11.034L14 26.888.442 17.048a1.09 1.09 0 01-.39-1.203l1.578-4.811zm7.217 0h10.309l-5.154 15.854zM5.753 1.475l3.093 9.559H1.63l3.093-9.559a.548.548 0 011.031 0zm20.618 9.559l1.578 4.811c.141.437-.016.922-.39 1.203l-13.558 9.84 12.371-15.854zm0 0h-7.216l3.093-9.559a.548.548 0 011.031 0z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.714a1.11 1.11 0 01-.786-.321L4.072 18.643c-.143-.125-4.071-3.714-4.071-8 0-5.232 3.196-8.357 8.535-8.357 3.125 0 6.053 2.464 7.464 3.857 1.411-1.393 4.339-3.857 7.464-3.857 5.339 0 8.535 3.125 8.535 8.357 0 4.286-3.928 7.875-4.089 8.035L16.785 29.392c-.214.214-.5.321-.786.321z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="keyborad_arrow_down" xmlns="http://www.w3.org/2000/svg"><path d="M3.281 5.36L14 16.079 24.719 5.36 28 8.641l-14 14-14-14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="keyborad_arrow_left" xmlns="http://www.w3.org/2000/svg"><path d="M25.875 28.25L22.125 32 6.126 16.001 22.125.002l3.75 3.75-12.25 12.25z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="keyborad_arrow_right" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 28.25L18.375 16 6.125 3.75 9.875 0l15.999 15.999L9.875 31.998z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M24.037 7.963q3.305 0 5.634 2.366T32 16t-2.329 5.671-5.634 2.366h-6.46v-3.08h6.46q2.028 0 3.493-1.465t1.465-3.493-1.465-3.493-3.493-1.465h-6.46v-3.08h6.46zM9.615 17.578v-3.155h12.77v3.155H9.615zM3.005 16q0 2.028 1.465 3.493t3.493 1.465h6.46v3.08h-6.46q-3.305 0-5.634-2.366T0 16.001t2.329-5.671 5.634-2.366h6.46v3.08h-6.46q-2.028 0-3.493 1.465t-1.465 3.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M.001 5.334h31.998v3.583H.001V5.334zm0 12.416v-3.5h31.998v3.5H.001zm0 8.916v-3.583h31.998v3.583H.001z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M22.615 19.384l2.894 2.894v1.413H2.49v-1.413l2.894-2.894V12.25q0-3.365 1.716-5.856t4.745-3.231v-1.01q0-.875.606-1.514T13.999 0t1.548.639.606 1.514v1.01q3.029.74 4.745 3.231t1.716 5.856v7.134zM14 27.999q-1.211 0-2.053-.808t-.841-2.019h5.788q0 1.144-.875 1.986T14 27.999z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M28 12.62h-9.793V8.414h-2.826v11.173h2.826v-4.206H28V26.62h-9.793v-4.206H12.62v-14H9.794v4.206H.001V1.381h9.793v4.206h8.413V1.381H28V12.62z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M16 20.023q5.052 0 10.526 2.199t5.473 5.754v4.023H0v-4.023q0-3.555 5.473-5.754t10.526-2.199zM16 16q-3.275 0-5.614-2.339T8.047 8.047t2.339-5.661T16 0t5.614 2.386 2.339 5.661-2.339 5.614T16 16z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M11.925 20.161q3.432 0 5.834-2.402t2.402-5.834-2.402-5.834-5.834-2.402-5.834 2.402-2.402 5.834 2.402 5.834 5.834 2.402zm10.981 0L32 29.255 29.255 32l-9.094-9.094v-1.458l-.515-.515q-3.26 2.831-7.721 2.831-4.976 0-8.45-3.432T.001 11.925t3.474-8.45 8.45-3.474 8.407 3.474 3.432 8.45q0 1.802-.858 4.075t-1.973 3.646l.515.515h1.458z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M22.167 15.166V3.5h-8.166v20.726c.93-.492 2.424-1.349 3.883-2.497 1.95-1.531 4.284-3.919 4.284-6.562zm3.499-13.999v14c0 7.674-10.737 12.523-11.192 12.724-.146.073-.31.109-.474.109s-.328-.036-.474-.109c-.456-.201-11.192-5.049-11.192-12.724v-14C2.334.529 2.863 0 3.501 0H24.5c.638 0 1.167.529 1.167 1.167z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M6.606 7.549c0-1.047-.84-1.887-1.887-1.887s-1.887.84-1.887 1.887.84 1.887 1.887 1.887 1.887-.84 1.887-1.887zm15.732 8.493c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546s-.988-.206-1.327-.546L1.342 14.066C.59 13.329 0 11.899 0 10.852V4.718a1.9 1.9 0 011.887-1.887h6.134c1.047 0 2.477.59 3.229 1.342L21.792 14.7c.339.354.546.84.546 1.342zm5.661 0c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546-.767 0-1.15-.354-1.651-.87l6.93-6.93c.339-.339.546-.826.546-1.327s-.206-.988-.546-1.342L13.609 4.173c-.752-.752-2.182-1.342-3.229-1.342h3.303c1.047 0 2.477.59 3.229 1.342L27.454 14.7c.339.354.546.84.546 1.342z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M25.026 3.335a.466.466 0 00-.646-.238L13.362 8.91a.463.463 0 00-.216.575l.227.593-6.36 3.488a.462.462 0 00-.205.583l.211.508-6.755 3.228a.463.463 0 00-.228.595l1.386 3.341a.463.463 0 00.583.259l7.056-2.5.211.508a.462.462 0 00.557.267l6.733-1.941.202.527a.46.46 0 00.566.277l12.03-3.702a.46.46 0 00.293-.613L25.026 3.335zM2.109 21.061l-1.049-2.53 6.314-3.018 1.332 3.211-6.596 2.337zm7.857-1.708l-.22-.531-1.706-4.113-.22-.53 5.863-3.216 2.197 5.676.347.908-6.261 1.806zm7.505-1.146l-.188-.491c-.003-.01-.001-.022-.006-.032l-.572-1.478-2.549-6.668 10.201-5.381 4.249 10.624-11.136 3.428zm8.943-16.723a.463.463 0 00-.86.344l5.552 13.881a.464.464 0 00.602.258.464.464 0 00.258-.602L26.413 1.484zM16.268 20.627h-2.776c-1.055 0-1.851.796-1.851 1.851v1.217l-5.44 6.347a.462.462 0 10.702.602l5.415-6.316h2.101v6.015a.463.463 0 00.926 0v-6.015h2.101l5.414 6.316a.462.462 0 10.703-.602l-5.44-6.347v-1.148c0-1.076-.813-1.92-1.851-1.92zm.925 2.777h-4.627v-.925c0-.545.38-.925.925-.925h2.776c.527 0 .925.428.925.995v.856z"/></symbol></svg>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hidden" id="menu-control" />
+        <header class="gdoc-header">
+    <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control">
+            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
+            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
+        </label>
+        
+        <a class="gdoc-header__link" href="https://bbbrady1.github.io/">
+            <span class="gdoc-brand flex align-center">
+                <img class="gdoc-brand__img" src="../../brand.svg" alt="" width=38 height=38>
+                CryoRocket.com
+            </span>
+        </a>
+    </div>
+</header>
+
+
+        <main class="container flex flex-even">
+            <aside class="gdoc-nav">
+                <nav>
+    
+    <div class="gdoc-search">
+
+
+        <svg class="icon search"><use xlink:href="#search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
+<br>
+
+
+
+    <section class="gdoc-nav--main">
+        
+        
+            
+
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">1.  SSME Thermodynamic Data</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../thermodynamic-data/1.1-fuel-system/" class="gdoc-nav__entry ">
+                        1.1 Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../thermodynamic-data/1.2-oxidizer-system/" class="gdoc-nav__entry ">
+                        1.2 Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../thermodynamic-data/1.3-combustion-system/" class="gdoc-nav__entry ">
+                        1.3 Combustion System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">2.  Equations of State</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.1-background/" class="gdoc-nav__entry ">
+                        2.1 Background
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.2-hydrogen-model/" class="gdoc-nav__entry ">
+                        2.2 Hydrogen Model
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.3-oxygen-model/" class="gdoc-nav__entry ">
+                        2.3 Oxygen Model
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.4-combustion-products/" class="gdoc-nav__entry ">
+                        2.4 Combustion Products
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.5-enthalpy-revisited/" class="gdoc-nav__entry ">
+                        2.5 Enthalpy Revisited
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.6-transport-properties/" class="gdoc-nav__entry ">
+                        2.6 Transport Properties
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">3.  Combustion Model</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.1-chemistry/" class="gdoc-nav__entry ">
+                        3.1 Chemistry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.2-first-law-of-thermodynamics/" class="gdoc-nav__entry ">
+                        3.2 First Law of Thermodynamics
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.3-solution-procedure/" class="gdoc-nav__entry ">
+                        3.3 Solution Procedure
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.4-mixture-ratio-optimization/" class="gdoc-nav__entry ">
+                        3.4 Mixture Ratio Optimization
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">4.  Turbomachinery</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.1-low-pressure-fuel-system/" class="gdoc-nav__entry ">
+                        4.1 Low Pressure Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.2-high-pressure-fuel-system/" class="gdoc-nav__entry ">
+                        4.2 High Pressure Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.3-low-pressure-oxidizer-system/" class="gdoc-nav__entry ">
+                        4.3 Low Pressure Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.4-high-pressure-oxidizer-system/" class="gdoc-nav__entry ">
+                        4.4 High Pressure Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.5-large-throat-main-combustion-chamber/" class="gdoc-nav__entry ">
+                        4.5 Large Throat Main Combustion Chamber
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">5.  Flow Model</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../flow-model/5.1-ltmcc-geometry/" class="gdoc-nav__entry ">
+                        5.1 LTMCC Geometry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../flow-model/5.2-nozzle-geometry/" class="gdoc-nav__entry ">
+                        5.2 Nozzle Geometry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../flow-model/5.3-compressible-flow/" class="gdoc-nav__entry ">
+                        5.3 Compressible Flow
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">6.  Regenerative Cooling Circuit</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/" class="gdoc-nav__entry is-active">
+                        6.1 LTMCC Cooling Channels
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/" class="gdoc-nav__entry ">
+                        6.2 Nozzle Coolant Tubes
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../regenerative-cooling-circuit/6.3-computational-framework/" class="gdoc-nav__entry ">
+                        6.3 Computational Framework
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../references/" class="gdoc-nav__entry ">
+                        7.  References
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../about/" class="gdoc-nav__entry ">
+                        8.  About
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+
+
+
+
+        
+    </section>
+
+    <section class="gdoc-nav--more">
+        
+    </section>
+</nav>
+
+            </aside>
+
+            <div class="gdoc-page">
+                
+    
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap
+     justify-end 
+     hidden-mobile 
+     hidden " itemprop="breadcrumb">
+    
+    
+</div>
+
+    <article class="gdoc-markdown">
+        
+        <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+  };
+</script>
+<p style="text-align:center"> <b> Regenerative Cooling </b>  </p>
+<p>As shown in previous sections, temperatures inside the  Large Throat Main Combustion Chamber (LTMCC) can exceed 3600 Kelvin.  In order to withstand this harsh environment, the combustion chamber must be constructed from a material with excellent heat conduction characteristics and a high melting point.  Simultaneously, this material must also have a high strength-to-weight ratio and not be too hard, tough, or brittle to complicate the manufacturing process.  Engineers at North American Rockwell developed an interesting alloy to solve this problem.  NARloy-Z consists primarily of copper with the addition of approximately 3% silver and 0.5% zirconium.  This alloy retains copper&rsquo;s excellent ability to conduct heat, and improves upon its  its strength and fatigue characteristics.<sup>[<a><a href="../../references/#ref67r" >67</href></a>]</sup><a name="ref67"> </a> The final hurdle to overcome is melting temperature.  NARLOY-Z still melts at about 1000 K, which is obviously much less than the 3600 K found inside the LTMCC.  Engineers solved this problem by manufacturing a regeneratively cooled combustion chamber.   Cryogenic hydrogen enters the LTMCC aft manifold and flows into a set of 430 high aspect ratio coolant passages evenly dispersed around the chamber&rsquo;s circumference.<sup>[<a><a href="../../references/#ref68r" >68</href></a>]</sup><a name="ref68"> </a>   As coolant flows through these channels toward the nozzle injector face, the high thermal conductivity of NARloy-Z allows heat to easily pass through the walls of the chamber and be carried away by the extremely cold hydrogen.  This designs maintains the wall at a temperature below its melting point while simultaneously increasing the enthalpy of the hydrogen as it is routed into the combustion chamber.  The figures below show a schematic of the LTMCC regenerative cooling system, along with a plot of how channel dimensions vary along the length of the chamber.  Refer to Figure <a><a href="../../thermodynamic-data/1.1-fuel-system/" > 1.1.1</href></a> for a global view showing how the coolant inlet manifold (Station 8) and outlet manifold (Station 9) integrate within the SSME fuel system as a whole.</p>
+<p style="text-align:center;"><img src="../../Fig6.1.1.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.1:</b> LTMCC Regenerative cooling Circuit<sup>[<a><a href="../../references/#ref58r" >58</href></a>]</sup><a name="ref58e"> </a>   </b> </p>
+<br>
+<a name="fig6.1.2"></a>
+<p style="text-align:center;"><img src="../../Fig6.1.2.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.2:</b> LTMCC Wall Channel Dimensions</b><sup>[<a><a href="../../references/#ref69r" >69</href></a>]</sup><a name="ref69"> </a> </p>
+<p>In <a><a href="../../flow-model/5.3-compressible-flow/" >Section 5.3</href></a> we developed an algorithm to determine the the properties of the exhaust gas flowing through the LTMCC.  We can combine this algorithm with the coolant channel geometry data shown above to initiate a coupled heat transfer analysis.  There are three simultaneous equations that must be solved:</b><sup>[<a><a href="../../references/#ref38r" >38</href></a>]</sup><a name="ref38i"> </a> </p></p>
+<p><a name="6.1.1"></a></p>
+<div style="float: right"><b>(6.1.1)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ q_{gas}=h_{gas}A_{gas}\left(T_{aw}-T_{hw}\right) $$</div>
+<p><a name="6.1.2"></a></p>
+<div style="float: right"><b>(6.1.2)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ q_{H_2}=h_{H_2}A_{H_2}\left(T_{cw}-T_{H_2}\right) $$</div>
+<div style="float: right"><b>(6.1.3)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ q_{wall}=kA_{gas}\frac{\partial T}{\partial y} $$</div>
+<p>The first two of these equations represent Newton&rsquo;s Law of Cooling applied to the LTMCC.  They account for convective heat transfer.  Equation 6.1.1 says that the amount of heat transferred from the exhaust gas flowing through the LTMCC into the LTMCC&rsquo;s inner wall ($q_{gas}$) is equal to the gas heat transfer coefficient ($h_{gas}$) multiplied by the surface area of the combustion chamber interior ($A_{gas}$) and the difference between the adiabatic wall temperature ($T_{aw}$) and the hot wall temperature, ($T_{hw}$).  Adiabatic wall temperature is the temperature that would exist on the inner wall of the LTMCC if the wall was perfectly insulated and no heat transfer was was possible.  The &ldquo;hot wall&rdquo; temperature, $T_{hw}$, is the true temperature of the inner surface of the LTMCC.</p>
+<p>Equation 6.1.2 is Newton&rsquo;s law of cooling applied to one of the hydrogen coolant channels.  $q_{H_{2}}$ is the total amount of heat transferred from the channel walls into the liquid hydrogen coolant.  $h$ represents the convective heat transfer coefficient and $A$ is the wetted surface area of the cooling channel.  $T_{H_2}$ is the bulk temperature of the liquid hydrogen flowing through the channel.  $T_{cw}$ is the temperature of the &ldquo;cold wall,&rdquo; the the bottom surface of the cooling cooling channel.  The cold wall and the hot wall of the LTMCC are separated by the &ldquo;thickness&rdquo; shown above in Figures 6.1.1 and 6.1.2.</p>
+<p>The final equation is Fourier&rsquo;s Law.  It accounts for heat conduction between the hot wall and cold wall.  $k$ is the thermal conductivity of the NARloy wall.  $A$ is the surface area of the wall, and $\partial T / \partial y$ is the temperature gradient between the hot and cold walls.</p>
+<p>As the exhaust gas flows down the nozzle, heat is transferred from the gas into the hot wall.  All of this heat is conducted through the hot wall and into they hydrogen coolant.  Therefore $q_{gas}=q_{wall}=q_{H_2}$.  Solving these three simultaneous equations will reveal the wall temperature profile from the injector face to the nozzle exit plane, and provide the expression for $Q(x)$ needed to close the system of &ldquo;quasi one-dimensional&rdquo; flow equations established in <a><a href="../../flow-model/5.3-compressible-flow/" >Section 5.3</href></a>.  We will begin by refining the expression for the amount of heat transferred from the combustion gas into the chamber wall:  Equation 6.1.1.</p>
+ <p style="text-align:center;"> <b>Equation 6.1.1</b> </p>
+<p>The geometry of the LTMCC is known from Section 5.1.1 which facilitates calculation of the chamber&rsquo;s inner surface area, $A_{gas}$. Equation Table 5.1.2 provides the radius of the LTMCC at any given station along the length of the LTMCC.  If we discretize the LTMCC into a finite number of segments of width $dx$ (as shown in Figure 5.2.1), the surface area of an segment $dx$ is simply that of a cylinder:</p>
+<p><a name="6.1.4"></a></p>
+<div style="float: right"><b>(6.1.4)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ A_{gas}= \frac{2\pi\,r(x)\,dx}{N_{cc}} $$ </div>
+<p>The $N_{cc}$ term in the denominator of this equation represents the number of cooling channels the arrayed around the cylinder&rsquo;s circumference.  We will perform this analysis and estimate the amount of heat transferred in a single cooling channel.  Therefore the surface area contained in the numerator is divided by the number of cooling channels, in this case 430.</p>
+<p>The convective heat transfer coefficient, $h_{gas}$ is significantly more complex to model.  We turn to the Bartz Equation:<sup>[<a><a href="../../references/#ref70r" >70</href></a>]</sup><a name="ref70"> </a></p>
+<p><a name="6.1.5"></a></p>
+<div style="float: right"><b>(6.1.5)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$  h_{gas}= \frac{0.026}{D_t^2}\left(\frac{\eta^{0.2}\,C_p}{P_r^{0.6}}\right)\left(\frac{p_c}{c^*}\right)^{0.8}\left(\frac{D_t}{R_U}\right)^{0.1}\left(\frac{A_t}{A}\right)^{0.9}\,\sigma$$ </div>
+<div style="margin: 0 auto; width: 100%;"> $$  \sigma = \frac{1}{\left[\frac{1}{2}\frac{T_{hw}}{T_s}\left(1+\frac{\gamma-1}{2}\,M^2\right)+\frac{1}{2}\right]^{0.68}\left[1+\frac{\gamma-1}{2}M^2\right]^{0.12}}$$ </div>
+<p>Solving this equation requires the use of nearly every function described in the previous sections of this website.  Table 6.1.1 names each variable and provides a cross-reference to the additional equations needed to perform the calculation.</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin-left:26%;  margin-right:20%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><b>Variable</b></th>
+    <th class="tg-0lax"><b>Name</b></th>
+    <th class="tg-0lax"><b>Calculation Procedure</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">$D_t$</td>
+    <td class="tg-0lax">LTMCC Throat Diameter</td>
+    <td class="tg-0lax"><a><a href="../../flow-model/5.1-ltmcc-geometry/#5.1.10" >Figure 5.1.10</href></a>  </td> 
+  </tr>
+  <tr>
+    <td class="tg-0lax">$\eta$</td>
+    <td class="tg-0lax">Combustion Gas Viscosity</td>
+    <td class="tg-0lax"><a><a href="../../equation-of-state/2.6-transport-properties/#2.6.13" >Equation 2.6.13</href></a>  </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$C_p$</td>
+    <td class="tg-0lax">Combustion Gas Specific Heat</td>
+    <td class="tg-0lax"><a><a href="../../equation-of-state/2.4-combustion-products/#2.4.1" >Equation 2.4.1</href></a></td>
+  </tr>
+  <tr>  
+    <td class="tg-0lax">$\lambda$</td>
+    <td class="tg-0lax">Combustion Gas Thermal Conductivity</td>
+    <td class="tg-0lax"><a><a href="../../equation-of-state/2.6-transport-properties/#2.6.12" >Equation 2.6.12</href></a></td>
+  </tr>
+ <tr>
+    <td class="tg-0lax">$Pr$</td>
+    <td class="tg-0lax">Combustion Gas Prandtl Number $\frac{C_p\,\eta}{\lambda}$</td>
+    <td class="tg-0lax"><a><a href="../../equation-of-state/2.6-transport-properties/" >Section 2.6</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$p_c$ </td>
+    <td class="tg-0lax">Stagnation Pressure</td>
+    <td class="tg-0lax"><a><a href="../../flow-model/5.3-compressible-flow/#5.3.1" >Eqns 5.3.1 - 5.3.3</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$c^*$</td>
+    <td class="tg-0lax">Characteristic Velocity</td>
+    <td class="tg-0lax"><a><a href="../../combustion-model/3.4-mixture-ratio-optimization/#3.4.1" >Equation 3.4.1</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$R_U$</td>
+    <td class="tg-0lax">Wall Radius of Curvature at Throat</td>
+    <td class="tg-0lax"><a><a href="../../flow-model/5.1-ltmcc-geometry/#5.1.11" >Figure 5.1.11</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$A$</td>
+    <td class="tg-0lax">Cross-Sectional Area at Station $x$ </td>
+    <td class="tg-0lax"><a><a href="../../flow-model/5.1-ltmcc-geometry/#tab5.1.2" >Table 5.1.2</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$A_t$</td>
+    <td class="tg-0lax">Throat Cross-Sectional Area </td>
+    <td class="tg-0lax"><a><a href="../../flow-model/5.1-ltmcc-geometry/#5.1.10" >Figure 5.1.10</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$T_s$</td>
+    <td class="tg-0lax">Stagnation Temperature</td>
+    <td class="tg-0lax"><a><a href="../../flow-model/5.3-compressible-flow/#5.3.1" >Eqns 5.3.1 - 5.3.3</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$\gamma$</td>
+    <td class="tg-0lax">Combustion Gas Specific Heat Ratio</td>
+    <td class="tg-0lax"><a><a href="../../combustion-model/3.3-solution-procedure/" >Section 3.3</href></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">$M$</td>
+    <td class="tg-0lax">Mach Number</td>
+    <td class="tg-0lax"><a><a href="../../flow-model/5.3-compressible-flow/#5.3.1" >Eqns 5.3.1 - 5.3.3</href></a></td>
+  </tr>
+</tbody>
+</table>
+<p style="text-align:center"> <b> Table 6.1.1 </b> </p>
+<p>The heat transfer coefficient predicted by the Bartz equation is very sensitive to the hot gas transport properties (viscosity, $\eta$, and thermal conductivity, $\lambda$) used as inputs.  The models for these transport properties developed in <a><a href="../../equation-of-state/2.6-transport-properties/" >Section 2.6</href></a> provide accurate results, as long provided they are provided the correct temperature to initiate the calculation.  This raises the question, what is the correct temperature to calculate the hot gas transport properties at?  Should the free-stream hot gas temperature be used?  Or the temperature of the hot wall?  The difference between these two temperatures can be on the order of several thousand Kelvin, which will drastically alter the the results returned by the transport property models.  To resolve this problem a &ldquo;reference temperature,&rdquo; $T^*$, is utilized:<sup>[<a><a href="../../references/#ref17r" >17</href></a>]</sup><a name="ref17h"> </a></p>
+<p><a name="6.1.5a"></a></p>
+<div style="float: right"><b>(6.1.5a)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \frac{T^*}{T}=1+0.032\,M^2+0.58\left(\frac{T_{hw}}{T}-1\right)$$</div>
+<p>where $T$ and $M$ correspond to the free stream temperature and Mach number of the combustion gas.</p>
+<p>Evaluating the hot gas transport properties at $T^*$ gives good results.  But this raises yet another question.  Must a similiar method be used account for transport properties of the liquid hydrogen in the coolant channels?  What temperature should those properties be calculated at?  Again, there can be a significant difference between the bulk tempertuare of the fluid (50-300 K) and the cold wall temperature (400-600 K).  In this case a &ldquo;film temperature,&rdquo; $T_f$ is used to calculate transport properties:</p>
+<p><a name="6.1.5b"></a></p>
+<div style="float: right"><b>(6.1.5b)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ T_f =\frac{T_{cw}+T_{H_{2}}}{2}$$</div>
+<p>Returning to Equation 6.1.1, there is still one more variable requiring elaboration:  adiabatic wall temperature, $T_{aw}$.<sup>[<a><a href="../../references/#ref38r" >38</href></a>]</sup><a name="ref38j"> </a></p>
+<div style="float: right"><b>(6.1.6)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ T_{aw} = T_{s}\frac{1+P_r^{0.33}\left(\frac{\gamma-1}{2}\right)\,M^2}{1+\left(\frac{\gamma-1}{2}\right)\,M^2} $$</div>
+<br>
+ <p style="text-align:center;"> <b>Equation 6.1.2</b> </p>
+<p>After defining all of the variables needed to account for the heat transferred from the combustion gas, we are ready to move on to Equation 6.1.2 and account for how this heat is absorbed by liquid hydrogen flowing through the LTMCC cooling channels.  The first variable of interest in Equation 6.1.2 is $h_{H_2}$, the liquid hydrogen heat transfer coefficient.  It is defined as follows:</p>
+<div style="float: right"><b>(6.1.7)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ h_{H_2}=\frac{Nu\,D_h}{\lambda_{H_2}}$$</div>
+<p>where $D_h$ is the hydraulic diameter of the cooling channel and $Nu$ is the local Nusselt Number. Nusselt number is a quantity that describes the ratio of conductive heat transfer to convective heat transfer into the hydrogen coolant.<sup>[<a><a href="../../references/#ref71r" >71</href></a>]</sup><a name="ref71"> </a>   It is modelled by the following correlation for hydrogen: <sup>[<a><a href="../../references/#ref72r" >72</href></a>]</sup><a name="ref72"> </a> <sup>[<a><a href="../../references/#ref73r" >73</href></a>]</sup><a name="ref73"> </a></p>
+<div style="float: right"><b>(6.1.8)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ Nu = \frac{\left(f/8\right)R_e\,P_r\frac{T_{H_2}}{T_{cw}}^{0.55}}{\left(1+\left(f/8\right)^{0.55}\left[B\left(\epsilon^*\right)-8.48\right]\right)}\,C_1\,C_2\,C_3$$</div>
+<p>The variables $f$ and $R_e$ represent the local friction factor and Reynold&rsquo;s number in the cooling channel.  These values can be determined through use of Equation <a><a href="../../flow-model/5.3-compressible-flow/#5.3.9" >5.3.9 </href></a> and Figure <a><a href="../../flow-model/5.3-compressible-flow/#5.3.2" >5.3.2 </href></a>.</p>
+<p>$B\left(\epsilon^*\right)$ is a piecewise function:</p>
+<div style="float: right"><b>(6.1.9)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \epsilon^*=R_e\left(e/D_h\right)\left(f/8\right)^{0.5}$$</div>
+<div style="float: right"><b>(6.1.10)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ B\left(\epsilon^*\right)=4.7\left(\epsilon^*\right)^{0.2}\,\,\,\,\text{for}\,\, \epsilon^* \geq 7 $$</div>
+<div style="float: right"><b>(6.1.11)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ B\left(\epsilon^*\right)=4.5+0.57\left(\epsilon^*\right)^{0.75}\,\,\,\,\text{for}\,\, \epsilon^* < 7 $$</div>
+<p>The coefficients $C_1$, $C_2$, and $C_3$ account for wall surface roughness, effects in the thermal entrance region, and secondary flows due to channel curvature, respectively.<sup>[<a><a href="../../references/#ref74r" >74</href></a>]</sup><a name="ref74"> </a></p>
+<div style="float: right"><b>(6.1.12)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ C_1 =\frac{1+1.5P_r^{-1/6}R_e^{-1/8}\left(P_r-1\right)\xi}{1+1.5P_r^{-1/6}R_e^{-1/8}\left(P_r\xi-1\right)} $$</div>
+<br>
+<p>In the above equations, the variable $\xi$ is the ratio of rough wall friction factor to smooth wall friction factor.  These friction factors can be evaluated with Equation <a><a href="../../flow-model/5.3-compressible-flow/#5.3.9" >5.3.9 </href></a> and Figure <a><a href="../../flow-model/5.3-compressible-flow/#5.3.2" >5.3.2 </href></a>.  For these calculations, the average surface roughness of the channel wall, $e$ is required.    For NARloy-Z, $e$ is approximately $2.5\times10^{-7}$ meters.<sup>[<a><a href="../../references/#ref69r" >69</href></a>]</sup><a name="ref69b"> </a></p>
+<div style="float: right"><b>(6.1.13)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ C_2 =1+\left(\frac{s}{D_h}\right)^{-0.7}\left(\frac{T_{cw}}{T_{H_2}}\right)^{0.1} $$</div>
+<p><br>The variable $s$ in Equation 6.1.13 represents the linear distance hydrogen has flowed since entering the cooling channel at the inlet manifold.</p>
+<div style="float: right"><b>(6.1.14)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ C_3 =\left[R_e\left(\frac{0.25\,D_h}{R}\right)^2\right]^{\pm0.05} $$</div>
+<p>The variable $R$ in Equation 6.1.14 represents channel wall&rsquo;s radius of curvature at station $x$. The exponent values correspond to the sign of the local concavity. The variable $C_3$ is only applied to stations where the wall curvature has a finite value (i.e. the curved regions corresponding to $R_I$, $R_U$, and $R_D$ on <a><a href="../../flow-model/5.1-ltmcc-geometry/#5.1.11" >Figure 5.1.11</href></a>)</p>
+<p>The final term of interest in Equation 6.1.2 is $A_{H_2}$, which represents the wetted surface area of the channel interior.  Each channel has a rectangular cross section of width $W$ and height $H$ (see Figure 6.1.1).  As was done for the LTMCC interior surface in Equation 6.1.4, the cooling will be discretized channel into multiple segments of length $dx$.  Therefore the wetted surface area of each channel segment becomes:</p>
+<div style="float: right"><b>(6.1.15)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ A_{H_2} = \left(2H+2W\right)dx $$</div>
+<p>This expression for surface area does not quite tell the entire story.  Equation 6.1.2 shows that the temperature difference between the channel&rsquo;s cold wall ($T_{cw}$) and the bulk temperature of the hydrogen coolant ($T_{H_2}$) is the primary factor driving the convective heat transfer.  If the assumption is made that the entire surface $A_{H_2}$ is maintained at the cold wall temperature $T_{cw}$ the model will greatly over-predict the amount of heat transferred into the hydrogen coolant.    We must account for the temperature distribution due to conduction along the channel&rsquo;s walls.  This is accomplished by approximating the vertical walls of the channel as thin rectangular fins.  The &ldquo;thin&rdquo; assumption implies that temperature distribution along the length of each vertical channel wall is one-dimensional. The vertical walls will have a temperature of $T_{cw}$ at their base, and this temperature will decay as a function of height, $H$, above the bottom of the coolant channel.  We will also make the assumption that the upper surface of the channel is well insulated.  This means that there is no heat flux through the top of the coolant channel.  The figure below provides a depiction of this heat transfer model with red arrows depicting flux.</p>
+<p style="text-align:center;"><img src="../../Fig6.1.3.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.3:</b> Convective Heat Transfer Model </b> </p>
+<p>In order to determine the heat flux into the hydrogen coolant we must derive expressions for the temperature profiles along the channel&rsquo;s two vertical walls and its horizontal base.  The horizontal wall is easy.  We assume it stays at a uniform temperature of $T_{cw}$.  The temperature distribution up the vertical walls takes a bit more work.  Returning to the &ldquo;thin fin&rdquo; assumption, Fourier&rsquo;s law of conduction can be used to establish a differential equation for the  temperature of the vertical wall at a distance $y$ above the channel floor:<sup>[<a><a href="../../references/#ref75r" >75</href></a>]</sup><a name="ref75"> </a></p>
+<div style="float: right"><b>(6.1.16)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \frac{d^2 T}{d y^2}+\left(\frac{1}{A_c}\frac{d A_c}{dy}\right)\frac{dT}{dy}-\left(\frac{1}{A_c}\frac{h_{H2}}{k}\frac{dA_s}{dy}\right)\left(T-T_{H_2}\right)=0$$</div>
+<p>The areas $A_c$ and $A_s$ in Equation 6.1.16 correspond to the cross-sectional area and surface area of the vertical wall.  The vertical wall has a rectangular profile, so $A_c$ is simply $\delta dx$.  $A_s$ is the surface area of the vertical wall that is exposed to the hydrogen coolant.  Remembering to account for both sides of the wall, the expression for $A_s$ then $2\cdot y \cdot dx$.</p>
+<p>This differential equation is subject to the following boundary conditions:</p>
+<div style="margin: 0 auto; width: 100%;"> $$ T\left(0\right)=T_{cw}$$</div>
+<div style="margin: 0 auto; width: 100%;"> $$ \frac{dT}{dy}\biggr\rvert_{y=H}=0$$</div>
+<p>Equation 6.1.16 can be solved analytically for simple geometries such as a rectangular fin with uniform cross-section.  Refer to [<a><a href="../../references/#ref75r" >75</href></a>]<a name="ref75b"> </a> for a detailed procedure on how to preform this calculation.  We will neglect the details and skip directly to the results.  The solution to Equation 6.1.16 gives the temperature profile of the vertical channel wall from $y=0$ to $y=H$.  Using this temperature profile, a &ldquo;fin efficiency&rdquo; can be established that will serve as a correction factor for the surface area described in Equation 6.1.12.  The efficiency of a thin rectangular fin is modelled as follows:</p>
+<div style="float: right"><b>(6.1.17)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \eta_{fin} = \frac{\text{tanh}\left(mL_c\right)}{mL_c}$$</div>
+<div style="float: right"><b>(6.1.18)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ m = sqrt(\frac{2\,h_{H2}}{k\,\delta})$$</div>
+<p>In Equation 6.1.18, $k$ is the thermal conductivity of NARloy-Z, 316 $W/m\cdot K$,<sup>[<a><a href="../../references/#ref69r" >69</href></a>]</sup><a name="ref69c"> </a>, and $\delta$ is the width of the vertical channel wall, as shown above on Figure 6.1.3.  The length $L_c$ is the &ldquo;corrected&rdquo; length of the vertical wall used to impose the adiabatic tip boundary condition:<sup>[<a><a href="../../references/#ref75r" >75</href></a>]</sup><a name="ref75c"> </a></p>
+<div style="float: right"><b>(6.1.19)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ L_c = H+\delta/2$$</div>
+<p>Now that we have the efficiency of the thin rectangular fin serving as the channel wall, we can return to Equation 6.1.15 and update the expression for the inner surface area of the coolant channel.  We made the assumption that upper surface of the channel is well insulated.  This means we can remove the area of the upper surface from this calculation.  The vertical walls are not at a uniform temperature, but we can correct for this by multiplying their surface area by the fin efficiency calculated with Equation 6.1.15.  The final expression for $A_{H_2}$ then becomes:</p>
+<div style="float: right"><b>(6.1.20)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ A_{H_2} = \left(2\eta_{fin}H+W\right)dx $$</div>
+</br>
+<p style="text-align:center;"> <b>Equation 6.1.3</b> </p>
+<p>Equations 6.1.1 and 6.1.2 accounted for convective heat transfer in the LTMCC.  The final heat transfer equation to be discussed, Equation 6.1.3, accounts for conductive heat transfer between the &ldquo;hot&rdquo; and &ldquo;cold&rdquo; walls of the LTMCC.  The hot wall is the inner surface of the chamber that is exposed to the combustion gas.  The cold wall is the bottom surface of the hydrogen coolant channel.  These walls are separated by the &ldquo;thickness&rdquo; shown in Figures 6.1.1 and 6.1.3.  Fortunately Equation 6.1.3 does not require nearly as much elaboration as the two previous convective equations!  There is only one new variable to introduce:  the temperature gradient between the hot and cold surfaces.</p>
+<div style="float: right"><b>(6.1.21)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \frac{\partial T}{\partial y}=\frac{T_{hw}-T_{cw}}{thickness} $$</div>
+<br>
+<p style="text-align:center;"> <b>Solution Procedure</b> </p>
+<p>We now have enough information to solve the governing heat transfer relationships established with Equations 6.1.1 - 6.1.3.  The first law of thermodynamics says that energy must be conserved.  Therefore $q_{gas}=q_{H_2}=q_{wall}$.  In these equations (and all of the sub-equations required to complete them), the only unknown variables are are the hot and cold wall temperatures, $T_{hw}$ and $T_{cw}$.  We can establish a system of two equations and solve for these two unknowns using a multi-variable Newton-Raphson algorithm:</p>
+<p><a name="6.1.22"></a></p>
+<div style="float: right"><b>(6.1.22)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ f_1:  q_{H_2}-q_{gas} =0 $$</div>
+<div style="float: right"><b>(6.1.23)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ f_2:\,\,  q_{H_2}-q_{wall} =0 $$</div>
+<p>This algorithm requires differentiating $f_1$ and $f_2$ with respect to both $T_{cw}$ and $T_{hw}$.  Due to all of the linked equations that go in to $f_1$ and $f_2$ it is not practical to derive an analytic solution.  These derivatives must be calculated numerically.  Fortunately this is an identical procedure to that described for the combustion model in <a><a href="../../combustion-model/3.3-solution-procedure/" >Section 3.3</href></a>.</p>
+<p>The algorithm is initiated by dividing the axis of the LTMCC into 200 increments of length $dx$.  An isentropic solution for the combustion gas flow through the nozzle is then computed using the procedure described in <a><a href="../../flow-model/5.3-compressible-flow/" >Section 5.3</href></a>.  The resulting gas properties at each station $dx$ are then input into the heat transfer model described in this section.  The initial temperature of the liquid hydrogen entering the coolant inlet manifold at Station 8 is known.  This temperature is assumed to remain constant over the length of the first channel segment $dx$.  The Newton-Raphson algorithm will guess values for $T_{cw}$ and $T_{hw}$ until the residuals of Equations 6.1.22 and 6.1.23 converge sufficiently close to zero, indicating the correct wall temperatures have been reached.  The coolant temperature entering station $dx_{i+1}$ is then calculated as follows:<sup>[<a><a href="../../references/#ref73r" >73</href></a>]</sup><a name="ref73b"> </a></p>
+<p><a name="6.1.24"></a></p>
+<div style="float: right"><b>(6.1.24)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ T_{H_2,\ i+1} = T_{H_2,\ i} + \Delta T $$</div>
+<div style="float: right"><b>(6.1.24 a)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \Delta T = \frac{q_{H_2}}{\dot m_{H_2}/  Ncc} C_p $$ </div>
+<br>
+<p>where $\dot m_{H_2}$ is the mass flow rate of hydrogen entering the coolant inlet manifold (13.2  kg/s for the LTMCC at 104.5% power), $C_p$ represents isobaric heat capacity, and $N_{cc}$ is the number of coolant channels arrayed round the perimeter of the chamber (430 for the LTMCC or 390 for the STMCC).</p>
+<p>The pressure drop between coolant stations, $\Delta P$ , is calculated as follows:<sup>[<a><a href="../../references/#ref73r" >73</href></a>]</sup><a name="ref73c"> </a></p>
+<div style="float: right"><b>(6.1.25)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \Delta P = \Delta P_1 + \Delta P_2 +\Delta P_3 $$</div>.
+<p>$\Delta P_1$ accounts for &ldquo;major losses&rdquo; from viscous pressure drop due to the surface roughness of the channel walls:</p>
+<div style="float: right"><b>(6.1.26)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \Delta P_1 = \frac{f\,\rho\,V^2\,dx}{2D_h} $$</div>.
+<p>$\Delta P_2$ accounts for &ldquo;minor losses&rdquo; due to expansion and contraction of the cooling channel hydraulic diameter:</p>
+<div style="float: right"><b>(6.1.27)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \Delta P_2 = \frac{K\,\rho\,V^2}{2} $$</div>
+<p>where the value of $K$ depends on the contraction or expansion ratio moving upstream into the next channel section $dx$.  For expansions:</p>
+<div style="float: right"><b>(6.1.28)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ K =\left[\frac{D_{h_{i}}}{D_{h_{i+1}}}^2-1\right]^2 $$</div>
+<p>For contractions:</p>
+<div style="float: right"><b>(6.1.29)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ K = 0.5 - 0.167\frac{D_{h_{i+1}}}{D_{h_{i}}}-0.125\frac{D_{h_{i+1}}}{D_{h_{i}}}^2-0.208\frac{D_{h_{i+1}}}{D_{h_{i}}}^3 $$</div>
+<p>$\Delta P_3$ models changes in pressure due to fluid acceleration:</p>
+<p><a name="6.1.30"></a></p>
+<div style="float: right"><b>(6.1.30)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ \Delta P_3 = \left[\frac{2}{\left(A_i\,N_{cc}\right)+\left(A_{i+1}\,N_{cc}\right)}\right]\left[\frac{1}{\rho\,A_{i}\,N_{cc}}-\frac{1}{\rho\,A_{i+1}\,N_{cc}}\right]\,\dot m^2 $$</div>
+<p>where $A_i$ corresponds to the cross-sectional area of the coolant channel at station $dx_i$</p>
+<p>The hydrogen coolant pressure at the next station upstream is then calculated as follows:</p>
+<p><a name="6.1.30"></a></p>
+<div style="float: right"><b>(6.1.31)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$ P_{H_{2},\ i+1} = P_{H_{2},\ i} - \Delta P $$</div>
+<p>This entire process is repeated at the next channel segment, $dx_{i+1}$ using temperatures $T_{hw}$ and $T_{cw}$ at station $dx_{i}$ as the initial guess to initiate the Newton algorithm.  Typically about 30 iterations are required to obtain convergence at each segment $dx$.  After the wall temperature and flux profiles have been determined along the length of the entire LTMCC axis, the program returns to the compressible flow model in <a><a href="../../flow-model/5.3-compressible-flow/" >Section 5.3</href></a> and solve for $Q(x)$ with Equation  <a><a href="../../flow-model/5.3-compressible-flow/#5.3.5" >5.3.5</href></a>.  The flow model (Equations <a><a href="../../flow-model/5.3-compressible-flow/#5.3.1" >5.3.1 - 5.3.3</href></a>) is then re-solved with the the $Q(x)$ terms included.  This results in new hot gas flow properties along the the length of the chamber.  These flow properties are then imported back in to the heat transfer model described in this section, and the entire process is iterated until global convergence is obtained.  Flow properties at the exit of the LTMCC are then used to initiate both the gas flow model and heat transfer model downstream of the nozzle attach flange (see Figures <a><a href="../../flow-model/5.1-ltmcc-geometry/#5.1.11" >5.1.11</href></a> and <a><a href="../../flow-model/5.2-nozzle-geometry/#5.2.5" >5.2.5</href></a>).  Results for the nozzle proper are presented in the following section.</p>
+<p style="text-align:center;"> <b>Results</b> </p>
+<p>Most literature presents data for the Standard Throat Main Combustion Chamber (STMCC) operating at the Full Power Level (FPL) of 109%, rather than the Large Throat Main Combustion Chamber (LTMCC) studied in this analysis at the Nominal Power Level (NPL) of 104.5%.  In order to validate the LTMCC model developed on this website it was first necessary to generate results corresponding to STMCC geometry and inlet conditions at 109%.  Plots of the temperature, heat flux, and heat transfer coefficient in the STMCC predicted by this model at 109% power level are shown below.   Table 6.1.2 contains predictions from literature for comparison.</p>
+<p style="text-align:center;"><img src="../../Fig6.1.4.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.4:</b> STMCC Wall Temperatures at 109%.  Spikes in temperature correspond to changes in channel geometry. </b> </p>
+<p style="text-align:center;"><img src="../../Fig6.1.5.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.5:</b> STMCC Hot Wall Heat Flux at 109% </b> </p>
+<p style="text-align:center;"><img src="../../Fig6.1.6.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.6:</b> STMCC Hot Wall Heat Transfer Coefficient at 109% </b> </p>
+<p style="text-align:center;"><img src="../../Fig6.1.7.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.7:</b> STMCC Coolant Pressure at 109% </b> </p>
+<br>
+<p style="text-align:center;"><img src="../../Fig6.1.8.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.8:</b> STMCC Coolant Temperature at 109% </b> </p>
+<br>
+<style type="text/css">
+.tg99  {border-collapse:collapse;border-spacing:0; margin-left:10%;  margin-right:10%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg99">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-7btt">This Model </th>
+    <th class="tg-7btt">Wang<sup>[<a><a href="../../references/#ref72r" >72</href></a>]</sup><a name="ref72b"> </a></th>
+    <th class="tg-7btt">Naraghi<sup>[<a><a href="../../references/#ref76r" >76</href></a>]</sup><a name="ref76"> </a></th>
+    <th class="tg-7btt">Pizzarelli<sup>[<a><a href="../../references/#ref76r" >77</href></a>]</sup><a name="ref77"> </a> </th>
+    <th class="tg-7btt">Betti<sup>[<a><a href="../../references/#ref69r" >69</href></a>]</sup><a name="ref69d"> </a> </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-7btt">Peak Hot Wall Temperature, [$K$]</td>
+    <td class="tg-c3ow">866</td>
+    <td class="tg-c3ow">855</td>
+    <td class="tg-c3ow">710 </td>
+    <td class="tg-c3ow">1196 </td>
+    <td class="tg-c3ow">1071 </td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"> Peak Heat Flux [$MW/m^2$]$</td>
+    <td class="tg-c3ow"> 144 </td>
+    <td class="tg-c3ow"> 138-163 </td>
+    <td class="tg-c3ow"> 163 </td>
+    <td class="tg-c3ow"> 159.7 </td>
+    <td class="tg-c3ow"> 143-147 </td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"> Peak Heat Transfer Coefficient $[\frac{kW}{m^2K}]$</td>
+    <td class="tg-c3ow"> 51.4</td>
+    <td class="tg-c3ow"> - </td>
+    <td class="tg-c3ow"> - </td>
+    <td class="tg-c3ow"> 64 </td>
+    <td class="tg-c3ow"> 57 </td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"> Coolant $\Delta P$, $MPa$ </td>
+    <td class="tg-c3ow"> 7.97</td>
+    <td class="tg-c3ow"> 9.12 </td>
+    <td class="tg-c3ow"> 17.6 </td>
+    <td class="tg-c3ow"> 8.7 </td>
+    <td class="tg-c3ow"> 8.6 </td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"> Coolant $\Delta T$, $K$ </td>
+    <td class="tg-c3ow"> 237 </td>
+    <td class="tg-c3ow"> 201 </td>
+    <td class="tg-c3ow"> 319 </td>
+    <td class="tg-c3ow"> 240</td>
+    <td class="tg-c3ow"> 215 </td>
+  </tr>
+</tbody>
+</table>
+<p style="text-align:center"> <b> Table 6.1.2: </b> Predictions for Standard Throat Configuration at 109% </p>
+<br>
+<p>There is a fairly wide range of uncertainty in the comparison values shown above. Nevertheless, the results from the model developed on this website fall in line with the general trends reported in from these references, which provides high confidence in the accuracy of the model.  The Betti and Pizzarelli models both state that their predicted maximum wall temperatures are significantly higher than expected.  The wall temperature reported by Naraghi is significantly less than the value reported by Wang.  The Naraghi model also appears to over predict the coolant pressure drop and temperature increase when compared to the other models.  The model developed on this website tends to under predict coolant pressure drop, but provides a very reasonable estimate of coolant temperature increase.  Both $\Delta P$ and $\Delta T$ are sensitive to the surface roughness of the coolant channel walls.  Surface roughness, $e$, is used to calculate the friction factor, $f$ in both the Nusselt number correlation (Equation 6.1.8) used for heat transfer and the model for &ldquo;major&rdquo; pressure losses due to friction (Equation 6.1.26).  Unfortunately consistent data about the surface roughness of NARloy-Z is difficult to find.  Values can range from 0.1-0.5 micrometers.<sup>[<a><a href="../../references/#ref69r" >69</href></a>]</sup><a name="ref69e"> </a>  This model uses 0.25 micrometers as a representative example.  $\Delta P$ increases as $e$ moves toward the upper end of this range.</p>
+<p>The final step in validating this model was to verify that the liquid hydrogen equation of state (Equation <a><a href="../../equation-of-state/2.1-background/#2.1.7" >2.1.7</href></a>) returned accurate results for thermodynamic properties along the length of the coolant channel.  There are significant axial temperature and pressure gradients along the cooling channel, and it was necessary to verify that the results produced by Equation <a><a href="../../equation-of-state/2.1-background/#2.1.7" >2.1.7</href></a> were free of discontinuities along the length of the passage.  The figures below plot density and specific heat as function of axial position.  The equation of state appears to return accurate results along along the entire regime of predicted temperatures and pressures.  It interesting to note that in the coolant channels liquid hydrogen is highly compressible and displays a large variation in specific heat.</p>
+<p style="text-align:center;"><img src="../../Fig6.1.9.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.9:</b> Coolant Isobaric Heat Capacity </b> </p>
+<p style="text-align:center;"><img src="../../Fig6.1.10.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.10:</b> Coolant Density</b> </p>
+<p>After validating that the model on this website produces results in good agreement with published values, the next step was to re-run the analysis for the large throat configuration at the 104% power level.  The following plots compare results from the large throat and small throat configurations.</p>
+<p style="text-align:center;"><img src="../../Fig6.1.11.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.11:</b> LT and ST MCC Hot Wall Temperatures.  Spikes in temperature correspond to changes in channel geometry. </b> </p>
+<p style="text-align:center;"><img src="../../Fig6.1.12.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.12:</b> LT and ST MCC Hot Wall Heat Flux</b> </p>
+<p style="text-align:center;"><img src="../../Fig6.1.13.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.13:</b>  LT and ST MCC Coolant Pressure  </p>
+<p style="text-align:center;"><img src="../../Fig6.1.14.PNG" alt="Fig LTMCC"></p>
+<p style="text-align:center"> <b>Figure 6.1.14:</b>  LT and ST MCC Coolant Temperature</b> </p>
+<br>
+<style type="text/css">
+.tg98  {border-collapse:collapse;border-spacing:0; margin-left:20%;  margin-right:20%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg98">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-7btt">This Model </th>
+    <th class="tg-7btt">Boeing <sup>[<a><a href="../../references/#ref2r" >2</href></a>]</sup><a name="ref2e"> </a></th>
+    <th class="tg-7btt">Wang<sup>[<a><a href="../../references/#ref72r" >72</href></a>]</sup><a name="ref72c"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-7btt">Peak Hot Wall Temperature, $K$</td>
+    <td class="tg-c3ow">826</td>
+    <td class="tg-c3ow">811</td>
+    <td class="tg-c3ow"> 852 </td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"> Peak Heat Flux, $MW/m^2$</td>
+    <td class="tg-c3ow"> 121 </td>
+    <td class="tg-c3ow"> - </td>
+    <td class="tg-c3ow"> - </td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"> Coolant $\Delta P$, $MPa$ </td>
+    <td class="tg-c3ow"> 5.9</td>
+    <td class="tg-c3ow"> 8.28 </td>
+    <td class="tg-c3ow"> - </td>
+  </tr>
+  <tr>
+    <td class="tg-7btt"> Coolant $\Delta T$, $K$ </td>
+    <td class="tg-c3ow"> 231</td>
+    <td class="tg-c3ow"> 212</td>
+    <td class="tg-c3ow"> - </td>
+  </tr>
+</tbody>
+</table>
+<p style="text-align:center"> <b> Table 5.1.2: </b> Predictions for Large Throat Configuration at 104.5% Power Level </p>
+<p>The plots above clearly indicate the difference in performance between the large throat and standard throat configurations.  Adding 40 additional coolant channels and increasing the cross-sectional area of throat area by 12 percent allows the LTMCC to operate at a &ldquo;greatly reduced&rdquo;<sup>[<a><a href="../../references/#ref56r" >56</href></a>]</sup><a name="ref56b"> </a> temperature and heat flux as compared to the standard throat configuration.</p>
+<p style="text-align:center;">
+
+
+
+
+
+  
+
+
+<span class="gdoc-button">
+<a  href="../../flow-model/5.3-compressible-flow/"   class="gdoc-button__link">
+  Previous
+</a>
+</span>
+  
+
+
+
+
+
+  
+
+
+<span class="gdoc-button">
+<a  href="../../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/"   class="gdoc-button__link">
+  Previous
+</a>
+</span>
+   </p>
+<p style="text-align:center;"> <a href="#top">Top</a>  </p>
+
+    </article>
+
+                
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+
+        
+    
+
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+
+        
+    
+
+
+
+
+
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+    
+    
+</div>
+
+            </div>
+        </main>
+
+        <footer >
+
+<html>
+<head>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+ 
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+<script defer src="../../js/en.search.min.d1300fa43c8b3ddb741038e2a85fdfbce3723906b87fd971f6a365b26465b1af.js"></script>
+
+
+
+<script defer src="../../js/clipboard-af8ab36589.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var clipboard = new ClipboardJS('.clip');
+    });
+</script>
+
+
+</body>
+</html>

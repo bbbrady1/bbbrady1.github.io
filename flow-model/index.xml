@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5.  Flow Model on CryoRocket.com</title>
+    <link>https://bbbrady1.github.io/flow-model/</link>
+    <description>Recent content in 5.  Flow Model on CryoRocket.com</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://bbbrady1.github.io/flow-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.1 LTMCC Geometry</title>
+      <link>https://bbbrady1.github.io/flow-model/5.1-ltmcc-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbbrady1.github.io/flow-model/5.1-ltmcc-geometry/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Figure 5.1.1: Large Throat Main Combustion Chamber (LTMCC) [52]  The first step in modelling the flow through the LTMCC is to define the geometry of the chamber. We assume a cylindrical design will be used with a converging-diverging throat, as shown above in Figure 5.1.1. The analysis begins by determining the cross-sectional area of the throat (Station 33.</description>
+    </item>
+    
+    <item>
+      <title>5.2 Nozzle Geometry</title>
+      <link>https://bbbrady1.github.io/flow-model/5.2-nozzle-geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbbrady1.github.io/flow-model/5.2-nozzle-geometry/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  In the previous section we defined the geometry of the LTMCC, at times using some &amp;ldquo;rather arbitrary&amp;rdquo; rules of thumb. This was acceptable because the subsonic portion of the LTMCC is relatively tolerant to gradual changes in geometry. This is not the case in the supersonic portion of the LTMCC and nozzle downstream of the throat. In this region we must turn to a more rigorous approach to minimize separation and turbulent losses.</description>
+    </item>
+    
+    <item>
+      <title>5.3 Compressible Flow</title>
+      <link>https://bbbrady1.github.io/flow-model/5.3-compressible-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbbrady1.github.io/flow-model/5.3-compressible-flow/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Sections 5.1 and 5.2 define the geometry of the SSME combustion chamber and nozzle. The analysis in Section 4.5  provides the temperature, pressure, and composition of the gas inside the chamber. Now we will use this information to predict what happens to the combustion products as they depart the LTMCC and accelerate toward the nozzle exit plane.</description>
+    </item>
+    
+  </channel>
+</rss>

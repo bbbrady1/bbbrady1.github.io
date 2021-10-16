@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6.  Regenerative Cooling Circuit on CryoRocket.com</title>
+    <link>https://bbbrady1.github.io/regenerative-cooling-circuit/</link>
+    <description>Recent content in 6.  Regenerative Cooling Circuit on CryoRocket.com</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://bbbrady1.github.io/regenerative-cooling-circuit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6.1 LTMCC Cooling Channels</title>
+      <link>https://bbbrady1.github.io/regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbbrady1.github.io/regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   Regenerative Cooling  As shown in previous sections, temperatures inside the Large Throat Main Combustion Chamber (LTMCC) can exceed 3600 Kelvin. In order to withstand this harsh environment, the combustion chamber must be constructed from a material with excellent heat conduction characteristics and a high melting point. Simultaneously, this material must also have a high strength-to-weight ratio and not be too hard, tough, or brittle to complicate the manufacturing process.</description>
+    </item>
+    
+    <item>
+      <title>6.2 Nozzle Coolant Tubes</title>
+      <link>https://bbbrady1.github.io/regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbbrady1.github.io/regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   Nozzle Coolant Tubes  After departing the LTMCC, the hot combustion gas flows past the nozzle attach flange and enters the nozzle proper. Although temperatures and heat flux are greatly reduced in the nozzle as compared to the LTMCC, wall thermal limits are still an important design consideration. To keep wall temperatures in check, the nozzle utilizes a regenerative cooling system very similar to the LTMCC.</description>
+    </item>
+    
+    <item>
+      <title>6.3 Computational Framework</title>
+      <link>https://bbbrady1.github.io/regenerative-cooling-circuit/6.3-computational-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bbbrady1.github.io/regenerative-cooling-circuit/6.3-computational-framework/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };    img { display: block; margin-left: auto; margin-right: auto; }    Computational Framework  The previous sections of this website provide mathematical details on how to model compressible flow and heat transfer in the SSME. For the most part, these topics were treated individually in their respective sections. The goal of this section is to examine the problem from a broader viewpoint and show how these models couple to form a comprehensive solution.</description>
+    </item>
+    
+  </channel>
+</rss>
