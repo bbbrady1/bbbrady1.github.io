@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="7.  References">
+
+<title>7.  References | Cryo-Rocket.com</title>
+
+<link rel="icon" href="../favicon/favicon-32x32.png" type="image/x-icon">
+
+<link rel="preload" as="font" href="../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" href="../main-f5793ba4b9.min.css" as="style">
+<link rel="stylesheet" href="../main-f5793ba4b9.min.css" media="all">
+
+<link rel="preload" href="../mobile-2eb10ce87d.min.css" as="style">
+<link rel="stylesheet" href="../mobile-2eb10ce87d.min.css" media="screen and (max-width: 45rem)">
+
+<link rel="preload" href="../print-f79fc3e5d7.min.css" as="style">
+<link rel="stylesheet" href="../print-f79fc3e5d7.min.css" media="print">
+
+<link rel="preload" href="../custom.css" as="style">
+<link rel="stylesheet" href="../custom.css" media="all">
+
+<link rel="alternate" type="application/rss+xml" href="https://bbbrady1.github.io/references/index.xml" title="Cryo-Rocket.com" />
+<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.526v2.947H5.755l8.351 8.421-2.105 2.105-12-12 12-12 2.105 2.105-8.351 8.421H24z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M5.965 10.526V6.035L0 12l5.965 5.965v-4.491H24v-2.947H5.965z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M18.035 10.526V6.035L24 12l-5.965 5.965v-4.491H0v-2.947h18.035z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="bitbucket" xmlns="http://www.w3.org/2000/svg"><path d="M15.905 13.355c.189 1.444-1.564 2.578-2.784 1.839-1.375-.602-1.375-2.784-.034-3.403 1.151-.705 2.818.223 2.818 1.564zm1.907-.361c-.309-2.44-3.076-4.056-5.328-3.042-1.426.636-2.389 2.148-2.32 3.747.086 2.097 2.08 3.815 4.176 3.626s3.729-2.234 3.472-4.331zm4.108-9.315c-.756-.997-2.045-1.169-3.179-1.358-3.214-.516-6.513-.533-9.727.034-1.066.172-2.269.361-2.939 1.323 1.1 1.031 2.664 1.186 4.073 1.358 2.544.327 5.156.344 7.699.017 1.426-.172 3.008-.309 4.073-1.375zm.979 17.788c-.481 1.684-.206 3.953-1.994 4.932-3.076 1.701-6.806 1.89-10.191 1.289-1.787-.327-3.884-.894-4.864-2.578-.43-1.65-.705-3.334-.98-5.018l.103-.275.309-.155c5.121 3.386 12.288 3.386 17.427 0 .808.241.206 1.22.189 1.805zM26.01 4.951c-.584 3.764-1.255 7.51-1.908 11.257-.189 1.1-1.255 1.719-2.148 2.183-3.214 1.615-6.96 1.89-10.483 1.512-2.389-.258-4.829-.894-6.771-2.389-.911-.705-.911-1.908-1.083-2.922-.602-3.523-1.289-7.046-1.719-10.604.206-1.547 1.942-2.217 3.231-2.698C6.848.654 8.686.362 10.508.19c3.884-.378 7.854-.241 11.618.859 1.341.395 2.784.945 3.695 2.097.412.533.275 1.203.189 1.805z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15.268 4.392q.868 0 1.532.638t.664 1.506v17.463l-7.659-3.268-7.608 3.268V6.536q0-.868.664-1.506t1.532-.638h10.876zm4.34 14.144V4.392q0-.868-.638-1.532t-1.506-.664H6.537q0-.868.664-1.532T8.733 0h10.876q.868 0 1.532.664t.664 1.532v17.412z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M9.917 24.5a1.75 1.75 0 10-3.501.001 1.75 1.75 0 003.501-.001zm0-21a1.75 1.75 0 10-3.501.001A1.75 1.75 0 009.917 3.5zm11.666 2.333a1.75 1.75 0 10-3.501.001 1.75 1.75 0 003.501-.001zm1.75 0a3.502 3.502 0 01-1.75 3.026c-.055 6.581-4.721 8.039-7.82 9.023-2.898.911-3.846 1.349-3.846 3.117v.474a3.502 3.502 0 011.75 3.026c0 1.932-1.568 3.5-3.5 3.5s-3.5-1.568-3.5-3.5c0-1.294.711-2.424 1.75-3.026V6.526A3.502 3.502 0 014.667 3.5c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5a3.502 3.502 0 01-1.75 3.026v9.06c.93-.456 1.914-.766 2.807-1.039 3.391-1.075 5.323-1.878 5.359-5.687a3.502 3.502 0 01-1.75-3.026c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M27.192 28.844V11.192H4.808v17.652h22.384zm0-25.689q1.277 0 2.253.976t.976 2.253v22.459q0 1.277-.976 2.216t-2.253.939H4.808q-1.352 0-2.291-.901t-.939-2.253V6.385q0-1.277.939-2.253t2.291-.976h1.577V.001h3.23v3.155h12.769V.001h3.23v3.155h1.577zm-3.155 11.267v3.155h-3.23v-3.155h3.23zm-6.46 0v3.155h-3.155v-3.155h3.155zm-6.384 0v3.155h-3.23v-3.155h3.23z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M2.866 28.209h26.269v3.79H2.866v-3.79zm26.268-16.925L16 24.418 2.866 11.284h7.493V.001h11.283v11.283h7.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M28.845 9.615v-3.23L16 14.422 3.155 6.385v3.23L16 17.577zm0-6.46q1.277 0 2.216.977T32 6.385v19.23q0 1.277-.939 2.253t-2.216.977H3.155q-1.277 0-2.216-.977T0 25.615V6.385q0-1.277.939-2.253t2.216-.977h25.69z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="git" xmlns="http://www.w3.org/2000/svg"><path d="M27.472 12.753L15.247.529a1.803 1.803 0 00-2.55 0l-2.84 2.84 2.137 2.137a2.625 2.625 0 013.501 3.501l3.499 3.499a2.625 2.625 0 11-1.237 1.237l-3.499-3.499c-.083.04-.169.075-.257.106v7.3a2.626 2.626 0 11-1.75 0v-7.3a2.626 2.626 0 01-1.494-3.607L8.62 4.606l-8.09 8.09a1.805 1.805 0 000 2.551l12.225 12.224a1.803 1.803 0 002.55 0l12.168-12.168a1.805 1.805 0 000-2.551z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M16 .394c8.833 0 15.999 7.166 15.999 15.999 0 7.062-4.583 13.062-10.937 15.187-.813.146-1.104-.354-1.104-.771 0-.521.021-2.25.021-4.396 0-1.5-.5-2.458-1.083-2.958 3.562-.396 7.312-1.75 7.312-7.896 0-1.75-.625-3.167-1.646-4.291.167-.417.708-2.042-.167-4.25-1.333-.417-4.396 1.646-4.396 1.646a15.032 15.032 0 00-8 0S8.937 6.602 7.603 7.018c-.875 2.208-.333 3.833-.167 4.25-1.021 1.125-1.646 2.542-1.646 4.291 0 6.125 3.729 7.5 7.291 7.896-.458.417-.875 1.125-1.021 2.146-.917.417-3.25 1.125-4.646-1.333-.875-1.521-2.458-1.646-2.458-1.646-1.562-.021-.104.979-.104.979 1.042.479 1.771 2.333 1.771 2.333.938 2.854 5.396 1.896 5.396 1.896 0 1.333.021 2.583.021 2.979 0 .417-.292.917-1.104.771C4.582 29.455-.001 23.455-.001 16.393-.001 7.56 7.165.394 15.998.394zM6.063 23.372c.042-.083-.021-.187-.146-.25-.125-.042-.229-.021-.271.042-.042.083.021.187.146.25.104.062.229.042.271-.042zm.646.709c.083-.062.062-.208-.042-.333-.104-.104-.25-.146-.333-.062-.083.062-.062.208.042.333.104.104.25.146.333.062zm.625.937c.104-.083.104-.25 0-.396-.083-.146-.25-.208-.354-.125-.104.062-.104.229 0 .375s.271.208.354.146zm.875.875c.083-.083.042-.271-.083-.396-.146-.146-.333-.167-.417-.062-.104.083-.062.271.083.396.146.146.333.167.417.062zm1.187.521c.042-.125-.083-.271-.271-.333-.167-.042-.354.021-.396.146s.083.271.271.312c.167.062.354 0 .396-.125zm1.313.104c0-.146-.167-.25-.354-.229-.187 0-.333.104-.333.229 0 .146.146.25.354.229.187 0 .333-.104.333-.229zm1.208-.208c-.021-.125-.187-.208-.375-.187-.187.042-.312.167-.292.312.021.125.187.208.375.167s.312-.167.292-.292z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gitlab" xmlns="http://www.w3.org/2000/svg"><path d="M1.629 11.034L14 26.888.442 17.048a1.09 1.09 0 01-.39-1.203l1.578-4.811zm7.217 0h10.309l-5.154 15.854zM5.753 1.475l3.093 9.559H1.63l3.093-9.559a.548.548 0 011.031 0zm20.618 9.559l1.578 4.811c.141.437-.016.922-.39 1.203l-13.558 9.84 12.371-15.854zm0 0h-7.216l3.093-9.559a.548.548 0 011.031 0z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.714a1.11 1.11 0 01-.786-.321L4.072 18.643c-.143-.125-4.071-3.714-4.071-8 0-5.232 3.196-8.357 8.535-8.357 3.125 0 6.053 2.464 7.464 3.857 1.411-1.393 4.339-3.857 7.464-3.857 5.339 0 8.535 3.125 8.535 8.357 0 4.286-3.928 7.875-4.089 8.035L16.785 29.392c-.214.214-.5.321-.786.321z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="keyborad_arrow_down" xmlns="http://www.w3.org/2000/svg"><path d="M3.281 5.36L14 16.079 24.719 5.36 28 8.641l-14 14-14-14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="keyborad_arrow_left" xmlns="http://www.w3.org/2000/svg"><path d="M25.875 28.25L22.125 32 6.126 16.001 22.125.002l3.75 3.75-12.25 12.25z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="keyborad_arrow_right" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 28.25L18.375 16 6.125 3.75 9.875 0l15.999 15.999L9.875 31.998z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M24.037 7.963q3.305 0 5.634 2.366T32 16t-2.329 5.671-5.634 2.366h-6.46v-3.08h6.46q2.028 0 3.493-1.465t1.465-3.493-1.465-3.493-3.493-1.465h-6.46v-3.08h6.46zM9.615 17.578v-3.155h12.77v3.155H9.615zM3.005 16q0 2.028 1.465 3.493t3.493 1.465h6.46v3.08h-6.46q-3.305 0-5.634-2.366T0 16.001t2.329-5.671 5.634-2.366h6.46v3.08h-6.46q-2.028 0-3.493 1.465t-1.465 3.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M.001 5.334h31.998v3.583H.001V5.334zm0 12.416v-3.5h31.998v3.5H.001zm0 8.916v-3.583h31.998v3.583H.001z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M22.615 19.384l2.894 2.894v1.413H2.49v-1.413l2.894-2.894V12.25q0-3.365 1.716-5.856t4.745-3.231v-1.01q0-.875.606-1.514T13.999 0t1.548.639.606 1.514v1.01q3.029.74 4.745 3.231t1.716 5.856v7.134zM14 27.999q-1.211 0-2.053-.808t-.841-2.019h5.788q0 1.144-.875 1.986T14 27.999z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M28 12.62h-9.793V8.414h-2.826v11.173h2.826v-4.206H28V26.62h-9.793v-4.206H12.62v-14H9.794v4.206H.001V1.381h9.793v4.206h8.413V1.381H28V12.62z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M16 20.023q5.052 0 10.526 2.199t5.473 5.754v4.023H0v-4.023q0-3.555 5.473-5.754t10.526-2.199zM16 16q-3.275 0-5.614-2.339T8.047 8.047t2.339-5.661T16 0t5.614 2.386 2.339 5.661-2.339 5.614T16 16z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M11.925 20.161q3.432 0 5.834-2.402t2.402-5.834-2.402-5.834-5.834-2.402-5.834 2.402-2.402 5.834 2.402 5.834 5.834 2.402zm10.981 0L32 29.255 29.255 32l-9.094-9.094v-1.458l-.515-.515q-3.26 2.831-7.721 2.831-4.976 0-8.45-3.432T.001 11.925t3.474-8.45 8.45-3.474 8.407 3.474 3.432 8.45q0 1.802-.858 4.075t-1.973 3.646l.515.515h1.458z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M22.167 15.166V3.5h-8.166v20.726c.93-.492 2.424-1.349 3.883-2.497 1.95-1.531 4.284-3.919 4.284-6.562zm3.499-13.999v14c0 7.674-10.737 12.523-11.192 12.724-.146.073-.31.109-.474.109s-.328-.036-.474-.109c-.456-.201-11.192-5.049-11.192-12.724v-14C2.334.529 2.863 0 3.501 0H24.5c.638 0 1.167.529 1.167 1.167z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M6.606 7.549c0-1.047-.84-1.887-1.887-1.887s-1.887.84-1.887 1.887.84 1.887 1.887 1.887 1.887-.84 1.887-1.887zm15.732 8.493c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546s-.988-.206-1.327-.546L1.342 14.066C.59 13.329 0 11.899 0 10.852V4.718a1.9 1.9 0 011.887-1.887h6.134c1.047 0 2.477.59 3.229 1.342L21.792 14.7c.339.354.546.84.546 1.342zm5.661 0c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546-.767 0-1.15-.354-1.651-.87l6.93-6.93c.339-.339.546-.826.546-1.327s-.206-.988-.546-1.342L13.609 4.173c-.752-.752-2.182-1.342-3.229-1.342h3.303c1.047 0 2.477.59 3.229 1.342L27.454 14.7c.339.354.546.84.546 1.342z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M25.026 3.335a.466.466 0 00-.646-.238L13.362 8.91a.463.463 0 00-.216.575l.227.593-6.36 3.488a.462.462 0 00-.205.583l.211.508-6.755 3.228a.463.463 0 00-.228.595l1.386 3.341a.463.463 0 00.583.259l7.056-2.5.211.508a.462.462 0 00.557.267l6.733-1.941.202.527a.46.46 0 00.566.277l12.03-3.702a.46.46 0 00.293-.613L25.026 3.335zM2.109 21.061l-1.049-2.53 6.314-3.018 1.332 3.211-6.596 2.337zm7.857-1.708l-.22-.531-1.706-4.113-.22-.53 5.863-3.216 2.197 5.676.347.908-6.261 1.806zm7.505-1.146l-.188-.491c-.003-.01-.001-.022-.006-.032l-.572-1.478-2.549-6.668 10.201-5.381 4.249 10.624-11.136 3.428zm8.943-16.723a.463.463 0 00-.86.344l5.552 13.881a.464.464 0 00.602.258.464.464 0 00.258-.602L26.413 1.484zM16.268 20.627h-2.776c-1.055 0-1.851.796-1.851 1.851v1.217l-5.44 6.347a.462.462 0 10.702.602l5.415-6.316h2.101v6.015a.463.463 0 00.926 0v-6.015h2.101l5.414 6.316a.462.462 0 10.703-.602l-5.44-6.347v-1.148c0-1.076-.813-1.92-1.851-1.92zm.925 2.777h-4.627v-.925c0-.545.38-.925.925-.925h2.776c.527 0 .925.428.925.995v.856z"/></symbol></svg>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hidden" id="menu-control" />
+        <header class="gdoc-header">
+    <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control">
+            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
+            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
+        </label>
+        
+        <a class="gdoc-header__link" href="https://bbbrady1.github.io/">
+            <span class="gdoc-brand flex align-center">
+                <img class="gdoc-brand__img" src="../brand.svg" alt="" width=38 height=38>
+                Cryo-Rocket.com
+            </span>
+        </a>
+    </div>
+</header>
+
+
+        <main class="container flex flex-even">
+            <aside class="gdoc-nav">
+                <nav>
+    
+    <div class="gdoc-search">
+
+
+        <svg class="icon search"><use xlink:href="#search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
+<br>
+
+
+
+    <section class="gdoc-nav--main">
+        
+        
+            
+
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">1.  SSME Thermodynamic Data</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../thermodynamic-data/1.1-fuel-system/" class="gdoc-nav__entry ">
+                        1.1 Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../thermodynamic-data/1.2-oxidizer-system/" class="gdoc-nav__entry ">
+                        1.2 Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../thermodynamic-data/1.3-combustion-system/" class="gdoc-nav__entry ">
+                        1.3 Combustion System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">2.  Equations of State</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../equation-of-state/2.1-background/" class="gdoc-nav__entry ">
+                        2.1 Background
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../equation-of-state/2.2-hydrogen-model/" class="gdoc-nav__entry ">
+                        2.2 Hydrogen Model
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../equation-of-state/2.3-oxygen-model/" class="gdoc-nav__entry ">
+                        2.3 Oxygen Model
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../equation-of-state/2.4-combustion-products/" class="gdoc-nav__entry ">
+                        2.4 Combustion Products
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../equation-of-state/2.5-enthalpy-revisited/" class="gdoc-nav__entry ">
+                        2.5 Enthalpy Revisited
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../equation-of-state/2.6-transport-properties/" class="gdoc-nav__entry ">
+                        2.6 Transport Properties
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">3.  Combustion Model</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../combustion-model/3.1-chemistry/" class="gdoc-nav__entry ">
+                        3.1 Chemistry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../combustion-model/3.2-first-law-of-thermodynamics/" class="gdoc-nav__entry ">
+                        3.2 First Law of Thermodynamics
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../combustion-model/3.3-solution-procedure/" class="gdoc-nav__entry ">
+                        3.3 Solution Procedure
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../combustion-model/3.4-mixture-ratio-optimization/" class="gdoc-nav__entry ">
+                        3.4 Mixture Ratio Optimization
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">4.  Turbomachinery</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../turbomachinery/4.1-low-pressure-fuel-system/" class="gdoc-nav__entry ">
+                        4.1 Low Pressure Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../turbomachinery/4.2-high-pressure-fuel-system/" class="gdoc-nav__entry ">
+                        4.2 High Pressure Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../turbomachinery/4.3-low-pressure-oxidizer-system/" class="gdoc-nav__entry ">
+                        4.3 Low Pressure Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../turbomachinery/4.4-high-pressure-oxidizer-system/" class="gdoc-nav__entry ">
+                        4.4 High Pressure Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../turbomachinery/4.5-large-throat-main-combustion-chamber/" class="gdoc-nav__entry ">
+                        4.5 Large Throat Main Combustion Chamber
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">5.  Flow Model</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../flow-model/5.1-ltmcc-geometry/" class="gdoc-nav__entry ">
+                        5.1 LTMCC Geometry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../flow-model/5.2-nozzle-geometry/" class="gdoc-nav__entry ">
+                        5.2 Nozzle Geometry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../flow-model/5.3-compressible-flow/" class="gdoc-nav__entry ">
+                        5.3 Compressible Flow
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">6.  Regenerative Cooling Circuit</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/" class="gdoc-nav__entry ">
+                        6.1 LTMCC Cooling Channels
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/" class="gdoc-nav__entry ">
+                        6.2 Nozzle Coolant Tubes
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../regenerative-cooling-circuit/6.3-computational-framework/" class="gdoc-nav__entry ">
+                        6.3 Computational Framework
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../references/" class="gdoc-nav__entry is-active">
+                        7.  References
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../about/" class="gdoc-nav__entry ">
+                        8.  About
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+
+
+
+
+        
+    </section>
+
+    <section class="gdoc-nav--more">
+        
+    </section>
+</nav>
+
+            </aside>
+
+            <div class="gdoc-page">
+                
+    
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap
+     justify-end 
+     hidden-mobile 
+     hidden " itemprop="breadcrumb">
+    
+    
+</div>
+
+    <article class="gdoc-markdown">
+        
+        <p style="text-align:center"> <b> References </b> </p>
+<p><b> 1. </b>   <sup> <a> <a href="../thermodynamic-data/1.1-fuel-system/#ref1a" >a.</href> </a> <a> <a href="../thermodynamic-data/1.2-oxidizer-system/#ref1b" >b.</href> </a>   <a> <a href="../thermodynamic-data/1.3-combustion-system/#ref1c" >c.</href> </a>    </sup>  File:  SSME Schematic.svg. (2020, October 5). Wikimedia Commons, the free media repository. Modified 19:30, March 6, 2021 from <a href="https://commons.wikimedia.org/w/index.php?title=File:Ssme_schematic_(updated).svg&oldid=481277690" ><a href="https://commons.wikimedia.org/w/index.php?title=File:Ssme_schematic_(updated).svg&amp;oldid=481277690">https://commons.wikimedia.org/w/index.php?title=File:Ssme_schematic_(updated).svg&amp;oldid=481277690</a></a> <a name="ref1r"> </a> </sup></p>
+<p><b> 2. </b>   <sup> <a> <a href="../thermodynamic-data/1.1-fuel-system/#ref2a" >a.</href> </a> <a> <a href="../thermodynamic-data/1.2-oxidizer-system/#ref2b" >b.</href> </a>   <a> <a href="../thermodynamic-data/1.3-combustion-system/#ref2c" >c.</href> </a>  <a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref2d" >d.</href> </a> <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref2e" >e.</href> </a>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref2f" >f.</href> </a> </a>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref2g" >g.</href> </a></sup>  “Space Shuttle Main Engine Orientation, Space Transportation Training System Data,” Boeing Rept.  BC-98-04, Canoga Park, CA, 1998 <a href="http://www.lpre.de/p_and_w/SSME/SSME_PRESENTATION.pdf" ><a href="http://www.lpre.de/p_and_w/SSME/SSME_PRESENTATION.pdf">http://www.lpre.de/p_and_w/SSME/SSME_PRESENTATION.pdf</a></a>. <a name="ref2r"> </a> </sup></p>
+<p><b> 3. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref3" >a.</href> </a>   <a> <a href="../combustion-model/3.2-first-law-of-thermodynamics/#ref3b" >b.</href> </a>    <a> <a href="../flow-model/5.3-compressible-flow/#ref3c" >c.</href> </a> </sup> Çengel Yunus A. and John M. Cimbala.  Fluid Mechanics: Fundamentals and Applications. McGraw-Hill Higher Education, Boston, 2006 <a name="ref3r"> </a> </sup></p>
+<p><b> 4. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref4" >a.</href> </a> <a> <a href="../equation-of-state/2.1-background/#ref4b" >b.</href> </a>  <a> <a href="../turbomachinery/4.1-low-pressure-fuel-system/#ref4c" >c.</href> </a>  <a> <a href="../turbomachinery/4.1-low-pressure-fuel-system/#ref4d" >d.</href> </a> <a> <a href="../turbomachinery/4.2-high-pressure-fuel-system/#ref4e" >e.</href> </a></sup>  Çengel, Yunus A., and Michael A. Boles. Thermodynamics: An Engineering Approach. 6th ed, McGraw-Hill Higher Education, 2008. Pages 137, 119, 379. <a name="ref4r"> </a> </sup></p>
+<p><b> 5. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref5a" >a.</href> </a>    <a> <a href="../equation-of-state/2.1-background/#ref5b" >b.</href></a>    <a> <a href="../equation-of-state/2.1-background/#ref5c" >c.</href></a>   <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref5d" >d.</href></a>   <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref5e" >e.&#34;</href></a>           </sup>  Banuti, Daniel, et al. “Seven Questions about Supercritical Fluids - Towards a New Fluid State Diagram.” 55th AIAA Aerospace Sciences Meeting, American Institute of Aeronautics and Astronautics, 2017. DOI.org (Crossref), doi:10.2514/6.2017-1106.  <a name="ref5r"> </a> </sup></p>
+<p><b> 6. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref6" >a.</href> </a>  </sup>  File:  Phase-diag.svg. (2008, January 28). Wikimedia Commons, the free media repository. Modified 11:13, March 21, 2021 from <a href="https://commons.wikimedia.org/wiki/File:Phase-diag.svg" ><a href="https://commons.wikimedia.org/wiki/File:Phase-diag.svg">https://commons.wikimedia.org/wiki/File:Phase-diag.svg</a></a> <a name="ref6r"> </a> </sup></p>
+<p><b> 7. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref7" >a.</href> </a>  </sup> “Hydrogen - Thermophysical Properties.” <a href="https://www.engineeringtoolbox.com/hydrogen-d_1419.html#phases" ><a href="https://www.engineeringtoolbox.com/hydrogen-d_1419.html#phases">https://www.engineeringtoolbox.com/hydrogen-d_1419.html#phases</a></a>. Accessed 21 Mar. 2021. <a name="ref7r"> </a> </sup></p>
+<p><b> 8. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref8" >a.</href> </a>   <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref8b" >b.</href> </a>   </sup>  “Thermophysical Properties of Hydrogen.” NIST Chemistry Webook. <a href="https://webbook.nist.gov/cgi/fluid.cgi?ID=C1333740&Action=Page" ><a href="https://webbook.nist.gov/cgi/fluid.cgi?ID=C1333740&amp;Action=Page">https://webbook.nist.gov/cgi/fluid.cgi?ID=C1333740&amp;Action=Page</a></a>. Accessed 21 Mar. 2021. <a name="ref8r"> </a> </sup></p>
+<p><b> 9. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref9" >a.</href> </a>  </sup>  Younglove, B. A., Thermophysical properties of Fluids. I. Argon, Ethylene, Parahydrogen, Nitrogen, Nitrogen Triuoride, and Oxygen,&quot; Journal of Physical and Chemical Reference Data, Vol. 11, 1982, pp. Supplement 1. <a name="ref9r"> </a> </sup></p>
+<p><b> 10. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref10" >a.</href> </a>  </sup>  “What Are Free Energies?” Chemistry LibreTexts, 23 Jan. 2018,  <a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Thermodynamics/Energies_and_Potentials/Free_Energy/What_are_Free_Energies" ><a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Thermodynamics/Energies_and_Potentials/Free_Energy/What_are_Free_Energies">https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Thermodynamics/Energies_and_Potentials/Free_Energy/What_are_Free_Energies</a></a>. Accessed 21 Mar. 2021. <a name="ref10r"> </a> </sup></p>
+<p><b> 11. </b>   <sup>  <a> <a href="../equation-of-state/2.1-background/#ref11" >a.</href> </a> <a> <a href="../equation-of-state/2.1-background/#ref11b" >b.</href> </a>    <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref11c" >c.</href> </a> <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref11d" >d.</href></a> <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref11ee" >e.</href> </a> <a> <a href="../equation-of-state/2.4-combustion-products/#ref11f" >f.</href> </a>  </sup> Leachman, J. W., et al. “Fundamental Equations of State for Parahydrogen, Normal Hydrogen, and Orthohydrogen.” Journal of Physical and Chemical Reference Data, Vol. 38, No. 3, Sept. 2009, pp. 721–48. DOI.org (Crossref), doi:10.1063/1.3160306. <a name="ref11r"> </a> </sup></p>
+<p><b> 12. </b>   <sup>  <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref12" >a.</href> <a href="../equation-of-state/2.3-oxygen-model/#ref12b" >b.</href></a>  <a href="../equation-of-state/2.4-combustion-products/#ref12c" >c.</href></a>   </sup> Schmidt, R., and W. Wagner. “A New Form of the Equation of State for Pure Substances and Its Application to Oxygen.” Fluid Phase Equilibria, Vol. 19, No. 3, Dec. 1985, pp. 175–200. DOI.org (Crossref), doi:10.1016/0378-3812(85)87016-3. <a name="ref12r"> </a> </sup></p>
+<p><b> 13. </b>   <sup>  <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref13" >a.</href> </a>  </sup> Bell, Ian H., and Andreas Jäger. “Helmholtz Energy Transformations of Common Cubic Equations of State for Use with Pure Fluids and Mixtures.” Journal of Research of the National Institute of Standards and Technology, vol. 121, June 2016, p. 238. DOI.org (Crossref), doi:10.6028/jres.121.011. <a name="ref13r"> </a> </sup></p>
+<p><b> 14. </b>   <sup>  <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref14" >a.</href> </a>  </sup> McCarty, R. D., et al. Selected Properties of Hydrogen (Engineering Design Data). U.S. Department of Commerce, 1981. <a name="ref14r"> </a> </sup></p>
+<p><b> 15. </b>   <sup>  <a> <a href="../equation-of-state/2.2-hydrogen-model/#ref15" >a.</href> </a> <a> <a href="../combustion-model/3.3-solution-procedure/#ref15b" >b.</href> </a>    <a> <a href="../combustion-model/3.3-solution-procedure/#ref15c" >c.</href> </a>   <a> <a href="../flow-model/5.3-compressible-flow/#ref15d" >d.</href> </a> </sup> Chapra, Steven C., and Raymond P. Canale. Numerical Methods for Engineers. Seventh edition, McGraw-Hill Education, 2015. <a name="ref15r"> </a> </sup></p>
+<p><b> 16. </b>   <sup>  <a> <a href="../equation-of-state/2.4-combustion-products/#ref16" >a.</href> </a>   <a> <a href="../equation-of-state/2.6-transport-properties/#ref16b" >b.</href> </a>  <a> <a href="../combustion-model/3.2-first-law-of-thermodynamics/#ref16c" >c.</href> </a> </sup> McBride, Bonnie, et al. Coefficients for Calculating Thermodynamic and Transport Properties of Individual Species. NASA Technical Memorandum 4513, 1993, p. 1-89 <a name="ref16r"> </a> </sup></p>
+<p><b> 17. </b>   <sup>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref17" >a.</href> </a>   <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref17b" >b.</href> </a> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref17c" >c.</href> </a>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref17d" >d.</href> </a>   <a> <a href="../equation-of-state/2.6-transport-properties/#ref17e" >e.</href> </a> <a> <a href="../combustion-model/3.1-chemistry/#ref17f" >f.</href> </a> <a> <a href="../combustion-model/3.2-first-law-of-thermodynamics/#ref17g" >g.</href> </a>   <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref17h" >h.</href> </a></sup> Anderson, John D. Hypersonic and High-Temperature Gas Dynamics. 2nd ed, American Institute of Aeronautics and Astronautics, 2006. <a name="ref17r"> </a> </sup></p>
+<p><b> 18. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref18" >a.</href> </a>    </sup>  File:  Translational Motion.gif. (1995, August 14). Wikimedia Commons, the free media repository. Modified 18:50, May 1, 2021 from <a href="https://commons.wikimedia.org/wiki/File:Translational_motion.gif" ><a href="https://commons.wikimedia.org/wiki/File:Translational_motion.gif">https://commons.wikimedia.org/wiki/File:Translational_motion.gif</a></a> <a name="ref18r"> </a> </sup></p>
+<p><b> 19. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref19" >a.</href> </a>    </sup>  File:  Euler2a.gif. (2013 January 30). Wikimedia Commons, the free media repository. Modified 08:20, May 2, 2021 from <a href="https://commons.wikimedia.org/wiki/File:Euler2a.gif" ><a href="https://commons.wikimedia.org/wiki/File:Euler2a.gif">https://commons.wikimedia.org/wiki/File:Euler2a.gif</a></a> <a name="ref19r"> </a> </sup></p>
+<p><b>20. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref20" >a.</href> </a>    </sup>  File:  Linear-3D-balls.png. (2006 December 12). Wikimedia Commons, the free media repository. Modified 08:20, May 2, 2021 from <a href="https://en.wikipedia.org/wiki/Molecular_geometry#/media/File:Linear-3D-balls.png" ><a href="https://en.wikipedia.org/wiki/Molecular_geometry#/media/File:Linear-3D-balls.png">https://en.wikipedia.org/wiki/Molecular_geometry#/media/File:Linear-3D-balls.png</a></a> <a name="ref20r"> </a> </sup></p>
+<p><b>21. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref21" >a.</href> </a>    </sup>  File:  Bent-3D-balls.png. (2006 December 12). Wikimedia Commons, the free media repository. Modified 08:20, May 2, 2021 from <a href="https://en.wikipedia.org/wiki/Molecular_geometry#/media/File:Bent-3D-balls.png" ><a href="https://en.wikipedia.org/wiki/Molecular_geometry#/media/File:Bent-3D-balls.png">https://en.wikipedia.org/wiki/Molecular_geometry#/media/File:Bent-3D-balls.png</a></a> <a name="ref21r"> </a> </sup></p>
+<p><b>22. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref22" >a.</href> </a>    </sup>  File:  Symmetrical_stretching.gif. (2006 December 12). Wikimedia Commons, the free media repository. Modified 08:20, May 2, 2021 from <a href="https://en.wikipedia.org/wiki/Molecular_vibration#/media/File:Symmetrical_stretching.gif" ><a href="https://en.wikipedia.org/wiki/Molecular_vibration#/media/File:Symmetrical_stretching.gif">https://en.wikipedia.org/wiki/Molecular_vibration#/media/File:Symmetrical_stretching.gif</a></a> <a name="ref22r"> </a> </sup></p>
+<p><b>23. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref23" >a.</href> </a>    </sup>  Johnson, R.D. Computational Chemistry Comparison and Benchmark Database, NIST Standard Reference Database 101. National Institute of Standards and Technology, 2020. DOI.org (Datacite), doi:10.18434/T47C7Z. <a name="ref23r"> </a> </sup></p>
+<p><b>24. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref24" >a.</href> </a>    </sup>  File: Energy_levels.svg. (2006 December 12). Wikimedia Commons, the free media repository. Modified 08:20, May 2, 2021 from <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Energy_levels.svg/612px-Energy_levels.svg.png" ><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Energy_levels.svg/612px-Energy_levels.svg.png">https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Energy_levels.svg/612px-Energy_levels.svg.png</a></a> <a name="ref24r"> </a> </sup></p>
+<p><b>25. </b>   <sup> <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref25" >a.</href> </a>    </sup> Wayne, R. P. “Singlet Molecular Oxygen.” Advances in Photochemistry, edited by J. N. Pitts et al., John Wiley &amp; Sons, Inc., 2007, pp. 311–71. DOI.org (Crossref), doi:10.1002/9780470133378.ch4.  <a name="ref25r"> </a> </sup></p>
+<p><b> 26. </b>   <sup>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref26" >a.</href> </a>  </sup> T.E. Horton. Computation of Partition Functions and Thermochemistry Data for Atomic, Ionic, Diatomic, and Polyatomic Species. NASA Technical Report 32-1425. <a href="https://ntrs.nasa.gov/api/citations/19700011342/downloads/19700011342.pdf">https://ntrs.nasa.gov/api/citations/19700011342/downloads/19700011342.pdf</a>. <a name="ref26r"> </a> </sup></p>
+<p><b> 27. </b>   <sup>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref27" >a.</href> </a>  </sup> Moore, Charlotte. Atomic Energy Levels as Derived from the Analyses of Optical Spectra. United States Department of Commerce National Bureau of Standards, 1971. <a name="ref27r"> </a> </sup></p>
+<p><b> 28. </b>   <sup>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref28" >a.</href> </a> <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref28b" >b.</href> </a><a> <a href="../flow-model/5.3-compressible-flow/#ref28c" >c.</href> </a> </sup> Zucker, Robert D., and Oscar Biblarz. Fundamentals of Gas Dynamics. 2nd ed, J. Wiley, 2002. <a name="ref28r"> </a> </sup></p>
+<p><b> 29. </b>   <sup>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref29" >a.</href> </a>   </sup>  “Thermophysical Properties of Oxygen.” NIST Chemistry Webook. <a href="https://webbook.nist.gov/cgi/fluid.cgi?ID=C7782447&Action=Page" ><a href="https://webbook.nist.gov/cgi/fluid.cgi?ID=C7782447&amp;Action=Page">https://webbook.nist.gov/cgi/fluid.cgi?ID=C7782447&amp;Action=Page</a></a>. Accessed 02 May 2021. <a name="ref29r"> </a> </sup></p>
+<p><b> 30. </b>   <sup>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref30" >a.</href> </a>   </sup>  “JANAF Thermochemical Tables.” <a href="https://janaf.nist.gov/tables/O-029.html" ><a href="https://janaf.nist.gov/tables/O-029.html">https://janaf.nist.gov/tables/O-029.html</a></a>. Accessed 02 May 2021. <a name="ref30r"> </a> </sup></p>
+<p><b> 31. </b>   <sup>  <a> <a href="../equation-of-state/2.5-enthalpy-revisited/#ref31" >a.</href> </a>  </sup> L.A. Weber.  Thermodynamic and Related Properties of Oxygen from the Triple Point to 300 K at Pressures to 1000 Bar.  NASA Reference Publication 1011. <a href="https://ntrs.nasa.gov/api/citations/19780008176/downloads/19780008176.pdf">https://ntrs.nasa.gov/api/citations/19780008176/downloads/19780008176.pdf</a> <a name="ref31r"> </a> </sup></p>
+<p><b> 32. </b>   <sup>  <a> <a href="../equation-of-state/2.6-transport-properties/#ref32" >a.</href> </a>  </sup> Roder, H. M. “The Thermal Conductivity of Oxygen.” Journal of Research of the National Bureau of Standards, vol. 87, no. 4, July 1982, p. 279. DOI.org (Crossref), doi:10.6028/jres.087.019. <a name="ref32r"> </a> </sup></p>
+<p><b> 33. </b>   <sup>  <a> <a href="../equation-of-state/2.6-transport-properties/#ref33" >a.</href> </a> <a> <a href="../equation-of-state/2.6-transport-properties/#ref33b" >b.</href> </a> </sup> Assael, M. J., et al. “Correlation of the Thermal Conductivity of Normal and Parahydrogen from the Triple Point to 1000 K and up to 100 MPa.” Journal of Physical and Chemical Reference Data, vol. 40, no. 3, Sept. 2011, p. 033101. DOI.org (Crossref), doi:10.1063/1.3606499. <a name="ref33r"> </a> </sup></p>
+<p><b> 34. </b>   <sup>  <a> <a href="../equation-of-state/2.6-transport-properties/#ref34" >a.</href> </a>  </sup> Lemmon, Eric W., and Richard T. Jacobsen. “A New Functional Form and New Fitting Techniques for Equations of State with Application to Pentafluoroethane (HFC-125).” Journal of Physical and Chemical Reference Data, vol. 34, no. 1, Mar. 2005, pp. 69–108. DOI.org (Crossref), doi:10.1063/1.1797813.  <a name="ref34r"> </a> </sup></p>
+<p><b> 35. </b>   <sup>  <a> <a href="../equation-of-state/2.6-transport-properties/#ref35" >a.</href> </a>  </sup> Diller, Dwain E. “Measurements of the Viscosity of Parahydrogen.” The Journal of Chemical Physics, vol. 42, no. 6, Mar. 1965, pp. 2089–100. DOI.org (Crossref), doi:10.1063/1.1696250.  <a name="ref35r"> </a> </sup></p>
+<p><b> 36. </b>   <sup>  <a> <a href="../equation-of-state/2.6-transport-properties/#ref36" >a.</href> </a>  </sup> Gordon, Sanford and McBride, Bonnie. “Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications.” NASA Reference Publication 1311.  <a name="ref36r"> </a> </sup></p>
+<p><b> 37. </b>   <sup>  <a> <a href="../combustion-model/3.1-chemistry/#ref37" >a.</href> </a> <a> <a href="../combustion-model/3.3-solution-procedure/#ref37b" >b.</href> </a>  </sup> Sozen, Mehmet. A Computational Method for Determining the Equilibrium Composition and Product Temperature in a LH2/LOX Combustor. 2002 NASA Faculty Fellowship Program Research Reports, 1 Apr. 2003, <a href="https://ntrs.nasa.gov/citations/20030093627">https://ntrs.nasa.gov/citations/20030093627</a>. <a name="ref37r"> </a> </sup></p>
+<p><b> 38. </b>   <sup>  <a> <a href="../combustion-model/3.1-chemistry/#ref38" >a.</href> </a> <a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref38b" >b.</href> </a> <a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref38c" >c.</href> </a></sup> <sup><a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref38d" >d.</href> </a></sup>    </a></sup> <sup><a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref38e" >e.</href> </a></sup>    </a></sup> <sup><a> <a href="../flow-model/5.1-ltmcc-geometry/#ref38f" >f.</href> </a></sup>    </a></sup> <sup><a> <a href="../flow-model/5.2-nozzle-geometry/#ref38g" >g.</href> </a></sup>  </a></sup> <sup><a> <a href="../flow-model/5.2-nozzle-geometry/#ref38h" >h.</href> </a></sup> <sup><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref38i" >i.</href> </a></sup> </a></sup> <sup><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref38j" >j.</href> </a><a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref38k" >k.</href> </a></sup>     Huzel, Dieter K., and David H. Huang. Modern Engineering for Design of Liquid Propellant Rocket Engines. American Institute of Aeronautics and Astronautics, 1992.  <a name="ref38r"> </a> </sup></p>
+<p><b> 39. </b>   <sup>  <a> <a href="../combustion-model/3.1-chemistry/#ref39" >a.</href> </a> <a> <a href="../combustion-model/3.3-solution-procedure/#ref39" >b.</href> </a>  </sup>  Sozen, Mehmet.  Modeling of LH2/LOX Combustion for Liquid Rocket Propulsion Engines-Enhancement of Generalized Fluid System Simulation Program. 2003 NASA Faculty Fellowship Program Research Reports, 1 May 2004,  <a href="https://ntrs.nasa.gov/citations/20040171464">https://ntrs.nasa.gov/citations/20040171464</a>  <a name="ref39r"> </a> </sup></p>
+<p><b> 40. </b>   <sup>  <a> <a href="../combustion-model/3.1-chemistry/#ref40" >a.</href> </a> <a> <a href="../combustion-model/3.1-chemistry/#ref40b" >b.</href> </a>  </sup> Hill, Philip G., and Carl R. Peterson. Mechanics and Thermodynamics of Propulsion. 2nd ed, Addison-Wesley, 1992.    <a name="ref40r"> </a> </sup></p>
+<p><b> 41. </b>   <sup>  <a> <a href="../combustion-model/3.1-chemistry/#ref41" >a.</href> </a>  </sup> “The Equilibrium Constant K.” Khan Academy, <a href="https://www.khanacademy.org/science/ap-chemistry/chemical-equilibrium-ap/equilibrium-constant-ap/a/the-equilibrium-constant-k">https://www.khanacademy.org/science/ap-chemistry/chemical-equilibrium-ap/equilibrium-constant-ap/a/the-equilibrium-constant-k</a>. Accessed 14 June 2021    <a name="ref41r"> </a> </sup></p>
+<p><b> 42. </b>   <sup>  <a> <a href="../combustion-model/3.1-chemistry/#ref42" >a.</href> </a>  </sup> “Van’t Hoff Equation.” Wikipedia, 19 May 2021. Wikipedia, <a href="https://en.wikipedia.org/w/index.php?title=Van_%27t_Hoff_equation&amp;oldid=1024051489">https://en.wikipedia.org/w/index.php?title=Van_%27t_Hoff_equation&amp;oldid=1024051489</a>.   <a name="ref42r"> </a> </sup></p>
+<p><b> 43. </b>   <sup>  <a> <a href="../combustion-model/3.3-solution-procedure/#ref43" >a.</href> </a>  </sup> “Chemical Equilibrium with Applications.” Glenn Research Center | NASA, <a href="https://www1.grc.nasa.gov/research-and-engineering/ceaweb/">https://www1.grc.nasa.gov/research-and-engineering/ceaweb/</a>. Accessed 15 June 2021.   <a name="ref43r"> </a> </sup></p>
+<p><b> 44. </b>   <sup>  <a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref44" >a.</href> </a>    <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref44b" >b.</href> </a> </sup> Brügge, Norbert. “Space Shuttle Propulsion.” Spacerockets: Database &amp; Analytics, <a href="http://www.b14643.de/Spacerockets_2/United_States_1/Space_Shuttle/Propulsion/engines.htm">http://www.b14643.de/Spacerockets_2/United_States_1/Space_Shuttle/Propulsion/engines.htm</a>. Accessed 15 June 2021.   <a name="ref44r"> </a> </sup></p>
+<p><b> 45. </b>   <sup>  <a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref45" >a.</href> </a>  </sup> Halliday, David, et al. Fundamentals of Physics. 7th ed., Extended ed, Wiley, 2005.  <a name="ref45r"> </a> </sup></p>
+<p><b> 46. </b>   <sup>  <a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref46" >a.</href> </a>  <a> <a href="../combustion-model/3.4-mixture-ratio-optimization/#ref46b" >b.</href> </a>    </sup>   Martinez-Sanchez, Manuel, and Paulo Lozano. “Space Propulsion:  Fundamentals and Definitions.” MIT Open Courseware, Massachusetts Institute of Technology, 2015, <a href="https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-522-space-propulsion-spring-2015/lecture-notes/MIT16_522S15_Lecture2.pdf">https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-522-space-propulsion-spring-2015/lecture-notes/MIT16_522S15_Lecture2.pdf</a>.  <a name="ref46r"> </a> </sup></p>
+<p><b> 47. </b>   <sup>  <a> <a href="../turbomachinery/4.1-low-pressure-fuel-system/#ref47" >a.</href> </a>    </sup>   Weisstein, Eric W. Gaussian Elimination. <a href="https://mathworld.wolfram.com/GaussianElimination.html">https://mathworld.wolfram.com/GaussianElimination.html</a>. Accessed 11 July 2021.  <a name="ref47r"> </a> </sup></p>
+<p><b> 48. </b>   <sup>  <a> <a href="../turbomachinery/4.2-high-pressure-fuel-system/#ref48" >a.</href> </a>    </sup>   Petrasek, Donald W., and Joseph R. Stephens. Fiber Reinforced Superalloys for Rocket Engines. 1988. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19890006619">https://ntrs.nasa.gov/citations/19890006619</a>.  <a name="ref48r"> </a> </sup></p>
+<p><b> 49. </b>   <sup>  <a> <a href="../turbomachinery/4.2-high-pressure-fuel-system/#ref49" >a.</href> </a>    </sup>   Abdul-Aziz, A., and A. Kaufman. “Nonlinear Heat Transfer and Structural Analyses of SSME Turbine Blades.” Structural Integrity and Durability of Reusable Space Propulsion Systems, Jan. 1987. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19870013346">https://ntrs.nasa.gov/citations/19870013346</a>.  <a name="ref49r"> </a> </sup></p>
+<p><b> 50. </b>   <sup>  <a> <a href="../turbomachinery/4.2-high-pressure-fuel-system/#ref50" >a.</href> </a>    </sup>   “Superalloys for High Temperatures—a Primer.” Superalloys, by Matthew J. Donachie and Stephen J. Donachie, ASM International, 2002, pp. 1–9. DOI.org (Crossref), doi:10.31399/asm.tb.stg2.t61280001.  <a name="ref50r"> </a> </sup></p>
+<p><b> 51. </b>   <sup>  <a> <a href="../turbomachinery/4.2-high-pressure-fuel-system/#ref51" >a.</href> </a>  <a> <a href="../turbomachinery/4.2-high-pressure-fuel-system/#ref51b" >b.</href> </a>   </sup>   Lewis, J. R. “Design Overview of Fiber-Reinforced Superalloy Composites for the Space Shuttle Main Engine.” NASA. Marshall Space Flight Center Advan. High Pressure O2/H2 Technol., Apr. 1985. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19850018560">https://ntrs.nasa.gov/citations/19850018560</a>.  <a name="ref51r"> </a> </sup></p>
+<p><b> 52. </b>   <sup>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref52" >a.</href> </a>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref52b" >b.</href> </a>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref52c" >c.</href> </a>   <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref52d" >d.</href> </a>  </sup>  Nickerson, G. R., and L. D. Dang. Performance Predictions for an SSME Configuration with an Enlarged Throat. Nov. 1985. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19860012108">https://ntrs.nasa.gov/citations/19860012108</a>  <a name="ref52r"> </a> </sup></p>
+<p><b> 53. </b>   <sup>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref53" >a.</href> </a>  </sup>   Smith, Mark. Newton-Raphson Technique. Massachusetts Institute of Technology, 1 Oct. 1998, <a href="https://web.mit.edu/10.001/Web/Course_Notes/NLAE/node6.html">https://web.mit.edu/10.001/Web/Course_Notes/NLAE/node6.html</a>.  <a name="ref53r"> </a> </sup></p>
+<p><b> 54. </b>   <sup>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref54" >a.</href> </a>  </sup> Humble, Ronald W. Space Propulsion Analysis and Design. 1. ed., Rev, McGraw-Hill, 1995.   <a name="ref54r"> </a> </sup></p>
+<p><b> 55. </b>   <sup>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref55" >a.</href> </a>  </sup> Huang, D. H., and D. K. Huzel. Design of Liquid Propellant Rocket Engines Second Edition. Jan. 1971. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19710019929">https://ntrs.nasa.gov/citations/19710019929</a>.   <a name="ref55r"> </a> </sup></p>
+<p><b> 56. </b>   <sup>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref56" >a.</href> </a> <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref56b" >b.</href> </a> </sup> Van Hooser, Katherine P., and Douglas P. Bradley. Space Shuttle Main Engine - The Relentless Pursuit of Improvement. 2011. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/20120001539">https://ntrs.nasa.gov/citations/20120001539</a>.   <a name="ref56r"> </a> </sup></p>
+<p><b> 57. </b>   <sup>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref57" >a.</href> </a>  </sup> Przekwas, A. J., et al. SSME Thrust Chamber Simulation Using Navier-Stokes Equations. Oct. 1984. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19850010707">https://ntrs.nasa.gov/citations/19850010707</a>.   <a name="ref57r"> </a> </sup></p>
+<p><b> 58. </b>   <sup>  <a> <a href="../flow-model/5.2-nozzle-geometry/#ref58" >a.</href> </a> <a> <a href="../flow-model/5.2-nozzle-geometry/#ref58b" >b.</href> </a>  <a> <a href="../flow-model/5.2-nozzle-geometry/#ref58c" >c.</href> </a>     <a> <a href="../flow-model/5.2-nozzle-geometry/#ref58d" >d.</href> </a>   <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref58e" >e.</href> </a> </sup> “Liquid Rocket Engine Nozzles.” NASA Space Vehicle Design Criteria (Chemical Propulsion), July 1976. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19770009165">https://ntrs.nasa.gov/citations/19770009165</a>.  <a name="ref58r"> </a> </sup></p>
+<p><b> 59. </b>   <sup>  <a> <a href="../flow-model/5.2-nozzle-geometry/#ref59" >a.</href> </a></sup> “Technical Notes.” ARS Journal, Vol. 30, No. 6, June 1960, pp. 557–76. DOI.org (Crossref), <a href="https://doi.org/10.2514/8.5151">https://doi.org/10.2514/8.5151</a>.  <a name="ref59r"> </a> </sup></p>
+<p><b> 60. </b>   <sup>  <a> <a href="../flow-model/5.2-nozzle-geometry/#ref60" >a.</href> </a></sup> Rao, G. V. R. “Exhaust Nozzle Contour for Optimum Thrust.” Journal of Jet Propulsion, vol. 28, no. 6, June 1958, pp. 377–82. DOI.org (Crossref), <a href="https://doi.org/10.2514/8.7324">https://doi.org/10.2514/8.7324</a>.  <a name="ref60r"> </a> </sup></p>
+<p><b> 61. </b>   <sup>  <a> <a href="../flow-model/5.2-nozzle-geometry/#ref61" >a.</href> </a></sup> Newlands, Rick. “The Thrust Optimised Parabolic Nozzle.” Aspirespace Rocket Engineering Society, 18 Apr. 2017, <a href="http://www.aspirespace.org.uk/downloads/Thrust%20optimised%20parabolic%20nozzle.pdf">http://www.aspirespace.org.uk/downloads/Thrust%20optimised%20parabolic%20nozzle.pdf</a>.  <a name="ref61r"> </a> </sup></p>
+<p><b> 62. </b>   <sup>  <a> <a href="../flow-model/5.3-compressible-flow/#ref62" >a.</href> </a></sup> Hicks, Bruce L., et al. “On the One‐Dimensional Theory of Steady Compressible Fluid Flow in Ducts with Friction and Heat Addition.” Journal of Applied Physics, vol. 18, no. 10, Oct. 1947, pp. 891–902. DOI.org (Crossref), <a href="https://doi.org/10.1063/1.1697563">https://doi.org/10.1063/1.1697563</a>. <a name="ref62r"> </a> </sup></p>
+<p><b> 63. </b>   <sup>  <a> <a href="../flow-model/5.3-compressible-flow/#ref63" >a.</href> </a></sup> Jiji, Latif M. Heat Convection. 2. ed, Springer, 2009. <a name="ref63r"> </a> </sup></p>
+<p><b> 64. </b>   <sup>  <a> <a href="../flow-model/5.3-compressible-flow/#ref64" >a.</href> </a></sup> Original diagram: S Beck and R Collins, University of Sheffield.   Conversion to SVG: Marc.derumaux, CC BY-SA 4.0, via Wikimedia Commons.  <a href="https://commons.wikimedia.org/w/index.php?curid=52681200">https://commons.wikimedia.org/w/index.php?curid=52681200</a> <a name="ref64r"> </a> </sup></p>
+<p><b> 65. </b>   <sup>  <a> <a href="../flow-model/5.3-compressible-flow/#ref65" >a.</href> </a></sup> Naraghi, Mohammad H., and Matthieu Foulon. “A Simple Approach for Thermal Analysis of Regenerative Cooling of Rocket Engines.” Volume 10: Heat Transfer, Fluid Flows, and Thermal Systems, Parts A, B, and C, ASMEDC, 2008, pp. 531–38. DOI.org (Crossref), <a href="https://doi.org/10.1115/IMECE2008-67988">https://doi.org/10.1115/IMECE2008-67988</a>.<a name="ref65r"> </a> </sup></p>
+<p><b> 66. </b>   <sup>  <a> <a href="../flow-model/5.3-compressible-flow/#ref66" >a.</href> </a></sup>Benson, Tom. Beginner’s Guide to Rockets -  Mach Number. NASA, 13 May 2021, <a href="https://www.grc.nasa.gov/www/k-12/rocket/Lessons/machC_ans.html">https://www.grc.nasa.gov/www/k-12/rocket/Lessons/machC_ans.html</a>. <a name="ref66r"> </a> </sup></p>
+<p><b> 67. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref67" >a.</href> </a><a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref67b" >b.</href> </a><a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref67c" >c.</href> </a><a> <a href="../thermodynamic-data/1.1-fuel-system/#ref67d" >d.</href> </a></sup>Halchak, John, et al. Materials for Liquid Propulsion Systems. NASA Marshall Space Flight Center and Aerojet Rocketdyne, Inc, 2018, <a href="https://ntrs.nasa.gov/citations/20160008869">https://ntrs.nasa.gov/citations/20160008869</a>. <a name="ref67r"> </a> </sup></p>
+<p><b> 68. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref68" >a.</href> </a> <a> <a href="../thermodynamic-data/1.1-fuel-system/#ref68b" >b.</href> </a></sup>SSME Physical and Functional Descriptions. Space Transportation System HAER No. TX-116, NASA, <a href="https://www.nasa.gov/sites/default/files/files/3PFD.pdf">https://www.nasa.gov/sites/default/files/files/3PFD.pdf</a>. <a name="ref68r"> </a> </sup></p>
+<p><b> 69. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref69" >a.</href> </a>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref69b" >b.</href> </a>   <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref69c" >c.</href> </a><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref69d" >d.</href> </a><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref69e" >e.</href> </a> </sup>Betti, Barbara, et al. “Coupled Heat Transfer Analysis in Regeneratively Cooled Thrust Chambers.” Journal of Propulsion and Power, vol. 30, no. 2, Mar. 2014, pp. 360–67. DOI.org (Crossref), <a href="https://doi.org/10.2514/1.B34855">https://doi.org/10.2514/1.B34855</a>. <a name="ref69r"> </a> </sup></p>
+<p><b> 70. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref70" >a.</href> </a></sup>Bartz, D. R. “Turbulent Boundary-Layer Heat Transfer from Rapidly Accelerating Flow of Rocket Combustion Gases and of Heated Air.” Advances in Heat Transfer, vol. 2, Elsevier, 1965, pp. 1–108. DOI.org (Crossref), <a href="https://doi.org/10.1016/S0065-2717(08)70261-2">https://doi.org/10.1016/S0065-2717(08)70261-2</a>. <a name="ref70r"> </a> </sup></p>
+<p><b> 71. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref71" >a.</href> </a></sup>“Nusselt Number.” Wikipedia, 24 May 2021. Wikipedia, <a href="https://en.wikipedia.org/w/index.php?title=Nusselt_number&amp;oldid=1024849680">https://en.wikipedia.org/w/index.php?title=Nusselt_number&amp;oldid=1024849680</a>. <a name="ref71r"> </a> </sup></p>
+<p><b> 72. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref72" >a.</href> </a><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref72b" >b.</href> </a><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref72c" >c.</href> </a></sup>Wang, Ten-See, and Van Luong. “Hot-Gas-Side and Coolant-Side Heat Transfer in Liquid Rocket Engine Combustors.” Journal of Thermophysics and Heat Transfer, vol. 8, no. 3, July 1994, pp. 524–30. DOI.org (Crossref), <a href="https://doi.org/10.2514/3.574">https://doi.org/10.2514/3.574</a>. <a name="ref72r"> </a> </sup></p>
+<p><b> 73. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref73" >a.</href> </a><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref73b" >b.</href> </a></a><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref73c" >c.</href> </a></sup>Naraghi, Mohammad H., and Matthieu Foulon. “A Simple Approach for Thermal Analysis of Regenerative Cooling of Rocket Engines.” Volume 10: Heat Transfer, Fluid Flows, and Thermal Systems, Parts A, B, and C, ASMEDC, 2008, pp. 531–38. DOI.org (Crossref), <a href="https://doi.org/10.1115/IMECE2008-67988">https://doi.org/10.1115/IMECE2008-67988</a>. <a name="ref73r"> </a> </sup></p>
+<p><b> 74. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref74" >a.</href> </a></sup>Niino, M., et al. “Heat Transfer Characteristics of Liquid Hydrogen as a Coolant for the LO2/LH2 Rocket Thrust Chamber with the Channel Wall Construction.” 18th Joint Propulsion Conference, American Institute of Aeronautics and Astronautics, 1982. DOI.org (Crossref), <a href="https://doi.org/10.2514/6.1982-1107">https://doi.org/10.2514/6.1982-1107</a>. <a name="ref74r"> </a> </sup></p>
+<p><b> 75. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref75" >a.</href> </a>    <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref75b" >b.</href> </a><a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref75c" >c.</href><a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref75d" >d.</href> </a></sup>Incropera, Frank, et al. Introduction to Heat Transfer. 6th ed, Wiley, 2011. <a name="ref75r"> </a> </sup></p>
+<p><b> 76. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref76" >a.</href> </a> </sup>Naraghi, Mohammad, et al. “A Model for Design and Analysis of Regeneratively Cooled Rocket Engines.” 40th AIAA/ASME/SAE/ASEE Joint Propulsion Conference and Exhibit, American Institute of Aeronautics and Astronautics, 2004. DOI.org (Crossref), <a href="https://doi.org/10.2514/6.2004-3852">https://doi.org/10.2514/6.2004-3852</a>. <a name="ref76r"> </a> </sup></p>
+<p><b> 77. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/#ref77" >a.</href> </a> </sup> Pizzarelli, Marco, et al. “Coupled Wall Heat Conduction and Coolant Flow Analysis for Liquid Rocket Engines.” Journal of Propulsion and Power, vol. 29, no. 1, Jan. 2013, pp. 34–41. arc.aiaa.org (Atypon), <a href="https://doi.org/10.2514/1.B34533">https://doi.org/10.2514/1.B34533</a>.<a name="ref77r"> </a> </sup></p>
+<p><b> 78. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref78" >a.</href> </a> </sup>  NASA on The Commons. Shuttle Main Engine Firing in Gimbal Test. 1 Jan. 1995. Flickr, <a href="https://www.flickr.com/photos/nasacommons/16315975038/">https://www.flickr.com/photos/nasacommons/16315975038/</a>.    <a name="ref78r"> </a> </sup></p>
+<p><b> 79. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref79" >a.</href> </a> </sup>  Foley, Michael J. Space Shuttle Main Engine Structural Analysis and Data Reduction/Evaluation. Volume 6: Primary Nozzle Diffuser Analysis. Apr. 1989. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19890015066">https://ntrs.nasa.gov/citations/19890015066</a>.   <a name="ref79r"> </a> </sup></p>
+<p><b> 80. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref80" >a.</href> </a> </sup>  Space Shuttle Main Engine | National Air and Space Museum. <a href="https://airandspace.si.edu/collection-media/NASM-SI-2006-405">https://airandspace.si.edu/collection-media/NASM-SI-2006-405</a>. Accessed 2 Oct. 2021.  <a name="ref80r"> </a> </sup></p>
+<p><b> 81. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref81" >a.</href> </a>   <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref81b" >b.</href> </a>   <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref81c" >c.</href> </a>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref81d" >d.</href> </a></sup>  Liquid Rocket Engine Fluid-Cooled Combustion Chambers. Apr. 1972. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19730022965">https://ntrs.nasa.gov/citations/19730022965</a>. <a name="ref81r"> </a> </sup></p>
+<p><b> 82. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref82" >a.</href> </a>  </sup>  Niino, M., et al. “Heat Transfer Characteristics of Liquid Hydrogen as a Coolant for the LO2/LH2 Rocket Thrust Chamber with the Channel Wall Construction.” 18th Joint Propulsion Conference, American Institute of Aeronautics and Astronautics, 1982. arc.aiaa.org (Atypon), <a href="https://doi.org/10.2514/6.1982-1107">https://doi.org/10.2514/6.1982-1107</a> <a name="ref82r"> </a> </sup></p>
+<p><b> 83. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref83" >a.</href> </a> <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref83b" >b.</href> </a>   </sup>  A286 Technical Data Sheet, Allegheny Technologies Incorporated, 17 Apr. 2012, <a href="https://www.atimetals.com/Products/Documents/datasheets/nickel-cobalt/nickel-based/ati_286_ludlum_version_tds_en_v1.pdf">https://www.atimetals.com/Products/Documents/datasheets/nickel-cobalt/nickel-based/ati_286_ludlum_version_tds_en_v1.pdf</a>. <a name="ref83r"> </a> </sup></p>
+<p><b> 84. </b>   <sup>  <a> <a href="../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/#ref84" >a.</href> </a>  </sup> Thompson, James R., &ldquo;Space Shuttle Main Engine&rdquo; (1980). The Space Congress® Proceedings.  <a href="https://commons.erau.edu/space-congress-proceedings/proceedings-1980-17th/session-1/5">https://commons.erau.edu/space-congress-proceedings/proceedings-1980-17th/session-1/5</a>  <a name="ref84r"> </a> </sup></p>
+<p><b> 85. </b>   <sup>  <a> <a href="../combustion-model/3.3-solution-procedure/#ref85" >a.</href> </a>  </sup> CEARUN Rev3a. <a href="https://cearun.grc.nasa.gov/">https://cearun.grc.nasa.gov/</a>. Accessed 10 Oct. 2021. <a name="ref85r"> </a> </sup></p>
+<p><b> 86. </b>   <sup>  <a> <a href="../flow-model/5.1-ltmcc-geometry/#ref86" >a.</href> </a>  </sup> Review of Idealized Nozzle Theory. Utah State University, <a href="http://mae-nas.eng.usu.edu/MAE_5540_Web/propulsion_systems/section5/section5.1.pdf">http://mae-nas.eng.usu.edu/MAE_5540_Web/propulsion_systems/section5/section5.1.pdf</a>. Accessed 11 Oct. 2021. <a name="ref86r"> </a> </sup></p>
+<p><b> 87. </b>     Naraghi, Mohammad H. N. “RTE: A Computer Code for Rocket Thermal Evaluation.” NASA. Lewis Research Center, The Sixth Annual Thermal and Fluids Analysis Workshop, Jan. 1995. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19950020934">https://ntrs.nasa.gov/citations/19950020934</a> <a name="ref87r"> </a> </sup></p>
+<p><b> 88. </b>    Nickerson, G. R., et al. Engineering and Programming Manual: Two-Dimensional Kinetic Reference Computer Program (TDK). Apr. 1985. ntrs.nasa.gov, <a href="https://ntrs.nasa.gov/citations/19860007470">https://ntrs.nasa.gov/citations/19860007470</a>. <a name="ref88r"> </a> </sup></p>
+<p><b> 89. </b>    Jurvetson, Steve. Space Shuttle Main Engine SSME. 30 Oct. 2012. Flickr, <a href="https://www.flickr.com/photos/jurvetson/8159769501/">https://www.flickr.com/photos/jurvetson/8159769501/</a>. <a name="ref89r"> </a> </sup></p>
+
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+
+        
+    
+
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+
+        
+    
+
+
+
+
+
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+    
+    
+</div>
+
+            </div>
+        </main>
+
+        <footer >
+
+<html>
+<head>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+ 
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+<script defer src="../js/en.search.min.d1300fa43c8b3ddb741038e2a85fdfbce3723906b87fd971f6a365b26465b1af.js"></script>
+
+
+
+<script defer src="../js/clipboard-af8ab36589.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var clipboard = new ClipboardJS('.clip');
+    });
+</script>
+
+
+</body>
+</html>

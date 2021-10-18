@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="2.6 Transport Properties">
+
+<title>2.6 Transport Properties | Cryo-Rocket.com</title>
+
+<link rel="icon" href="../../favicon/favicon-32x32.png" type="image/x-icon">
+
+<link rel="preload" as="font" href="../../fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-BoldItalic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationSans-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/LiberationMono.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/DroidSans.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="../../fonts/GeekdocIcons.woff2" type="font/woff2" crossorigin="anonymous">
+
+<link rel="preload" href="../../main-f5793ba4b9.min.css" as="style">
+<link rel="stylesheet" href="../../main-f5793ba4b9.min.css" media="all">
+
+<link rel="preload" href="../../mobile-2eb10ce87d.min.css" as="style">
+<link rel="stylesheet" href="../../mobile-2eb10ce87d.min.css" media="screen and (max-width: 45rem)">
+
+<link rel="preload" href="../../print-f79fc3e5d7.min.css" as="style">
+<link rel="stylesheet" href="../../print-f79fc3e5d7.min.css" media="print">
+
+<link rel="preload" href="../../custom.css" as="style">
+<link rel="stylesheet" href="../../custom.css" media="all">
+
+<!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
+
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_back" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.526v2.947H5.755l8.351 8.421-2.105 2.105-12-12 12-12 2.105 2.105-8.351 8.421H24z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_left_alt" xmlns="http://www.w3.org/2000/svg"><path d="M5.965 10.526V6.035L0 12l5.965 5.965v-4.491H24v-2.947H5.965z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="arrow_right_alt" xmlns="http://www.w3.org/2000/svg"><path d="M18.035 10.526V6.035L24 12l-5.965 5.965v-4.491H0v-2.947h18.035z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="bitbucket" xmlns="http://www.w3.org/2000/svg"><path d="M15.905 13.355c.189 1.444-1.564 2.578-2.784 1.839-1.375-.602-1.375-2.784-.034-3.403 1.151-.705 2.818.223 2.818 1.564zm1.907-.361c-.309-2.44-3.076-4.056-5.328-3.042-1.426.636-2.389 2.148-2.32 3.747.086 2.097 2.08 3.815 4.176 3.626s3.729-2.234 3.472-4.331zm4.108-9.315c-.756-.997-2.045-1.169-3.179-1.358-3.214-.516-6.513-.533-9.727.034-1.066.172-2.269.361-2.939 1.323 1.1 1.031 2.664 1.186 4.073 1.358 2.544.327 5.156.344 7.699.017 1.426-.172 3.008-.309 4.073-1.375zm.979 17.788c-.481 1.684-.206 3.953-1.994 4.932-3.076 1.701-6.806 1.89-10.191 1.289-1.787-.327-3.884-.894-4.864-2.578-.43-1.65-.705-3.334-.98-5.018l.103-.275.309-.155c5.121 3.386 12.288 3.386 17.427 0 .808.241.206 1.22.189 1.805zM26.01 4.951c-.584 3.764-1.255 7.51-1.908 11.257-.189 1.1-1.255 1.719-2.148 2.183-3.214 1.615-6.96 1.89-10.483 1.512-2.389-.258-4.829-.894-6.771-2.389-.911-.705-.911-1.908-1.083-2.922-.602-3.523-1.289-7.046-1.719-10.604.206-1.547 1.942-2.217 3.231-2.698C6.848.654 8.686.362 10.508.19c3.884-.378 7.854-.241 11.618.859 1.341.395 2.784.945 3.695 2.097.412.533.275 1.203.189 1.805z"/></symbol><symbol viewBox="-2.29 -2.29 28.57 28.57" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M15.268 4.392q.868 0 1.532.638t.664 1.506v17.463l-7.659-3.268-7.608 3.268V6.536q0-.868.664-1.506t1.532-.638h10.876zm4.34 14.144V4.392q0-.868-.638-1.532t-1.506-.664H6.537q0-.868.664-1.532T8.733 0h10.876q.868 0 1.532.664t.664 1.532v17.412z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M9.917 24.5a1.75 1.75 0 10-3.501.001 1.75 1.75 0 003.501-.001zm0-21a1.75 1.75 0 10-3.501.001A1.75 1.75 0 009.917 3.5zm11.666 2.333a1.75 1.75 0 10-3.501.001 1.75 1.75 0 003.501-.001zm1.75 0a3.502 3.502 0 01-1.75 3.026c-.055 6.581-4.721 8.039-7.82 9.023-2.898.911-3.846 1.349-3.846 3.117v.474a3.502 3.502 0 011.75 3.026c0 1.932-1.568 3.5-3.5 3.5s-3.5-1.568-3.5-3.5c0-1.294.711-2.424 1.75-3.026V6.526A3.502 3.502 0 014.667 3.5c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5a3.502 3.502 0 01-1.75 3.026v9.06c.93-.456 1.914-.766 2.807-1.039 3.391-1.075 5.323-1.878 5.359-5.687a3.502 3.502 0 01-1.75-3.026c0-1.932 1.568-3.5 3.5-3.5s3.5 1.568 3.5 3.5z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="date" xmlns="http://www.w3.org/2000/svg"><path d="M27.192 28.844V11.192H4.808v17.652h22.384zm0-25.689q1.277 0 2.253.976t.976 2.253v22.459q0 1.277-.976 2.216t-2.253.939H4.808q-1.352 0-2.291-.901t-.939-2.253V6.385q0-1.277.939-2.253t2.291-.976h1.577V.001h3.23v3.155h12.769V.001h3.23v3.155h1.577zm-3.155 11.267v3.155h-3.23v-3.155h3.23zm-6.46 0v3.155h-3.155v-3.155h3.155zm-6.384 0v3.155h-3.23v-3.155h3.23z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M2.866 28.209h26.269v3.79H2.866v-3.79zm26.268-16.925L16 24.418 2.866 11.284h7.493V.001h11.283v11.283h7.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="email" xmlns="http://www.w3.org/2000/svg"><path d="M28.845 9.615v-3.23L16 14.422 3.155 6.385v3.23L16 17.577zm0-6.46q1.277 0 2.216.977T32 6.385v19.23q0 1.277-.939 2.253t-2.216.977H3.155q-1.277 0-2.216-.977T0 25.615V6.385q0-1.277.939-2.253t2.216-.977h25.69z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="git" xmlns="http://www.w3.org/2000/svg"><path d="M27.472 12.753L15.247.529a1.803 1.803 0 00-2.55 0l-2.84 2.84 2.137 2.137a2.625 2.625 0 013.501 3.501l3.499 3.499a2.625 2.625 0 11-1.237 1.237l-3.499-3.499c-.083.04-.169.075-.257.106v7.3a2.626 2.626 0 11-1.75 0v-7.3a2.626 2.626 0 01-1.494-3.607L8.62 4.606l-8.09 8.09a1.805 1.805 0 000 2.551l12.225 12.224a1.803 1.803 0 002.55 0l12.168-12.168a1.805 1.805 0 000-2.551z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="github" xmlns="http://www.w3.org/2000/svg"><path d="M16 .394c8.833 0 15.999 7.166 15.999 15.999 0 7.062-4.583 13.062-10.937 15.187-.813.146-1.104-.354-1.104-.771 0-.521.021-2.25.021-4.396 0-1.5-.5-2.458-1.083-2.958 3.562-.396 7.312-1.75 7.312-7.896 0-1.75-.625-3.167-1.646-4.291.167-.417.708-2.042-.167-4.25-1.333-.417-4.396 1.646-4.396 1.646a15.032 15.032 0 00-8 0S8.937 6.602 7.603 7.018c-.875 2.208-.333 3.833-.167 4.25-1.021 1.125-1.646 2.542-1.646 4.291 0 6.125 3.729 7.5 7.291 7.896-.458.417-.875 1.125-1.021 2.146-.917.417-3.25 1.125-4.646-1.333-.875-1.521-2.458-1.646-2.458-1.646-1.562-.021-.104.979-.104.979 1.042.479 1.771 2.333 1.771 2.333.938 2.854 5.396 1.896 5.396 1.896 0 1.333.021 2.583.021 2.979 0 .417-.292.917-1.104.771C4.582 29.455-.001 23.455-.001 16.393-.001 7.56 7.165.394 15.998.394zM6.063 23.372c.042-.083-.021-.187-.146-.25-.125-.042-.229-.021-.271.042-.042.083.021.187.146.25.104.062.229.042.271-.042zm.646.709c.083-.062.062-.208-.042-.333-.104-.104-.25-.146-.333-.062-.083.062-.062.208.042.333.104.104.25.146.333.062zm.625.937c.104-.083.104-.25 0-.396-.083-.146-.25-.208-.354-.125-.104.062-.104.229 0 .375s.271.208.354.146zm.875.875c.083-.083.042-.271-.083-.396-.146-.146-.333-.167-.417-.062-.104.083-.062.271.083.396.146.146.333.167.417.062zm1.187.521c.042-.125-.083-.271-.271-.333-.167-.042-.354.021-.396.146s.083.271.271.312c.167.062.354 0 .396-.125zm1.313.104c0-.146-.167-.25-.354-.229-.187 0-.333.104-.333.229 0 .146.146.25.354.229.187 0 .333-.104.333-.229zm1.208-.208c-.021-.125-.187-.208-.375-.187-.187.042-.312.167-.292.312.021.125.187.208.375.167s.312-.167.292-.292z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="gitlab" xmlns="http://www.w3.org/2000/svg"><path d="M1.629 11.034L14 26.888.442 17.048a1.09 1.09 0 01-.39-1.203l1.578-4.811zm7.217 0h10.309l-5.154 15.854zM5.753 1.475l3.093 9.559H1.63l3.093-9.559a.548.548 0 011.031 0zm20.618 9.559l1.578 4.811c.141.437-.016.922-.39 1.203l-13.558 9.84 12.371-15.854zm0 0h-7.216l3.093-9.559a.548.548 0 011.031 0z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="heart" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.714a1.11 1.11 0 01-.786-.321L4.072 18.643c-.143-.125-4.071-3.714-4.071-8 0-5.232 3.196-8.357 8.535-8.357 3.125 0 6.053 2.464 7.464 3.857 1.411-1.393 4.339-3.857 7.464-3.857 5.339 0 8.535 3.125 8.535 8.357 0 4.286-3.928 7.875-4.089 8.035L16.785 29.392c-.214.214-.5.321-.786.321z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="keyborad_arrow_down" xmlns="http://www.w3.org/2000/svg"><path d="M3.281 5.36L14 16.079 24.719 5.36 28 8.641l-14 14-14-14z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="keyborad_arrow_left" xmlns="http://www.w3.org/2000/svg"><path d="M25.875 28.25L22.125 32 6.126 16.001 22.125.002l3.75 3.75-12.25 12.25z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="keyborad_arrow_right" xmlns="http://www.w3.org/2000/svg"><path d="M6.125 28.25L18.375 16 6.125 3.75 9.875 0l15.999 15.999L9.875 31.998z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="link" xmlns="http://www.w3.org/2000/svg"><path d="M24.037 7.963q3.305 0 5.634 2.366T32 16t-2.329 5.671-5.634 2.366h-6.46v-3.08h6.46q2.028 0 3.493-1.465t1.465-3.493-1.465-3.493-3.493-1.465h-6.46v-3.08h6.46zM9.615 17.578v-3.155h12.77v3.155H9.615zM3.005 16q0 2.028 1.465 3.493t3.493 1.465h6.46v3.08h-6.46q-3.305 0-5.634-2.366T0 16.001t2.329-5.671 5.634-2.366h6.46v3.08h-6.46q-2.028 0-3.493 1.465t-1.465 3.493z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M.001 5.334h31.998v3.583H.001V5.334zm0 12.416v-3.5h31.998v3.5H.001zm0 8.916v-3.583h31.998v3.583H.001z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="notification" xmlns="http://www.w3.org/2000/svg"><path d="M22.615 19.384l2.894 2.894v1.413H2.49v-1.413l2.894-2.894V12.25q0-3.365 1.716-5.856t4.745-3.231v-1.01q0-.875.606-1.514T13.999 0t1.548.639.606 1.514v1.01q3.029.74 4.745 3.231t1.716 5.856v7.134zM14 27.999q-1.211 0-2.053-.808t-.841-2.019h5.788q0 1.144-.875 1.986T14 27.999z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="path" xmlns="http://www.w3.org/2000/svg"><path d="M28 12.62h-9.793V8.414h-2.826v11.173h2.826v-4.206H28V26.62h-9.793v-4.206H12.62v-14H9.794v4.206H.001V1.381h9.793v4.206h8.413V1.381H28V12.62z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="person" xmlns="http://www.w3.org/2000/svg"><path d="M16 20.023q5.052 0 10.526 2.199t5.473 5.754v4.023H0v-4.023q0-3.555 5.473-5.754t10.526-2.199zM16 16q-3.275 0-5.614-2.339T8.047 8.047t2.339-5.661T16 0t5.614 2.386 2.339 5.661-2.339 5.614T16 16z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M11.925 20.161q3.432 0 5.834-2.402t2.402-5.834-2.402-5.834-5.834-2.402-5.834 2.402-2.402 5.834 2.402 5.834 5.834 2.402zm10.981 0L32 29.255 29.255 32l-9.094-9.094v-1.458l-.515-.515q-3.26 2.831-7.721 2.831-4.976 0-8.45-3.432T.001 11.925t3.474-8.45 8.45-3.474 8.407 3.474 3.432 8.45q0 1.802-.858 4.075t-1.973 3.646l.515.515h1.458z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M22.167 15.166V3.5h-8.166v20.726c.93-.492 2.424-1.349 3.883-2.497 1.95-1.531 4.284-3.919 4.284-6.562zm3.499-13.999v14c0 7.674-10.737 12.523-11.192 12.724-.146.073-.31.109-.474.109s-.328-.036-.474-.109c-.456-.201-11.192-5.049-11.192-12.724v-14C2.334.529 2.863 0 3.501 0H24.5c.638 0 1.167.529 1.167 1.167z"/></symbol><symbol viewBox="-2.29 -2.29 32.57 32.57" id="tags" xmlns="http://www.w3.org/2000/svg"><path d="M6.606 7.549c0-1.047-.84-1.887-1.887-1.887s-1.887.84-1.887 1.887.84 1.887 1.887 1.887 1.887-.84 1.887-1.887zm15.732 8.493c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546s-.988-.206-1.327-.546L1.342 14.066C.59 13.329 0 11.899 0 10.852V4.718a1.9 1.9 0 011.887-1.887h6.134c1.047 0 2.477.59 3.229 1.342L21.792 14.7c.339.354.546.84.546 1.342zm5.661 0c0 .501-.206.988-.546 1.327l-7.239 7.254c-.354.339-.84.546-1.342.546-.767 0-1.15-.354-1.651-.87l6.93-6.93c.339-.339.546-.826.546-1.327s-.206-.988-.546-1.342L13.609 4.173c-.752-.752-2.182-1.342-3.229-1.342h3.303c1.047 0 2.477.59 3.229 1.342L27.454 14.7c.339.354.546.84.546 1.342z"/></symbol><symbol viewBox="-2.29 -2.29 36.57 36.57" id="telescope" xmlns="http://www.w3.org/2000/svg"><path d="M25.026 3.335a.466.466 0 00-.646-.238L13.362 8.91a.463.463 0 00-.216.575l.227.593-6.36 3.488a.462.462 0 00-.205.583l.211.508-6.755 3.228a.463.463 0 00-.228.595l1.386 3.341a.463.463 0 00.583.259l7.056-2.5.211.508a.462.462 0 00.557.267l6.733-1.941.202.527a.46.46 0 00.566.277l12.03-3.702a.46.46 0 00.293-.613L25.026 3.335zM2.109 21.061l-1.049-2.53 6.314-3.018 1.332 3.211-6.596 2.337zm7.857-1.708l-.22-.531-1.706-4.113-.22-.53 5.863-3.216 2.197 5.676.347.908-6.261 1.806zm7.505-1.146l-.188-.491c-.003-.01-.001-.022-.006-.032l-.572-1.478-2.549-6.668 10.201-5.381 4.249 10.624-11.136 3.428zm8.943-16.723a.463.463 0 00-.86.344l5.552 13.881a.464.464 0 00.602.258.464.464 0 00.258-.602L26.413 1.484zM16.268 20.627h-2.776c-1.055 0-1.851.796-1.851 1.851v1.217l-5.44 6.347a.462.462 0 10.702.602l5.415-6.316h2.101v6.015a.463.463 0 00.926 0v-6.015h2.101l5.414 6.316a.462.462 0 10.703-.602l-5.44-6.347v-1.148c0-1.076-.813-1.92-1.851-1.92zm.925 2.777h-4.627v-.925c0-.545.38-.925.925-.925h2.776c.527 0 .925.428.925.995v.856z"/></symbol></svg>
+
+    <div class="wrapper">
+        <input type="checkbox" class="hidden" id="menu-control" />
+        <header class="gdoc-header">
+    <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control">
+            <svg class="icon menu"><use xlink:href="#menu"></use></svg>
+            <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
+        </label>
+        
+        <a class="gdoc-header__link" href="https://bbbrady1.github.io/">
+            <span class="gdoc-brand flex align-center">
+                <img class="gdoc-brand__img" src="../../brand.svg" alt="" width=38 height=38>
+                Cryo-Rocket.com
+            </span>
+        </a>
+    </div>
+</header>
+
+
+        <main class="container flex flex-even">
+            <aside class="gdoc-nav">
+                <nav>
+    
+    <div class="gdoc-search">
+
+
+        <svg class="icon search"><use xlink:href="#search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
+<br>
+
+
+
+    <section class="gdoc-nav--main">
+        
+        
+            
+
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">1.  SSME Thermodynamic Data</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../thermodynamic-data/1.1-fuel-system/" class="gdoc-nav__entry ">
+                        1.1 Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../thermodynamic-data/1.2-oxidizer-system/" class="gdoc-nav__entry ">
+                        1.2 Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../thermodynamic-data/1.3-combustion-system/" class="gdoc-nav__entry ">
+                        1.3 Combustion System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">2.  Equations of State</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.1-background/" class="gdoc-nav__entry ">
+                        2.1 Background
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.2-hydrogen-model/" class="gdoc-nav__entry ">
+                        2.2 Hydrogen Model
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.3-oxygen-model/" class="gdoc-nav__entry ">
+                        2.3 Oxygen Model
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.4-combustion-products/" class="gdoc-nav__entry ">
+                        2.4 Combustion Products
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.5-enthalpy-revisited/" class="gdoc-nav__entry ">
+                        2.5 Enthalpy Revisited
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../equation-of-state/2.6-transport-properties/" class="gdoc-nav__entry is-active">
+                        2.6 Transport Properties
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">3.  Combustion Model</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.1-chemistry/" class="gdoc-nav__entry ">
+                        3.1 Chemistry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.2-first-law-of-thermodynamics/" class="gdoc-nav__entry ">
+                        3.2 First Law of Thermodynamics
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.3-solution-procedure/" class="gdoc-nav__entry ">
+                        3.3 Solution Procedure
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../combustion-model/3.4-mixture-ratio-optimization/" class="gdoc-nav__entry ">
+                        3.4 Mixture Ratio Optimization
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">4.  Turbomachinery</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.1-low-pressure-fuel-system/" class="gdoc-nav__entry ">
+                        4.1 Low Pressure Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.2-high-pressure-fuel-system/" class="gdoc-nav__entry ">
+                        4.2 High Pressure Fuel System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.3-low-pressure-oxidizer-system/" class="gdoc-nav__entry ">
+                        4.3 Low Pressure Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.4-high-pressure-oxidizer-system/" class="gdoc-nav__entry ">
+                        4.4 High Pressure Oxidizer System
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../turbomachinery/4.5-large-throat-main-combustion-chamber/" class="gdoc-nav__entry ">
+                        4.5 Large Throat Main Combustion Chamber
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">5.  Flow Model</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../flow-model/5.1-ltmcc-geometry/" class="gdoc-nav__entry ">
+                        5.1 LTMCC Geometry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../flow-model/5.2-nozzle-geometry/" class="gdoc-nav__entry ">
+                        5.2 Nozzle Geometry
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../flow-model/5.3-compressible-flow/" class="gdoc-nav__entry ">
+                        5.3 Compressible Flow
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">6.  Regenerative Cooling Circuit</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/" class="gdoc-nav__entry ">
+                        6.1 LTMCC Cooling Channels
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/" class="gdoc-nav__entry ">
+                        6.2 Nozzle Coolant Tubes
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../regenerative-cooling-circuit/6.3-computational-framework/" class="gdoc-nav__entry ">
+                        6.3 Computational Framework
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../references/" class="gdoc-nav__entry ">
+                        7.  References
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="../../about/" class="gdoc-nav__entry ">
+                        8.  About
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+
+
+
+
+        
+    </section>
+
+    <section class="gdoc-nav--more">
+        
+    </section>
+</nav>
+
+            </aside>
+
+            <div class="gdoc-page">
+                
+    
+
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap
+     justify-end 
+     hidden-mobile 
+     hidden " itemprop="breadcrumb">
+    
+    
+</div>
+
+    <article class="gdoc-markdown">
+        
+        <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+  };
+</script>
+<p style="text-align:center;"> <b>Transport Properties</b> </p>
+<p>The equations of state discussed in the previous sections enabled us to calculate the thermodynamic properties of hydrogen, oxygen, and their associated combustion products.  We now direct our attention to the transport properties of these propellants.  Transport properties describe how a fluid disperses energy.   There are two properties of interest:  thermal conductivity and viscosity.  Thermal conductivity describes a fluid’s ability to transfer heat via conduction.  Viscosity represents the fluid’s response to shear stress and the resulting transfer of momentum.</p>
+<p>Once again the model must be divided into two regimes:  a low temperature regime for liquid propellants, and a high temperature regime for combustion gasses.</p>
+<p style="text-align:center;"> <b>Liquid Hydrogen Thermal Conductivity</b> </p>
+<p>The liquid hydrogen thermal conductivity  model is split into three terms: the dilute gas component $\lambda_0$, the &ldquo;excess&rdquo; conductivity $\Delta\lambda$, and the critical enhancement $\Delta\lambda_c$.  The dilute gas component is a theoretical construct representing the thermal conductivity of the fluid at zero density.  The excess conductivity term takes into account effects of variable density.  At times, the excess component and the dilute gas component are bundled together in a term known as the &ldquo;background&rdquo; conductivity.<sup>[<a><a href="../../references/#ref32r" >32</href></a>]</sup><a name="ref32"> </a></sup>  The critical enhancement takes into account density fluctuations occurring near the critical point that lead to a singularity in the thermal conductivity field.  Equations for all three terms are listed below.<sup>[<a><a href="../../references/#ref33r" >33</href></a>]</sup><a name="ref33"> </a></sup></p>
+<div style="float: right"><b>(2.6.1)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\lambda_0 = \frac{\sum_{i=0}^m\,A_{1,i}\left(T/T_c\right)^i}{\sum_{i=0}^n\,A_{2,i}\left(T/T_c\right)^i} $$</div>
+<div style="float: right"><b>(2.6.2)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\Delta\lambda = \sum_{i=1}^5\left(B_{1,i}+B_{2,i}\left(T/T_c\right)\right)\left(\rho/\rho_c\right)^i$$</div>
+<div style="float: right"><b>(2.6.3)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\Delta\lambda_c =\frac{C_1}{C_2+|\Delta\,T_c|}\,\text{exp}\left[-\left(C_3\,\Delta\rho_c\right)^2\right]  $$</div>
+<br>
+<div style="float: right"><b>(2.6.4)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\lambda_{total} = \lambda_0+\Delta\lambda+\Delta\lambda_c  $$</div>
+<p style="margin-left: 40px;">
+$C_1=6.24\times10^{-4}$
+<p style="margin-left: 40px;">
+$C_2=-2.58\times10^{-7}$
+<p style="margin-left: 40px;">
+$C_3=0.837$
+<p style="margin-left: 40px;">
+$T_c= 32.938 K $  
+<p style="margin-left: 40px;">
+$\rho_c= 31.323 \frac{kg}{m^3}$
+<p style="margin-left: 40px;">
+$\Delta\rho_c=\frac{\rho}{\rho_c}-1$
+<p style="margin-left: 40px;">
+$\Delta T_c=\frac{T}{T_c}-1$
+<p>Coefficients for these equations are listed in the following table.</p>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid23" id="tabs-uniqueid23-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid23-0" class="gdoc-tabs__label">
+      Parahydrogen Coefficients
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 100%">
+<colgroup>
+<col style="width: 53px">
+<col style="width: 101px">
+<col style="width: 101px">
+<col style="width: 98px">
+<col style="width: 98px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-7btt">i</th>
+    <th class="tg-7btt">$A_1$</th>
+    <th class="tg-7btt">$A_2$</th>
+    <th class="tg-7btt">$B_1$</th>
+    <th class="tg-7btt">$B_2$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">-1.24500E+00</td>
+    <td class="tg-c3ow">1.42304E+04</td>
+    <td class="tg-c3ow">2.65975E-02</td>
+    <td class="tg-c3ow">-1.21727E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">3.10212E+02</td>
+    <td class="tg-c3ow">-1.93922E+04</td>
+    <td class="tg-c3ow">-1.33826E-03</td>
+    <td class="tg-c3ow">3.66663E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-c3ow">-3.31004E+02</td>
+    <td class="tg-c3ow">1.58379E+04</td>
+    <td class="tg-c3ow">1.30219E-02</td>
+    <td class="tg-c3ow">3.88715E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">3</td>
+    <td class="tg-c3ow">2.46016E+02</td>
+    <td class="tg-c3ow">-4.81812E+03</td>
+    <td class="tg-c3ow">-5.67678E-03</td>
+    <td class="tg-c3ow">-9.21055E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">4</td>
+    <td class="tg-c3ow">-6.57810E+01</td>
+    <td class="tg-c3ow">7.28639E+02</td>
+    <td class="tg-c3ow">-9.23380E-05</td>
+    <td class="tg-c3ow">4.00723E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">5</td>
+    <td class="tg-c3ow">1.08260E+01</td>
+    <td class="tg-c3ow">-3.57365E+01</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">-5.19659E-01</td>
+    <td class="tg-c3ow">1.00000E+00</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">7</td>
+    <td class="tg-c3ow">1.439790E-02</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid23" id="tabs-uniqueid23-1"
+       />
+    <label for="tabs-uniqueid23-1" class="gdoc-tabs__label">
+      Normal Hydrogen Coefficients
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ljam{border-color:#000000;text-align:center;vertical-align:bottom}
+.tg .tg-jdb5{border-color:#000000;font-weight:bold;text-align:center;vertical-align:bottom}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 100%">
+<colgroup>
+<col style="width: 39px">
+<col style="width: 101px">
+<col style="width: 101px">
+<col style="width: 98px">
+<col style="width: 98px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-jdb5">i</th>
+    <th class="tg-jdb5">$A_1$</th>
+    <th class="tg-jdb5">$A_2$</th>
+    <th class="tg-jdb5">$B_1$</th>
+    <th class="tg-jdb5">$B_2$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-ljam">0</td>
+    <td class="tg-ljam">-3.40976E-01</td>
+    <td class="tg-ljam">1.38497E+02</td>
+    <td class="tg-ljam">3.63081E-02</td>
+    <td class="tg-ljam">1.83370E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-ljam">1</td>
+    <td class="tg-ljam">4.58820E+00</td>
+    <td class="tg-ljam">-2.21878E+01</td>
+    <td class="tg-ljam">-2.07629E-02</td>
+    <td class="tg-ljam">-8.86716E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-ljam">2</td>
+    <td class="tg-ljam">-1.45080E+00</td>
+    <td class="tg-ljam">4.57151E+00</td>
+    <td class="tg-ljam">3.14810E-02</td>
+    <td class="tg-ljam">1.58260E-02</td>
+  </tr>
+  <tr>
+    <td class="tg-ljam">3</td>
+    <td class="tg-ljam">3.26394E-01</td>
+    <td class="tg-ljam">1.00000E+00</td>
+    <td class="tg-ljam">-1.43097E-02</td>
+    <td class="tg-ljam">-1.06283E-02</td>
+  </tr>
+  <tr>
+    <td class="tg-ljam">4</td>
+    <td class="tg-ljam">3.16939E-03</td>
+    <td class="tg-ljam">-</td>
+    <td class="tg-ljam">1.74980E-03</td>
+    <td class="tg-ljam">2.80673E-03</td>
+  </tr>
+  <tr>
+    <td class="tg-ljam">5</td>
+    <td class="tg-ljam">1.90592E-04</td>
+    <td class="tg-ljam">-</td>
+    <td class="tg-ljam">-</td>
+    <td class="tg-ljam">-</td>
+  </tr>
+  <tr>
+    <td class="tg-ljam">6</td>
+    <td class="tg-ljam">-1.13900E-06</td>
+    <td class="tg-ljam">-</td>
+    <td class="tg-ljam">-</td>
+    <td class="tg-ljam">-</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+</div>
+
+<p style="text-align:center;"> <b>Table 2.6.1</b> </p>
+<p>Equations 2.6.2 and 2.6.3 present a challenge.  Both of these equations are functions of density.  It is fairly straight forward to measure the temperature and pressure of liquid hydrogen flowing through a rocket engine.  Just attach a thermocouple and pressure transducer to a pipeline and the collect the data.  But there is no simple instrumentation available to measure density.  Instead, density must be calculated from an equation of state using a measured temperature and pressure.  This can be accomplished using the Helmholtz correlation discussed in <a><a href="../../equation-of-state/2.2-hydrogen-model/" >Section 2.2</href></a>.</p>
+<p>The final hurdle to overcome is the question posed by the two sets of coefficients in Table 2.6.1.  Should we use the data for parahydrogen or normal hydrogen?  It is important to note that &ldquo;normal&rdquo; hydrogen is actually a mixture consisting of 75% orthohydrogen and 25% parahydrogen.  This composition varies as a function of temperature (<a><a href="../../equation-of-state/2.2-hydrogen-model/#ref2.2.8" >see Figure 2.2.8</href></a>) There are really two issues at hand.  First, we need to determine the conductivity of orthohydrogen at the desired temperature and pressure.  Second, we need to calculate the overall conductivity of the mixture, taking in to account that the para/ortho composition is a function of temperature.</p>
+<p>The first issue is resolved by performing the thermal conductivity calculation utilizing both sets of coefficients in Table 2.6.1 to solve for $\lambda_{norm}$ and $\lambda_{para}$.  The next step is to solve for $\lambda_{ortho}$ with Equation 2.6.5:</p>
+<div style="float: right"><b>(2.6.5)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\lambda_{ortho} = \frac{\lambda_{norm}-0.25\lambda_{para}}{0.75} $$</div>
+<p>Now the total conductivity of the mixture can be determined by taking in to account ortho/para composition at the desired temperature:</p>
+<div style="float: right"><b>(2.6.6)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\lambda_{tot} = X\,\lambda_{para}+\left(1-X\right)\lambda_{ortho} $$</div>
+<p>The variable $X$ represents the fraction of parahydrogen in the mixture, as shown in <a><a href="../../equation-of-state/2.2-hydrogen-model/#ref2.2.8" >Figure 2.2.8</href></a>.  These equations allow the thermal conductivity surface to be calculated.  The model is accurate for temperatures up to 1000 K and pressures up to 100 MPa.   The figure below plots thermal conductivity as a function of reduced pressure and reduced temperature.</p>
+<p style="text-align:center;"><img src="../../Fig2.6.1.PNG" alt="Fig 2.6.1"></p>
+<p style="text-align:center"> <b>Figure 2.6.1</b> </br> </p>
+<p>There are two interesting items to note on Figure 2.6.1.  First, the model does not perform particularly well near the critical point where $\text{P}_r=1$ and $\text{T}_r =1$. In fact, the model diverges along the critical temperature isotherm.  This is an inherent feature of the model.<sup>[<a><a href="../../references/#ref33r" >33</href></a>]</sup><a name="ref33b"> </a></sup>  Secondly, since this model relies on a density calculation performed with the Helmholtz equation of state (<a><a href="../../equation-of-state/2.2-hydrogen-model/#refNewton" >see Section 2.2</href></a>), it introduces turbulence along the saturation and pseudo-boiling lines.  This turbulence is visible in Figure 2.6.1 in the region where reduced temperature is between 1 and 1.5.  This is a known problem with equations of state that rely on root finding schemes based on temperature and pressure inputs, especially in areas like the pseudo-boiling region where thermodynamic properties exhibit large rates of change.<sup>[<a><a href="../../references/#ref34r" >34</href></a>]</sup><a name="ref34"> </a></sup>  Fortunately, the vast majority of the thermal conductivity calculations required for this model of the SSME occur at reduced pressures of 25 to 30, far above the turbulent region.</p>
+<p style="text-align:center;"> <b>Liquid Hydrogen Viscosity</b> </p>
+<p>The liquid hydrogen viscosity  model is split into similar terms as the thermal conductivity model.  A dilute gas component, $\eta_0$ corresponds to conductivity at the low density limit.  The excess viscosity, $\Delta\eta$, accounts for the effects of variable density.  At low densities, the excess viscosity is independent of temperature.  The total viscosity is the sum of the dilute gas and excess components.  This correlation does not include a critical enhancement.<sup>[<a><a href="../../references/#ref35r" >35</href></a>]</sup><a name="ref35"> </a></sup></p>
+<div style="float: right"><b>(2.6.7)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\eta_0=8.5558\left(\frac{T^{3/2}}{T+19.55}\right)\left(\frac{T+650.39}{T+1175.9}\right) $$</div>
+<div style="float: right"><b>(2.6.8)</b></div>
+<div style="margin: 0 auto; width: 100%;"> $$\Delta\eta = A\,\text{exp}\left(\frac{B}{T}\right) $$</div>
+<div style="float: right"><b>(2.6.9)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$ \eta_{tot}=\left(\eta_0+\Delta\,\eta\right)\times10^{-7} $$</div>
+<p>The coefficients $A$ and $B$ are described by the following equations:</p>
+<div style="float: right"><b>(2.6.10)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$ \text{ln}\left(A\right)=5.7694+\text{ln}\left(\rho\right)+65\,\rho^{\frac{3}{2}}-\,\left(6\times10^{-6}\right)\,\text{exp}\left(127.2\,\rho\right)$$</div>
+<div style="float: right"><b>(2.6.11)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$ B=10+7.2\left[\left(\frac{\rho}{0.07}\right)^{6}-\left(\frac{\rho}{0.07}\right)^{\frac{3}{2}}\right]-17.63\,\,\text{exp}\left[-58.75\left(\frac{\rho}{0.07}\right)^{3}\right] $$</div>
+<p>This correlation is again a function of density, which must be input with units of $g/cm^3$.  The resulting viscosity is then output with units of $Pa \cdot sec$.  As was the case for thermal conductivity, and equation of state must be used to determine density for input into Equations 2.6.8 and 2.6.9.  The resulting viscosity surface again contains turbulence along the pseudo-boiling line due to instability with the root finding algorithm used in this region.</p>
+<p style="text-align:center;"><img src="../../Fig2.6.2.PNG" alt="Fig 2.6.2"></p>
+<p style="text-align:center"> <b>Figure 2.6.2</b> </br> </p>
+<br>
+<p style="text-align:center;"> <b>Combustion Gas Transport Properties</b> </p>
+<p>Transport properties of the high-temperature gasses produced in the SSME pre-burners and main combustion chamber are modeled with empirical curve fits. The equations take the following form:</p>
+<p><a name="2.6.12"> </a></p>
+<div style="float: right"><b>(2.6.12)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$ \text{ln}\left(\lambda\right)=\,A\,\text{ln}\left(T\right)+\frac{B}{T}+\frac{C}{T^2}+D$$</div>
+<p><a name="2.6.13"> </a></p>
+<div style="float: right"><b>(2.6.13)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$ \text{ln}\left(\eta\right)=\,A\,\text{ln}\left(T\right)+\frac{B}{T}+\frac{C}{T^2}+D$$</div>
+<p>Once again, the coefficients for these curve fits come from data tabulated in NASA Technical Memorandum 4513.<sup>[<a><a href="../../references/#ref16r" >16</href></a>]</sup><a name="ref16b"> </a></sup>   Temperature is entered in kelvin.  Viscosity is output in units of micropoise, and thermal conductivity in microwatts per centimeter kelvin.  Each property has two sets of coefficients, one for temperatures less than 1000 K and one set for temperatures greater than 1000 K.</p>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid5" id="tabs-uniqueid5-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid5-0" class="gdoc-tabs__label">
+      $H_{2}$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-xwyw"> </th>
+    <th class="tg-18eh" colspan="4">Viscosity $\left(\mu P\right)$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-xwyw"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">7.4553182E-01</td>
+    <td class="tg-xwyw">4.3555109E+01</td>
+    <td class="tg-xwyw">-3.2579340E+03</td>
+    <td class="tg-xwyw">1.3556243E-01</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">9.6730605E-01</td>
+    <td class="tg-xwyw">6.7931897E+02</td>
+    <td class="tg-xwyw">-2.1025179E+05</td>
+    <td class="tg-xwyw">-1.8251697E+00</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid5" id="tabs-uniqueid5-1"
+       />
+    <label for="tabs-uniqueid5-1" class="gdoc-tabs__label">
+      $O_{2}$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-xwyw"> </th>
+    <th class="tg-18eh" colspan="4">Viscosity $\left(\mu P\right)$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-xwyw"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">6.0916180E-01</td>
+    <td class="tg-xwyw">-5.2244847E+01</td>
+    <td class="tg-xwyw">-5.9974009E+02</td>
+    <td class="tg-xwyw">2.0410801E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">7.2216486E-01</td>
+    <td class="tg-xwyw">1.7550839E+02</td>
+    <td class="tg-xwyw">-5.7974816E+04</td>
+    <td class="tg-xwyw">1.0901044E+00</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid5" id="tabs-uniqueid5-2"
+       />
+    <label for="tabs-uniqueid5-2" class="gdoc-tabs__label">
+      $H_{2}O$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-xwyw"> </th>
+    <th class="tg-18eh" colspan="4">Viscosity $\left(\mu P\right)$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-xwyw"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">5.0019557E-01</td>
+    <td class="tg-xwyw">-6.9712796E+02</td>
+    <td class="tg-xwyw">8.8163892E+04</td>
+    <td class="tg-xwyw">3.0836508E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">5.8988538E-01</td>
+    <td class="tg-xwyw">-5.3769814E+02</td>
+    <td class="tg-xwyw">5.4263513E+04</td>
+    <td class="tg-xwyw">2.3386375E+00</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid5" id="tabs-uniqueid5-3"
+       />
+    <label for="tabs-uniqueid5-3" class="gdoc-tabs__label">
+      $OH$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-xwyw"> </th>
+    <th class="tg-18eh" colspan="4">Viscosity $\left(\mu P\right)$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-xwyw"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">5.9711536E-01</td>
+    <td class="tg-xwyw">-4.6100678E+02</td>
+    <td class="tg-xwyw">3.7606286E+04</td>
+    <td class="tg-xwyw">2.4041761E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">6.4287721E-01</td>
+    <td class="tg-xwyw">-1.8173747E+02</td>
+    <td class="tg-xwyw">-8.8543767E+04</td>
+    <td class="tg-xwyw">1.9636057E+00</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid5" id="tabs-uniqueid5-4"
+       />
+    <label for="tabs-uniqueid5-4" class="gdoc-tabs__label">
+      $H$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-xwyw"> </th>
+    <th class="tg-18eh" colspan="4">Viscosity $\left(\mu P\right)$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-xwyw"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">7.4226149E-01</td>
+    <td class="tg-xwyw">-4.0132865E+02</td>
+    <td class="tg-xwyw">1.8554165E+05</td>
+    <td class="tg-xwyw">4.6741844E-02</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">8.7486623E-01</td>
+    <td class="tg-xwyw">-2.5022902E+03</td>
+    <td class="tg-xwyw">7.0955048E+06</td>
+    <td class="tg-xwyw">-9.3888455E-01</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid5" id="tabs-uniqueid5-5"
+       />
+    <label for="tabs-uniqueid5-5" class="gdoc-tabs__label">
+      $O$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-xwyw"> </th>
+    <th class="tg-18eh" colspan="4">Viscosity $\left(\mu P\right)$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-xwyw"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">7.7269241E-01</td>
+    <td class="tg-xwyw">8.3842977E+01</td>
+    <td class="tg-xwyw">-5.8502098E+04</td>
+    <td class="tg-xwyw">8.5100827E-01</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">8.7669586E-01</td>
+    <td class="tg-xwyw">1.0158420E+03</td>
+    <td class="tg-xwyw">-1.0884566E+06</td>
+    <td class="tg-xwyw">-1.8001077E-01</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+</div>
+
+<p style="text-align:center;"> <b>Table 2.6.2: </b>  Viscosity Coefficients</p>
+<br>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid6" id="tabs-uniqueid6-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid6-0" class="gdoc-tabs__label">
+      $H_{2}$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-18eh"> </th>
+    <th class="tg-18eh" colspan="4">Thermal Conductivity $\mu W / cm \cdot\,K$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-18eh"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">1.0059461E+00</td>
+    <td class="tg-xwyw">2.7951262E+02</td>
+    <td class="tg-xwyw">-2.9792018E+04</td>
+    <td class="tg-xwyw">1.1996252E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">1.0582450E+00</td>
+    <td class="tg-xwyw">2.4875372E+02</td>
+    <td class="tg-xwyw">1.1736907E+04</td>
+    <td class="tg-xwyw">8.2758695E-01</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid6" id="tabs-uniqueid6-1"
+       />
+    <label for="tabs-uniqueid6-1" class="gdoc-tabs__label">
+      $O_{2}$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-18eh"> </th>
+    <th class="tg-18eh" colspan="4">Thermal Conductivity $\mu W / cm \cdot\,K$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-18eh"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">7.7229167E-01</td>
+    <td class="tg-xwyw">6.8463210E+00</td>
+    <td class="tg-xwyw">-5.8933377E+03</td>
+    <td class="tg-xwyw">1.2210365E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">9.0917351E-01</td>
+    <td class="tg-xwyw">2.9124182E+02</td>
+    <td class="tg-xwyw">-7.9650171E+04</td>
+    <td class="tg-xwyw">6.4851631E-02</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid6" id="tabs-uniqueid6-2"
+       />
+    <label for="tabs-uniqueid6-2" class="gdoc-tabs__label">
+      $H_{2}O$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-18eh"> </th>
+    <th class="tg-18eh" colspan="4">Thermal Conductivity $\mu W / cm \cdot\,K$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-18eh"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">1.0966389E+00</td>
+    <td class="tg-xwyw">-5.5513429E+02</td>
+    <td class="tg-xwyw">1.0623408E+05</td>
+    <td class="tg-xwyw">-2.4664550E-01</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">3.9367933E-01</td>
+    <td class="tg-xwyw">-2.2524226E+03</td>
+    <td class="tg-xwyw">6.1217458E+05</td>
+    <td class="tg-xwyw">5.8011317E+00</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid6" id="tabs-uniqueid6-3"
+       />
+    <label for="tabs-uniqueid6-3" class="gdoc-tabs__label">
+      $OH$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-18eh"> </th>
+    <th class="tg-18eh" colspan="4">Thermal Conductivity $\mu W / cm \cdot\,K$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-18eh"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">6.8627561E-01</td>
+    <td class="tg-xwyw">-7.4033274E+02</td>
+    <td class="tg-xwyw">2.7559033E+04</td>
+    <td class="tg-xwyw">2.8308741E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">-4.7918112E-01</td>
+    <td class="tg-xwyw">-9.3769908E+03</td>
+    <td class="tg-xwyw">7.0509952E+06</td>
+    <td class="tg-xwyw">1.4203688E+01</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid6" id="tabs-uniqueid6-4"
+       />
+    <label for="tabs-uniqueid6-4" class="gdoc-tabs__label">
+      $H$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-18eh"> </th>
+    <th class="tg-18eh" colspan="4">Thermal Conductivity $\mu W / cm \cdot\,K$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-18eh"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">7.4166119E-01</td>
+    <td class="tg-xwyw">-4.0487203E+02</td>
+    <td class="tg-xwyw">1.8775642E+05</td>
+    <td class="tg-xwyw">3.4843121E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">8.7447639E-01</td>
+    <td class="tg-xwyw">-2.5089452E+03</td>
+    <td class="tg-xwyw">7.1081294E+06</td>
+    <td class="tg-xwyw">2.4970991E+00</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid6" id="tabs-uniqueid6-5"
+       />
+    <label for="tabs-uniqueid6-5" class="gdoc-tabs__label">
+      $O$
+    </label>
+    <div  class="gdoc-markdown--nested gdoc-tabs__content"> 
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-18eh"> </th>
+    <th class="tg-18eh" colspan="4">Thermal Conductivity $\mu W / cm \cdot\,K$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-18eh"> </td>
+    <td class="tg-18eh">A</td>
+    <td class="tg-18eh">B</td>
+    <td class="tg-18eh">C</td>
+    <td class="tg-18eh">D</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &lt; 1000</td>
+    <td class="tg-xwyw">7.7271664E-01</td>
+    <td class="tg-xwyw">8.3989100E+01</td>
+    <td class="tg-xwyw">-5.8580966E+04</td>
+    <td class="tg-xwyw">1.5179900E+00</td>
+  </tr>
+  <tr>
+    <td class="tg-xwyw">T &gt; 1000</td>
+    <td class="tg-xwyw">8.7676666E-01</td>
+    <td class="tg-xwyw">1.0170744E+03</td>
+    <td class="tg-xwyw">-1.0906690E+06</td>
+    <td class="tg-xwyw">4.8644232E-01</td>
+  </tr>
+</tbody>
+</table>
+ 
+    </div>
+  
+</div>
+
+<p style="text-align:center;"> <b>Table 2.6.3:</b> Thermal Conductivity Coefficients  </p>
+<p>Equations 2.6.12 and 2.6.13 enable calculation of the transport properties of the individual species listed in the above tables.  But the gas produced in the SSME pre-burners and main combustion chamber consists of a mixture of all these species.  The model must be adjusted to account for the resulting composition.  In the case of thermodynamic properties calculated in <a><a href="../../equation-of-state/2.4-combustion-products/" >Section 2.4</href></a>, a simple mixture rule is utilized where the properties are weighted according to mole fraction alone.  A slightly more complex model is required for the transport properties:<sup>[<a><a href="../../references/#ref36r" >36</href></a>]</sup><a name="ref36"> </a></sup></p>
+<div style="float: right"><b>(2.6.14)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$ \eta_{mix}=\sum_{i=1}^6\frac{x_i\,\eta_i}{x_i+\sum_{j=1, j\neq i}^6\,x_j\,\phi_{ij}}$$</div>
+<div style="float: right"><b>(2.6.15)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$ \lambda_{mix}=\sum_{i=1}^6\frac{x_i\,\eta_i}{x_i+\sum_{j=1, j\neq i}^6\,x_j\,\psi_{ij}}$$</div>
+<div style="float: right"><b>(2.6.16)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$\phi_{ij}=\frac{1}{4}\left[1+\left(\frac{\eta_i}{\eta_j}\right)^{1/2}\left(\frac{M_j}{M_i}\right)^{1/4}\right]^2\,\left(\frac{2\,M_j}{M_i+M_j}\right)^{1/2} $$</div>
+<div style="float: right"><b>(2.6.17)</b></div>
+<div style="margin: 0 auto; width: 100%;">$$\psi_{ij}=\phi_{ij}\left[1+\frac{2.41\left(M_i-M_j\right)\left(M_i-0.142\,M_j\right)}{\left(M_i+M_j\right)^2}\right] $$</div>
+<p>In the above equations, $M$ is the molecular mass of an individual species.  This model of the SSME utilizes the six species listed in Tables 2.6.2 and 2.6.3, hence the summations on $i$ and $j$ go up to six.  The variable $x$ represents the mole fraction of each individual species within the overall gas mixture.  Mole fractions are calculated utilizing the combustion model presented in <a><a href="../../combustion-model/3.1-chemistry/" >Section 3</href></a>.</p>
+<p>Figures 2.6.4 and 2.6.5 plot the thermal conductivity and viscosity of the SSME exhaust as a function of axial position in the main combustion chamber and rocket nozzle.  As expected, the transport properties mirror the trend displayed by the exhaust temperature, as shown in Figure 2.6.3.  Properties are the highest in the main combustion chamber where temperatures reach approximately 3600 K.  Exhaust temperature rapidly decreases along the length of the nozzle.  Transport properties follow this trend.</p>
+<p style="text-align:center;"><img src="../../Fig2.6.3.PNG" alt="Fig 2.6.3"></p>
+<p style="text-align:center"> <b>Figure 2.6.3:</b> Exhaust Temperature Profile </br> </p>
+<br>
+<p style="text-align:center;"><img src="../../Fig2.6.4.PNG" alt="Fig 2.6.4"></p>
+<p style="text-align:center"> <b>Figure 2.6.4:</b> Thermal Conductivity Profile </br> </p>
+<br>
+<p style="text-align:center;"><img src="../../Fig2.6.5.PNG" alt="Fig 2.6.4"></p>
+<p style="text-align:center"> <b>Figure 2.6.5</b> Viscosity Profile </br> </p>
+<p>As a final note, this model assumes the exhaust flow is &ldquo;frozen.&rdquo;  This means that exhaust composition is fixed in the combustion chamber.  Mole fractions are assumed to remain constant as the gas flows through the nozzle.  In reality, the exhaust composition changes as a function of temperature and pressure due to the individual species recombining via chemical reactions.  A flow like this is described as an &ldquo;equilibrium&rdquo; flow.  If the exhaust temperature profile shown in Figure 2.6.3 included the effects of chemical equilibrium, temperatures and transport properties would slightly higher than what is currently shown.<sup>[<a><a href="../../references/#ref17r" >17</href></a>]</sup><a name="ref17e"> </a></sup></p>
+<p style="text-align:center;">
+
+
+
+
+
+  
+
+
+<span class="gdoc-button">
+<a  href="../../equation-of-state/2.5-enthalpy-revisited/"   class="gdoc-button__link">
+  Previous
+</a>
+</span>
+ 
+
+
+
+
+
+  
+
+
+<span class="gdoc-button">
+<a  href="../../combustion-model/3.1-chemistry/"   class="gdoc-button__link">
+  Next
+</a>
+</span>
+ </p>
+<p style="text-align:center;"> <a href="#top">Top</a>  </p>
+
+    </article>
+
+                
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+
+        
+    
+
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+            
+    
+    
+
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+        
+        
+
+        
+        
+            
+            
+            
+
+            
+
+            
+
+            
+        
+
+        
+        
+    
+
+        
+    
+
+
+
+
+
+<div class="gdoc-page__footer flex flex-wrap justify-between">
+    
+    
+</div>
+
+            </div>
+        </main>
+
+        <footer >
+
+<html>
+<head>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+ 
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+<script defer src="../../js/en.search.min.d1300fa43c8b3ddb741038e2a85fdfbce3723906b87fd971f6a365b26465b1af.js"></script>
+
+
+
+<script defer src="../../js/clipboard-af8ab36589.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var clipboard = new ClipboardJS('.clip');
+    });
+</script>
+
+
+</body>
+</html>
