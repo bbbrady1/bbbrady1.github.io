@@ -32,7 +32,7 @@
 <link rel="preload" href="./custom.css" as="style">
 <link rel="stylesheet" href="./custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="https://bbbrady1.github.io/index.xml" title="Cryo-Rocket.com" />
+<link rel="alternate" type="application/rss+xml" href="https://www.cryo-rocket.com/index.xml" title="Cryo-Rocket.com" />
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
 </head>
@@ -50,7 +50,7 @@
             <svg class="icon arrow-back"><use xlink:href="#arrow_back"></use></svg>
         </label>
         
-        <a class="gdoc-header__link" href="https://bbbrady1.github.io/">
+        <a class="gdoc-header__link" href="https://www.cryo-rocket.com/">
             <span class="gdoc-brand flex align-center">
                 <img src="./cryologo.PNG" align="left" alt="" width="auto" height="auto" >
               
@@ -75,6 +75,32 @@
     
 
     <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="./home/" class="gdoc-nav__entry ">
+                        Overview
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
         
             
             
@@ -966,7 +992,7 @@ img {
 <p>At its most fundamental level, the Space Shuttle Main Engine (SSME) can be though of as a large water nozzle. It is governed by a single chemical reaction:</p>
 <p>$$ 2H_{2} + O_{2} \implies 2H_{2}O  $$</p>
 <p>The engine produces thrust by converting the chemical energy contained in cryogenic hydrogen and oxygen to kinetic energy in the form of high-velocity water vapor.  This website establishes a computational model to trace the thermodynamic properties of these propellants as they flow through the components of the SSME.  The overall results of this analysis are presented in <a><a href="./thermodynamic-data/1.1-fuel-system/" > Section 1</href></a>.  <a><a href="./equation-of-state/2.1-background/" >Section 2</href></a> contains all of the mathematical background required to predict the thermodynamic states of liquid hydrogen, liquid oxygen, and their associated high-temperature combustion products without relying on expensive commercial software like <a><a href="https://www.nist.gov/srd/refprop" >NIST RefProp</href></a>.  <a><a href="./combustion-model/3.1-chemistry/" >Section 3</href></a> provides all of the resources necessary to code an $H_2/O_2$ combustion model that produces results very comparable to NASA&rsquo;s <a><a href="https://www1.grc.nasa.gov/research-and-engineering/ceaweb/" >Chemical Equilibrium With Applications (CEA)</href></a> program.  <a><a href="./turbomachinery/4.1-low-pressure-fuel-system/" >Section 4</href></a> builds upon these results to predict the mass flow rates and power required to drive the SSME&rsquo;s network of turbomachinery.  Sections <a><a href="./flow-model/5.1-ltmcc-geometry/" >5</href></a> and  <a><a href="./regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/" >6</href></a> describe a procedure for conducting a coupled heat transfer analysis in the SSME regenerative cooling circuit, similar to NASA&rsquo;s Rocket Thermal Evaluation (RTE)<sup>[<a><a href="./references/#ref87r" >87</href></a>]</sup><a name="ref87"> </a></sup> and Two Dimensional Kinetics (TDK)<sup>[<a><a href="./references/#ref88r" >88</href></a>]</sup><a name="ref88"> </a></sup> codes.</p>
-<p>The results of the model developed here predict the SSME&rsquo;s specific impulse, thrust, and maximum hot-wall temperatures to within 2% of values reported by Boeing and Rocketdyne.  This model does not rely on any commercial Computational Fluid Dynamics (CFD) software, and converges to a solution on a modest single-core processor in less than 30 seconds.</p>
+<p>The results of the model developed here predict the SSME&rsquo;s specific impulse, thrust, and maximum hot-wall temperatures to within 2% of values reported by Boeing and Rocketdyne.  This model does not rely on any commercial Computational Fluid Dynamics (CFD) software, and converges to a solution on a modest single-core processor in approximately 30 seconds.</p>
 <p style="text-align:center;"> 
 
 

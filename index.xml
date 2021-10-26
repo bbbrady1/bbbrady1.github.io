@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Space Shuttle Main Engine Computational Model on Cryo-Rocket.com</title>
-    <link>https://bbbrady1.github.io/</link>
+    <link>https://www.cryo-rocket.com/</link>
     <description>Recent content in Space Shuttle Main Engine Computational Model on Cryo-Rocket.com</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://bbbrady1.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.cryo-rocket.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/thermodynamic-data/1.1-fuel-system/</link>
+      <link>https://www.cryo-rocket.com/thermodynamic-data/1.1-fuel-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/thermodynamic-data/1.1-fuel-system/</guid>
+      <guid>https://www.cryo-rocket.com/thermodynamic-data/1.1-fuel-system/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 1.1.1: SSME Fuel System Schematic  [1, 2]
 The SSME fuel system performs two functions:
@@ -19,10 +19,10 @@ a. Route high-pressure hydrogen to the engine’s three combustion chambers. b. 
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/turbomachinery/4.1-low-pressure-fuel-system/</link>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.1-low-pressure-fuel-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/turbomachinery/4.1-low-pressure-fuel-system/</guid>
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.1-low-pressure-fuel-system/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 4.1.1: SSME Fuel System Schematic  [1]
 The equations of state developed in Section 2 and the combustion model developed in Section 3 provide all the necessary tools to perform a high-level analysis of the SSME&amp;rsquo;s turbomachinery. We begin with the Low Pressure Fuel Turbopump.
@@ -31,10 +31,10 @@ Low Pressure Fuel Turbopump  Liquid hydrogen enters this pump at Station 1 from 
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/turbomachinery/4.2-high-pressure-fuel-system/</link>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.2-high-pressure-fuel-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/turbomachinery/4.2-high-pressure-fuel-system/</guid>
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.2-high-pressure-fuel-system/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 4.2.1: SSME High Pressure Fuel System [1]
 High Pressure Fuel Turbopump  We now turn our attention to the High Pressure Fuel Turbopump. Liquid hydrogen enters this device at Station 3 with a known temperature and pressure. The desired pressure on the output side of the pump (Station 4) is known, but all other output state variables are unknown.</description>
@@ -42,10 +42,10 @@ High Pressure Fuel Turbopump  We now turn our attention to the High Pressure Fue
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/turbomachinery/4.3-low-pressure-oxidizer-system/</link>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.3-low-pressure-oxidizer-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/turbomachinery/4.3-low-pressure-oxidizer-system/</guid>
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.3-low-pressure-oxidizer-system/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 4.3.1: SSME Oxidixer System Schematic  [1] 
 Low Pressure Oxidizer Turbopump
@@ -54,10 +54,10 @@ We begin our analysis with the Low Pressure Oxidizer Turbopump. Liquid oxygen fr
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/turbomachinery/4.4-high-pressure-oxidizer-system/</link>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.4-high-pressure-oxidizer-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/turbomachinery/4.4-high-pressure-oxidizer-system/</guid>
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.4-high-pressure-oxidizer-system/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 4.4.1: SSME Oxidizer System Schematic [1]
 The high-pressure oxidizer system is slightly more complex than the low-pressure system. Combustion gas exits the Oxidizer Preburner at Station 31 and spins the blades of the High Pressure Oxidizer turbine. The shaft on this turbine drives two pumps: the High-Pressure Oxidizer Boost Pump and the Preburner Oxidizer Boost Pump.</description>
@@ -65,10 +65,10 @@ The high-pressure oxidizer system is slightly more complex than the low-pressure
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/turbomachinery/4.5-large-throat-main-combustion-chamber/</link>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.5-large-throat-main-combustion-chamber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/turbomachinery/4.5-large-throat-main-combustion-chamber/</guid>
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.5-large-throat-main-combustion-chamber/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 4.5.1: SSME Combustion System[1]
  Large Throat Main Combustion Chamber Although not technically a &amp;ldquo;turbomachine&amp;rdquo; it is still fitting to conclude this section with a discussion of the Large Throat Main Combustion Chamber (LTMCC). The preceding sections traced the thermodynamic properties of liquid hydrogen and liquid oxygen from the external tank, through the SSME turbomachinery, all the way LTMCC inlet.</description>
@@ -76,129 +76,129 @@ Figure 4.5.1: SSME Combustion System[1]
     
     <item>
       <title>5.1 LTMCC Geometry</title>
-      <link>https://bbbrady1.github.io/flow-model/5.1-ltmcc-geometry/</link>
+      <link>https://www.cryo-rocket.com/flow-model/5.1-ltmcc-geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/flow-model/5.1-ltmcc-geometry/</guid>
+      <guid>https://www.cryo-rocket.com/flow-model/5.1-ltmcc-geometry/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Figure 5.1.1: Large Throat Main Combustion Chamber (LTMCC) [52]  The first step in modelling the flow through the LTMCC is to define the geometry of the chamber. We assume a cylindrical design will be used with a converging-diverging throat, as shown above in Figure 5.1.1. The analysis begins by determining the cross-sectional area of the throat (Station 33.</description>
     </item>
     
     <item>
       <title>5.2 Nozzle Geometry</title>
-      <link>https://bbbrady1.github.io/flow-model/5.2-nozzle-geometry/</link>
+      <link>https://www.cryo-rocket.com/flow-model/5.2-nozzle-geometry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/flow-model/5.2-nozzle-geometry/</guid>
+      <guid>https://www.cryo-rocket.com/flow-model/5.2-nozzle-geometry/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  In the previous section we defined the geometry of the LTMCC, at times using some &amp;ldquo;rather arbitrary&amp;rdquo; rules of thumb. This was acceptable because the subsonic portion of the LTMCC is relatively tolerant to gradual changes in geometry. This is not the case in the supersonic portion of the LTMCC and nozzle downstream of the throat. In this region we must turn to a more rigorous approach to minimize separation and turbulent losses.</description>
     </item>
     
     <item>
       <title>5.3 Compressible Flow</title>
-      <link>https://bbbrady1.github.io/flow-model/5.3-compressible-flow/</link>
+      <link>https://www.cryo-rocket.com/flow-model/5.3-compressible-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/flow-model/5.3-compressible-flow/</guid>
+      <guid>https://www.cryo-rocket.com/flow-model/5.3-compressible-flow/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Sections 5.1 and 5.2 define the geometry of the SSME combustion chamber and nozzle. The analysis in Section 4.5  provides the temperature, pressure, and composition of the gas inside the chamber. Now we will use this information to predict what happens to the combustion products as they depart the LTMCC and accelerate toward the nozzle exit plane.</description>
     </item>
     
     <item>
       <title>6.1 LTMCC Cooling Channels</title>
-      <link>https://bbbrady1.github.io/regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/</link>
+      <link>https://www.cryo-rocket.com/regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/</guid>
+      <guid>https://www.cryo-rocket.com/regenerative-cooling-circuit/6.1-ltmcc-cooling-channels/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   Regenerative Cooling  As shown in previous sections, temperatures inside the Large Throat Main Combustion Chamber (LTMCC) can exceed 3600 Kelvin. In order to withstand this harsh environment, the combustion chamber must be constructed from a material with excellent heat conduction characteristics and a high melting point. Simultaneously, this material must also have a high strength-to-weight ratio and not be too hard, tough, or brittle to complicate the manufacturing process.</description>
     </item>
     
     <item>
       <title>6.2 Nozzle Coolant Tubes</title>
-      <link>https://bbbrady1.github.io/regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/</link>
+      <link>https://www.cryo-rocket.com/regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/</guid>
+      <guid>https://www.cryo-rocket.com/regenerative-cooling-circuit/6.2-nozzle-coolant-tubes/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   Nozzle Coolant Tubes  After departing the LTMCC, the hot combustion gas flows past the nozzle attach flange and enters the nozzle proper. Although temperatures and heat flux are greatly reduced in the nozzle as compared to the LTMCC, wall thermal limits are still an important design consideration. To keep wall temperatures in check, the nozzle utilizes a regenerative cooling system very similar to the LTMCC.</description>
     </item>
     
     <item>
       <title>6.3 Computational Framework</title>
-      <link>https://bbbrady1.github.io/regenerative-cooling-circuit/6.3-computational-framework/</link>
+      <link>https://www.cryo-rocket.com/regenerative-cooling-circuit/6.3-computational-framework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/regenerative-cooling-circuit/6.3-computational-framework/</guid>
+      <guid>https://www.cryo-rocket.com/regenerative-cooling-circuit/6.3-computational-framework/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };    img { display: block; margin-left: auto; margin-right: auto; }    Computational Framework  The previous sections of this website provide mathematical details on how to model compressible flow and heat transfer in the SSME. For the most part, these topics were treated individually in their respective sections. The goal of this section is to examine the problem from a broader viewpoint and show how these models couple to form a comprehensive solution.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/combustion-model/3.1-chemistry/</link>
+      <link>https://www.cryo-rocket.com/combustion-model/3.1-chemistry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/combustion-model/3.1-chemistry/</guid>
+      <guid>https://www.cryo-rocket.com/combustion-model/3.1-chemistry/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Combustion Chemistry We are now in a position to use the thermodynamic properties calculated in the previous section to predict the chemical composition and flame temperature of the exhaust gas mixture produced in the SSME pre-burners and main combustion chamber. The model is based on a fuel-rich combustion process utilizing the following set of reactions, as described by Sozen.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/combustion-model/3.2-first-law-of-thermodynamics/</link>
+      <link>https://www.cryo-rocket.com/combustion-model/3.2-first-law-of-thermodynamics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/combustion-model/3.2-first-law-of-thermodynamics/</guid>
+      <guid>https://www.cryo-rocket.com/combustion-model/3.2-first-law-of-thermodynamics/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  First Law of Thermodynamics The analysis begins with a thermodynamic system (perhaps a rocket combustion chamber, turbine, or pump) as shown below in Figure 3.2.1.
 Figure 3.2.1 Fluid enters the system at Station 1 with an internal energy $u_1$, pressure $P_1$, temperature $T_1$, and density $\rho_1$. It flows through the device, exiting at Station 2 with internal energy $u_2$, pressure $P_2$, temperature $T_2$, and density $\rho_2$.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/combustion-model/3.3-solution-procedure/</link>
+      <link>https://www.cryo-rocket.com/combustion-model/3.3-solution-procedure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/combustion-model/3.3-solution-procedure/</guid>
+      <guid>https://www.cryo-rocket.com/combustion-model/3.3-solution-procedure/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Solution Procedure The preceding sections utilized equilibrium constants and the first law of thermodynamics to construct a set of five simultaneous non-linear equations to model combustion of hydrogen and oxygen. The full set of equations are reproduced here. For convenience, these functions are labeled $f_1$ through $f_5$:[37],[39] 
 (3.1.19) $$ f_1:\,\,\,\, 0=\left[\frac{Z_{H_2O}^2}{Z_{H_2}^2 Z_{O_2}}\right]P^{-y}-K_{P,a} $$ (3.1.20) $$ f_2:\,\,\,\, 0=\left[\frac{Z_{H}^2}{Z_{H_2}}\right]P-K_{P,b} $$ (3.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/combustion-model/3.4-mixture-ratio-optimization/</link>
+      <link>https://www.cryo-rocket.com/combustion-model/3.4-mixture-ratio-optimization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/combustion-model/3.4-mixture-ratio-optimization/</guid>
+      <guid>https://www.cryo-rocket.com/combustion-model/3.4-mixture-ratio-optimization/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Mixture Ratio Optimization The combustion model developed in the previous sections allows us to examine how the properties of the SSME exhaust vary as a function of reactant mixture ratio. In turn, these trends provide clues that assist in selecting the optimal mixture ratio to maximize engine performance. We will begin by examining flame temperature. As shown below in Figure 3.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/equation-of-state/2.1-background/</link>
+      <link>https://www.cryo-rocket.com/equation-of-state/2.1-background/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/equation-of-state/2.1-background/</guid>
+      <guid>https://www.cryo-rocket.com/equation-of-state/2.1-background/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Equations of State The previous section tracked the enthalpy of the propellants as they flowed through the components of the engine. But what exactly is enthalpy? And what does it have to do with an equation of state? Enthalpy is not as intuitive to understand as the pressure and temperature of a fluid. Mathematically, enthalpy is defined as follows:</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/equation-of-state/2.2-hydrogen-model/</link>
+      <link>https://www.cryo-rocket.com/equation-of-state/2.2-hydrogen-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/equation-of-state/2.2-hydrogen-model/</guid>
+      <guid>https://www.cryo-rocket.com/equation-of-state/2.2-hydrogen-model/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Hydrogen Phase Diagram As shown in the previous section, the reduced Helmholtz equation of state can be broken into two components, one modeling ideal gas effects ($\alpha^0$), and the other corresponding to the residual contribution from intermolecular forces ($\alpha^r$). This equation of state allows for construction of a phase diagram that is more nuanced than the “four quadrant” model described in Section 2.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/equation-of-state/2.3-oxygen-model/</link>
+      <link>https://www.cryo-rocket.com/equation-of-state/2.3-oxygen-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/equation-of-state/2.3-oxygen-model/</guid>
+      <guid>https://www.cryo-rocket.com/equation-of-state/2.3-oxygen-model/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Oxygen Phase Diagram The oxygen phase diagram displays similar trends to those discussed on the hydrogen phase diagram in the previous section. As shown below in Figures 2.3.1. and 2.3.2, a discontinuity in the density field is clearly visible along the saturation line, as expected due to the simultaneous existence of both liquid and gaseous oxygen. This discontinuity gradually smooths out along the pseudo-boiling line above the critical point.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/equation-of-state/2.4-combustion-products/</link>
+      <link>https://www.cryo-rocket.com/equation-of-state/2.4-combustion-products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/equation-of-state/2.4-combustion-products/</guid>
+      <guid>https://www.cryo-rocket.com/equation-of-state/2.4-combustion-products/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Combustion Products The Helmholtz correlations in Sections 2.2 and 2.3 were designed to model hydrogen and oxygen at relatively low temperatures where intermolecular forces cannot be neglected. The hydrogen correlation is accurate within the following limits:[11]
 14 K 7 MPa The oxygen model is even further restricted:[12]
 54 K 0 MPa Propellant temperatures remain in this range as they flow through this SSME’s network of pumps and turbines (refer to Sections 1.</description>
@@ -206,10 +206,10 @@ Figure 3.2.1 Fluid enters the system at Station 1 with an internal energy $u_1$,
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/equation-of-state/2.5-enthalpy-revisited/</link>
+      <link>https://www.cryo-rocket.com/equation-of-state/2.5-enthalpy-revisited/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/equation-of-state/2.5-enthalpy-revisited/</guid>
+      <guid>https://www.cryo-rocket.com/equation-of-state/2.5-enthalpy-revisited/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Enthalpy Revisited It is interesting to note that the empirical correlation for enthalpy shown in Section 2.4 is a function of temperature alone:
 (2.4.2) $$ \frac{h}{R_u\,T} = a_1+a_2\frac{T}{2}\,T+a_3\frac{T^2}{3}+a_4\frac{T^3}{4}+a_5\frac{T^4}{5}+b_1\,T \,\,\,\,\,\text{[J/mol]} $$ This is surprising, especially since in Section 2.1 enthalpy was defined as follows:
 (2.1.1) $ h=u+\frac{P}{\rho} $ Pressure and density both clearly play a role in this equation, which is applicable to both liquids and gasses.</description>
@@ -217,19 +217,19 @@ Figure 3.2.1 Fluid enters the system at Station 1 with an internal energy $u_1$,
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/equation-of-state/2.6-transport-properties/</link>
+      <link>https://www.cryo-rocket.com/equation-of-state/2.6-transport-properties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/equation-of-state/2.6-transport-properties/</guid>
+      <guid>https://www.cryo-rocket.com/equation-of-state/2.6-transport-properties/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Transport Properties The equations of state discussed in the previous sections enabled us to calculate the thermodynamic properties of hydrogen, oxygen, and their associated combustion products. We now direct our attention to the transport properties of these propellants. Transport properties describe how a fluid disperses energy. There are two properties of interest: thermal conductivity and viscosity. Thermal conductivity describes a fluid’s ability to transfer heat via conduction.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/thermodynamic-data/1.2-oxidizer-system/</link>
+      <link>https://www.cryo-rocket.com/thermodynamic-data/1.2-oxidizer-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/thermodynamic-data/1.2-oxidizer-system/</guid>
+      <guid>https://www.cryo-rocket.com/thermodynamic-data/1.2-oxidizer-system/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 1.2.1: SSME Oxidizer System Schematic  [1, 2] 
 The SSME oxidizer system routes high-pressure oxygen to the engine’s three combustion chambers.
@@ -238,10 +238,10 @@ Liquid oxygen enters the Low Pressure Oxidizer Turbopump at Station 17 from the 
     
     <item>
       <title></title>
-      <link>https://bbbrady1.github.io/thermodynamic-data/1.3-combustion-system/</link>
+      <link>https://www.cryo-rocket.com/thermodynamic-data/1.3-combustion-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bbbrady1.github.io/thermodynamic-data/1.3-combustion-system/</guid>
+      <guid>https://www.cryo-rocket.com/thermodynamic-data/1.3-combustion-system/</guid>
       <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
 Figure 1.3.1: SSME Combustion System Schematic  [1, 2]  
 The SSME Combustion System performs three functions:
