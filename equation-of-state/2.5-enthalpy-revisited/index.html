@@ -984,7 +984,7 @@
 <div style="float: right"><b>(2.5.2)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto">$h = u + R_s\,T$</div>
 <p>The specific gas constant, $R_s$, is the universal gas constant divided by the molecular mass of the gas molecule.   This eliminates the explicit pressure and density terms from the expression for enthalpy.  But what about the internal energy, $u$, of the gas?  Does pressure play a role here?</p>
-<p>To answer this question, we need to break down internal energy into four components: translational energy, rotational energy,vibrational energy, and electronic energy.<sup>[<a><a href="../../references/#ref17r" >17</href></a>]</sup><a name="ref17"> </a></sup></p>
+<p>To answer this question, we need to break down internal energy into four components: translational energy, rotational energy, vibrational energy, and electronic energy.<sup>[<a><a href="../../references/#ref17r" >17</href></a>]</sup><a name="ref17"> </a></sup></p>
 <div style="float: right"><b>(2.5.3)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto">$ u = e_{trans}+ e_{rot}+e_{vib}+e_{elec}$</div>
 <p>Translational energy is the result of the molecule moving through space.  It is the kinetic energy of the gas molecule, as shown below in Figure 2.5.1.</p>
@@ -1005,7 +1005,7 @@
 <p>Each degree of rotational freedom (the number of which varies depending on the geometry described above) contributes $\frac{1}{2}RT$ to the total amount of rotational energy in the gas.  Again, this result is independent of pressure.</p>
 <p>We now look at the molecule&rsquo;s vibrational energy.  Many different degrees of vibrational freedom may exist.  Several examples are shown below.</p>
 <p style="text-align:center;"><img src="../../Fig2.5.5.gif" alt="Fig 2.5.5"><img src="../../Fig2.5.6.gif" alt="Fig 2.5.6"><img src="../../Fig2.5.7.gif" alt="Fig 2.5.7"></p>
-<p style="text-align:center"> <b>Figure 2.5.4:Possible Vibration Modes   </b><sup>[<a><a href="../../references/#ref22r" >22</href></a>]</sup><a name="ref22"> </a></sup> <br>  </br> </p
+<p style="text-align:center"> <b>Figure 2.5.4: Possible Vibration Modes   </b><sup>[<a><a href="../../references/#ref22r" >22</href></a>]</sup><a name="ref22"> </a></sup> <br>  </br> </p
 <p>To account for these vibrational modes, scientists performed experiments to measure the harmonic frequency of many different species.  Vibration frequencies relevant to SSME combustion gasses are tabulated below:<sup>[<a><a href="../../references/#ref23r" >23</href></a>]</sup><a name="ref23"> </a></sup></p>
 <style type="text/css">
 .tg55  {border-collapse:collapse;border-spacing:0;margin-left:25%;  margin-right:25%;}
@@ -1077,8 +1077,8 @@
 <div style="float: right"><b>(2.5.7)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ e_{elec} = R_s\,T^2\,\frac{\partial\,\text{ln}\left(Q \right)}{\partial\,T} $$ </div>
 <p>We are now finally equipped to analyze all contributions to the internal energy of a diatomic ideal gas.  Summing the translational, rotational, vibrational, and electronic energy components reveals:</p>
-<div style="float: right"><b>(2.5.8)</b></div>
-<div style="margin: 0 auto; width: 1000px;"> $$  u = \frac{3}{2} R_s\,T + R_s\,T+ \,R_s\,T \,\frac{\frac{h\,v\,c}{k\,T}}{\text{exp}\left(\frac{h\,v\,c}{kT} \right)-1}+  R_s\,T^2\,\frac{\partial\,\text{ln}\left(Q \right)}{\partial\,T} $$ </div>
+<div style="float: right"><b>(2.5.8)</b></div> 
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$  u = \frac{3}{2} R_s\,T + R_s\,T+ \,R_s\,T \,\frac{\frac{h\,v\,c}{k\,T}}{\text{exp}\left(\frac{h\,v\,c}{kT} \right)-1}+  R_s\,T^2\,\frac{\partial\,\text{ln}\left(Q \right)}{\partial\,T} $$</div>
 <p>This result definitively shows that the the internal energy and enthalpy of an ideal gas are independent of pressure.  They are functions of temperature alone.  This trend is demonstrated in the plot below.  The plot shows that the enthalpy of diatomic oxygen is independent of pressure for temperatures greater than approximately 1.25 Tc.  Above this temperature, the “real gas” effects due to intermolecular forces may be neglected and the “ideal gas” approximations described in this section are valid.  Near the critical point (where reduced pressure and temperature = 1) a “real gas” equation of state (i.e. the Helmholtz model from <a><a href="../../equation-of-state/2.1-background/" >Section 2.1</href></a>) must be used to account for the effects of pressure and intermolecular forces.</p>
 <p style="text-align:center;"><img src="../../Fig2.3.7.PNG" alt="Fig 2.5.3"></p>
 <p style="text-align:center"> <b>Figure 2.5.6</b> <br>  </br> </p>
@@ -1096,7 +1096,7 @@
 <div style="float: right"><b>(2.5.12)</b></div>
 <div style="margin: 0 auto; width: 1000px;"> $$ h = \int\,C_p\,dT + c $$ </div>
 <p>where $c$ is an arbitrary constant of integration.  This is a surprising result.  Depending on the value chosen for $c$, Equation 2.5.12 will return different values for enthalpy.  How do we go about selecting the correct constant of integration?  We solve this problem by imposing a Dirichlet boundary condition on Equation 2.5.11:</p>
-<div style="margin: 0 auto; width: 1000px;"> $$ h\left(T_{ref}\right) = h_{ref} $$ </div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h\left(T_{ref}\right) = h_{ref} $$ </div>
 <p>Any convenient reference temperature ($T_{ref}$) and reference enthalpy ($h_{ref}$) can be selected.  The analysis used in this model of the SSME sets a reference temperature of 298.5 K and a corresponding reference enthalpy of zero:
 h(298.5)= 0.</p>
 <p>Care must be taken when comparing enthalpies tabulated across different sources.  Each source may report a different enthalpy value even when comparing identical temperatures.  The enthalpies tabulated below illustrate this trend.</p>
@@ -1187,8 +1187,8 @@ h(298.5)= 0.</p>
 <p style="text-align:center"> <b>Figure 2.5.9: </b> Comparison of $C_p$ models for diatomic oxygen.    <br>  </br> </p
 <p>This makes physical sense.  At low temperatures only the translational and rotational energy modes are active.  The vibrational and electronic terms in Equation 2.5.8 can be neglected, and the equation for internal energy reduces to</p>
 <div style="margin: 0 auto; width: 1000px;"> $$ u = \frac{5}{2}R_S\,T$$ </div>
-<p>Differentiating this eqation with respect to temperature reveals that</p>
-<div style="margin: 0 auto; width: 1000px;"> $$ \frac{C_v}{R_s} = \frac{5}{2} = 2.5 $$ </div>
+<p>Differentiating this equation with respect to temperature reveals that</p>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ \frac{C_v}{R_s} = \frac{5}{2} = 2.5 $$ </div>
 <p>Figures 2.5.7 and 2.5.9  demonstrate that at low temperatures the specific heat of an ideal gas is constant.  Enthalpy and internal energy are functions of temperature alone.  The specific heat ratio, $\gamma = \frac{C_p}{C_v}$ is constant, and the ideal gas equation of state is valid.  A gas obeying these rules is described as &ldquo;calorically perfect&rdquo;.  A familiar result from the &ldquo;calorically perfect&rdquo; assumption is that for air, $\gamma= 1.4$.</p>
 <p>As temperature increases, specific heat starts to change and $\gamma$ is no longer constant.  It becomes a function of temperature, along with enthalpy and internal energy.  The ideal gas equation of state still holds true.  A gas obeying these rules is described as &ldquo;thermally perfect.&rdquo;</p>
 <p>At low temperatures the ideal gas approximations used in this section break down.  Specific heat, enthalpy, and internal energy become functions of temperature and pressure due to the increasing importance of intermolecular forces.  This is a &ldquo;real gas&rdquo; that can no longer be modeled with the ideal gas law.  A real gas equation of state (such as the Helmholtz correlation) must be used instead.</p>

@@ -971,7 +971,7 @@
   };
 </script>
 <p style="text-align:center;"> <b>Oxygen Phase Diagram</b> </p>
-<p>The oxygen phase diagram displays similar trends to those discussed on the hydrogen phase diagram in the previous section.  As shown below in Figures 2.3.1. and 2.3.2, a discontinuity in the density field is clearly visible along the saturation line, as expected due to the simultaneous existence of both liquid and gaseous oxygen.  This discontinuity gradually smooths out along the pseudo-boiling line above the critical point.  The turbulence visible along this line is again due to  mathematical difficulties the Newton-Raphson algorithm encounters near the pseudo-boiling line.  Along this line the solution is extremely sensitive to small changes in temperature.  This makes convergence difficult to achieve.</p>
+<p>The oxygen phase diagram displays similar trends to those discussed on the hydrogen phase diagram in the previous section.  As shown below in Figures 2.3.1. and 2.3.2, a discontinuity in the density field is clearly visible along the saturation line, as expected due to the simultaneous existence of both liquid and gaseous oxygen.  This discontinuity gradually smooths out along the pseudo-boiling line above the critical point.  The turbulence visible along this line is again due to  mathematical difficulties the Newton-Raphson algorithm encounters in this region.  Along this line the solution is extremely sensitive to small changes in temperature.  This makes convergence difficult to achieve.</p>
 <p style="text-align:center;"><img src="../../Fig2.3.1.PNG" alt="Fig 2.2.1"></p>
 <p style="text-align:center"> <b>Figure 2.3.1</b> <br>  </br> </p>
 <p style="text-align:center;"><img src="../../Fig2.3.2.PNG" alt="Fig 2.2.1"></p>
@@ -998,7 +998,7 @@ $P_c = \text{5.0 MPa}$
 <p style="text-align:center;"><img src="../../Fig2.3.7.PNG" alt="Fig 2.3.7"></p>
 <p style="text-align:center"> <b>Figure 2.3.7</b> <br>  </br> </p>
 <p>Figure 2.3.8 plots the isobaric heat capacity of oxygen as function of reduced density and temperature near the critical point. The labels overlaid on top of this figure correspond to the turbomachinery stations described in  <a><a href="../../thermodynamic-data/1.2-oxidizer-system/#ref1.2" >Table 1.2.1</href></a>. This provides a visual representation of how the thermodynamic properties of oxygen change as it flows through the SSME turbomachinery, all the way from the external storage tank to the pre-burner inlets.  It is interesting to note that as oxygen flows through the SSME turbomachinery, it remains at a subcritical temperature all the way to the main combustion chamber.  Reduced temperatures never rise above the reduced critical temperature (1.0).  This is in contrast with hydrogen, where reduced temperatures go well into the supercritical range (up to 10) when flowing through the regenerative cooling circuit.  Refer to <a><a href="../../equation-of-state/2.2-hydrogen-model/#ref2.2.6" >Figure 2.2.6</href></a>.</p>
-<p>Another interesting comparison arises when examining compressibility factors.  Although both oxygen and hydrogen flow well into the supercritical pressure range, oxygen&rsquo;s compressibility factor remains fairly close to 1.0 all the way to the main combustion chamber (see Figure 2.3.6 above).  Referring back to <a><a href="../../thermodynamic-data/1.2-oxidizer-system/#ref1.2" >Table 1.2.1</href></a>, it is evident that oxygen remains fairly incompressible as it flows through the engine.  Its density remains very close to 1130 $\frac{\text{kg}}{m^3}$.  This is in contrast to hydrogen, where compressibility factors do not fall near the z=1.0 line.  This is reflected in the hydrogen densities recorded in <a><a href="../../thermodynamic-data/1.1-fuel-system/#ref1.1.1" >Table 1.1.1</href></a>, which vary from 21 - 70 $\frac{\text{kg}}{m^3}$.</p>
+<p>Another interesting comparison arises when examining compressibility factors.  Although both oxygen and hydrogen flow well into the supercritical pressure range, oxygen&rsquo;s compressibility factor remains fairly close to 1.0 all the way to the main combustion chamber (see Figure 2.3.6 above).  Referring back to <a><a href="../../thermodynamic-data/1.2-oxidizer-system/#ref1.2" >Table 1.2.1</href></a>, it is evident that oxygen remains fairly incompressible as it flows through the engine.  Its density remains very close to 1130 $\frac{\text{kg}}{m^3}$.  This is in contrast to hydrogen, where compressibility factors do not fall near the Z = 1.0 line.  This is reflected in the hydrogen densities recorded in <a><a href="../../thermodynamic-data/1.1-fuel-system/#ref1.1.1" >Table 1.1.1</href></a>, which vary from 21 - 70 $\frac{\text{kg}}{m^3}$.</p>
 <p style="text-align:center;"><img src="../../Fig2.3.8.PNG" alt="Fig 2.3.8"></p>
 <p style="text-align:center"> <b>Figure 2.3.8</b> <br>  </br> </p>
 <style type="text/css">
@@ -1048,42 +1048,14 @@ $P_c = \text{5.0 MPa}$
 <p style="text-align:center"> <b>Table 2.3.1</b> <br>  </br> </p>
 <p style="text-align:center"> <b>Mathematical Details</b>   </br> </p>
 <p>The thermodynamic properties of oxygen (pressure, enthalpy, entropy, specific heat, and compressibility factor) are calculated using the same fundamental equations as for hydrogen, Equations <a><a href="../../equation-of-state/2.2-hydrogen-model/#eq2.2.2" >2.2.2 – 2.2.7</href></a>.   The difference between these two models arises in the empirical curve fit used to capture the ideal and residual components of the Helmholtz energy.  The oxygen model uses Equations 2.3.1 and 2.3.2 to account for these components.<sup>[<a><a href="../../references/#ref12r" >12</href></a>]</sup><a name="ref12b"> </a></sup></p>
-<style type="text/css">
-.tg34  {border-collapse:collapse;border-color:#ccc;border-spacing:0; margin-left:10%;  margin-right:10%;}
-.tg34 td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg34 th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg34 .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg34">
-<tbody>
-  <tr>
-    <td class="tg33-0lax">$$ \alpha^0 =k_1\,\tau^{1.5}+k_2\,\tau^{-2}+k_3\,\text{ln}\left(\tau\right)+k_4\,\tau+k_5\,\text{ln}\left(e^{k_{\,7}\tau}-1\right)+k_6\,\text{ln}\left(1+\frac{2}{3}\,e^{-k_8\tau}\right)+k_9+\text{ln}\left(\frac{\delta}{\delta_0}\right)$$</td>
-	<td class="tg33-0lax">$$2.3.1$$</td>
-  </tr>
-</tbody>
-</table>
+<div style="float: right"><b>(2.3.1)</b></div> 
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ \alpha^0 =k_1\,\tau^{1.5}+k_2\,\tau^{-2}+k_3\,\text{ln}\left(\tau\right)+k_4\,\tau+k_5\,\text{ln}\left(e^{k_{\,7}\tau}-1\right)+k_6\,\text{ln}\left(1+\frac{2}{3}\,e^{-k_8\tau}\right)+k_9+\text{ln}\left(\frac{\delta}{\delta_0}\right)$$</div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$\delta_0 =\frac{p_0}{R_s\,T_0}$$</div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$p_0 =\text{101325 Pa}$$</div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$T_0 =\text{298.15 K}$$</div>
 <br>  </br> 
-<style type="text/css">
-.tg35  {border-collapse:collapse;border-color:#ccc;border-spacing:0; margin-left:20%;  margin-right:20%;}
-.tg35 td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg35 th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg35 .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg35">
-<tbody>
-  <tr>   
-    <td class="tg33-0lax">$$\alpha^r = \sum_{i=1}^{13}n_i\,\delta^{\,r_i}\,\tau^{s_i}+e^{-\delta^2}\,\sum_{i=14}^{24}\,n_i\,\delta^{\,r_i}\,\tau^s_i+e^{-\delta^4}\,\sum_{i=25}^{32}n_i\,\delta^{\,r_i}\,\tau^s_i $$</td>
-<td class="tg33-0lax">$$2.3.2$$</td> 
- </tr>
-</tbody>
-</table>
+<div style="float: right"><b>(2.3.2)</b></div> 
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$\alpha^r = \sum_{i=1}^{13}n_i\,\delta^{\,r_i}\,\tau^{s_i}+e^{-\delta^2}\,\sum_{i=14}^{24}\,n_i\,\delta^{\,r_i}\,\tau^s_i+e^{-\delta^4}\,\sum_{i=25}^{32}n_i\,\delta^{\,r_i}\,\tau^s_i $$</div>
 <p>Closed-form solutions for the derivatives of Equations 2.3.1 and 2.3.2 are listed below. <sup>[<a><a href="../../references/#ref12r" >12</href></a>]</sup>  The subscripts in the following equations indicate derivatives with respect to $\tau$ and $\delta$.  One subscript represents the first derivative, and two represent the second derivative.  For example,</p>
 <p>$$\alpha^r_\tau = \frac{\partial\alpha^r}{\partial\tau}$$</p>
 <p>$$\alpha^r_{\tau\delta} = \frac{\partial^2\alpha^r}{\partial\tau\partial\delta}$$</p>

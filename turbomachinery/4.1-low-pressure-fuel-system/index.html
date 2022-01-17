@@ -1014,7 +1014,7 @@
 </sup><a name="ref47"> </a></sup>  Once $x$ and $y$ are known, updated values for $T_{2s,i+1}$ and $\rho_{2s,i+1}$ can be determined as follows:</p>
 <div style="float: right"><b>(4.1.8)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$\left[\begin{matrix}  T_{2s,i+1} \\ \rho_{2s,i+1} \end{matrix}\right]= \left[\begin{matrix} x  \\ y  \end{matrix}\right] + \\   \left[\begin{matrix} T_{2s,i} \\ \rho_{2s,i}\end{matrix}\right]   $$  </div> 
-<p>Te updated temperature and density values are plugged into the Helmholtz model to calculate refined pressure, entropy, and enthalpy values and use these to establish relative error:</p>
+<p>The updated temperature and density values are plugged into the Helmholtz model to calculate refined pressure, entropy, and enthalpy values and use these to establish relative error:</p>
 <div style="float: right"><b>(2.2.2)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ P_{2,i+1} = P\left(T_{2s,i+1},\,\rho_{2s,i+1}  \right)$$ </div> 
 <div style="float: right"><b>(2.2.4)</b></div>
@@ -1101,7 +1101,7 @@
 <p style="text-align:center"> <b>Table  4.1.1:</b> Low Pressure Fuel Turbopump Calculation Results </p>
 <br>
 <p style="text-align:center"> <b>Low Pressure Fuel Turbine</b> </p>
-<p>Now we know how much power is required to operate the Low Pressure Fuel Turbopump.  The question then becomes how to generate that power.  The Low Pressure Fuel Turbine accomplishes this task.  Liquid hydrogen enters the turbine at Station 10, as shown above on Figure 4.1.1  The turbine rotors extract energy from the flow in (in the form of pressure and temperature drop between Stations 10 and 11) and convert it to shaft work which is then used to spin the compressor in the Low Pressure Fuel Turbopump.  We assume the flow inlet conditions at Station 10 are known.  We also know the maximum allowable pressure drop between Stations 10 and 11 (established by the  minimum required inlet pressure into the main combustion chamber).  These conditions are shown below on Figure 4.1.4.</p>
+<p>Now we know how much power is required to operate the Low Pressure Fuel Turbopump.  The question then becomes how to generate that power.  The Low Pressure Fuel Turbine accomplishes this task.  Liquid hydrogen enters the turbine at Station 10, as shown above on Figure 4.1.1  The turbine rotors extract energy from the flow (in the form of pressure and temperature drop between Stations 10 and 11) and convert it to shaft work which is then used to spin the compressor in the Low Pressure Fuel Turbopump.  We assume the flow inlet conditions at Station 10 are known.  We also know the maximum allowable pressure drop between Stations 10 and 11 (established by the  minimum required inlet pressure into the main combustion chamber).  These conditions are shown below on Figure 4.1.4.</p>
 <p style="text-align:center;"><img src="../../Fig4.1.4.PNG" alt="Logo"></p>
 <p style="text-align:center"> <b>Figure 4.1.4</b>  </p>
 <p>A key difference between the turbine analysis and pump analysis is that in the case of the turbine we do not know the mass flow rate through the system.  We need to solve for the mass flow rate required to generate the 3330 HP demanded by the Low Pressure Fuel Pump.   The solution procedure is almost identical to that of used for the Low Pressure Fuel Pump.  All of the equations used in Steps 1 and 3 are still valid.  In Step 2 a definition for turbine efficiency, $\eta_T$, is introduced:<sup>[<a><a href="../../references/#ref4r" >4</href></a>]
