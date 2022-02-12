@@ -40,7 +40,7 @@ Figure 3.2.1 Fluid enters the system at Station 1 with an internal energy $u_1$,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cryo-rocket.com/combustion-model/3.4-mixture-ratio-optimization/</guid>
-      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Mixture Ratio Optimization The combustion model developed in the previous sections allows us to examine how the properties of the SSME exhaust vary as a function of reactant mixture ratio. In turn, these trends provide clues that assist in selecting the optimal mixture ratio to maximize engine performance. We will begin by examining flame temperature. As shown below in Figure 3.</description>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Mixture Ratio Optimization The combustion model developed in the previous sections allows us to examine how the properties of SSME exhaust vary as a function of reactant mixture ratio. In turn, these trends provide clues that assist in selecting the optimal mixture ratio to maximize engine performance. We will begin by examining flame temperature. As shown below in Figure 3.</description>
     </item>
     
   </channel>

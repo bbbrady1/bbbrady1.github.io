@@ -981,48 +981,123 @@
 <p>The terms inside the integral represent the different types of energy flowing through the system.  $u+\frac{P}{\rho}$ is defined as the enthalpy of the fluid, $h$ (refer to <a><a href="../../equation-of-state/2.1-background/" >Section 2.1</href></a>).  $\frac{V^2}{2}$ is the kinetic energy of the fluid, and $gZ$ is gravitational potential energy.  Assuming  fluid properties are constant over the cross section of both the inlet and outlet (but not necessarily constant between Stations 1 and 2),  $\rho V \cdot \hat{n} dA$ becomes the mass flow rate of fluid across the control surface, $\dot m$.  Assuming steady-state conditions, integrating between Stations 1 and 2 gives the following:</p>
 <div style="float: right"><b>(3.2.2)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ \left[\left(h_2-h_1\right) +\frac{V_1^2-V_2^2}{2}+g\left(Z_2-Z_1\right)\right]\dot{m} = \left(Q_2-Q_1\right)+\left(W_2-W_1\right)$$</div>
-<p>Equation 3.2.2 is a general result applicable to any steady-state thermodynamic system with one inlet and one outlet to satisfy conservation of mass.  We will now make several assumptions to tailor this general result into a better model of a rocket combustion chamber.  First, we assume that very little time elapses as the fluid travels from Station 1 to Station 2 and completes the combustion process.  This means that the distance between Stations 1 and 2 is relatively small. We can therefore assume that the combustion process is complete before the fluid enters the converging section of the nozzle and begins to accelerate.  This means that $V_1$ = $V_2$ and $A_1$ = $A_2$.  We will also assume that the difference in height between the entrance and exit of the combustion chamber is negligible $\left(Z_1 = Z_2\right)$.  There is no shaft work into or out of the combustion chamber, so both $W_1$ and $W_2$ are 0.  For now, we assume there is no heat transfer into or out of the combustion chamber ($Q_1$ and $Q_2$ = 0).  This reduces the equation to</p>
+<p>Equation 3.2.2 is a general result applicable to any steady-state thermodynamic system with one inlet and one outlet to satisfy conservation of mass.  We will now make several assumptions to tailor this general result into a better model of a rocket combustion chamber.  First, we assume that very little time elapses as the fluid travels from Station 1 to Station 2 and completes the combustion process.  This means that the distance between Stations 1 and 2 is relatively small. We can therefore assume that the combustion process is complete before the fluid enters the converging section of the nozzle and begins to accelerate.  This means that $V_1$ = $V_2$ and $A_1$ = $A_2$.  We will also assume that the difference in height between the entrance and exit of the combustion chamber is negligible $\left(Z_1 = Z_2\right)$.  There is no shaft work into or out of the combustion chamber, so both $W_1$ and $W_2$ are 0.  For now, we assume there is no heat transfer into or out of the combustion chamber ($Q_1$ and $Q_2$ = 0).  This reduces the equation to:</p>
 <div style="float: right"><b>(3.2.3)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_1=h_2$$</div>
-<p>This simple equation gives a powerful result.  The enthalpy of the fluid entering the combustion chamber ($h_1$) must be equal to the enthalpy of the fluid exiting the chamber after combustion is complete ($h_2$).  It is important to remember that an exothermic chemical reaction takes place in the combustion chamber.  This reaction releases additional heat that must be accounted for.  Therefore in Equation 3.2.3 the $h_2$ term actually consists of two components, $h_2 \left(T\right)$ and $h_f$, where $h_f$ is the heat of formation due to the chemical reaction.  This will be discussed in more detail below.</p>
-<p>Let&rsquo;s begin by analyzing the enthalpy of the reactants entering the combustion chamber that initiate the overall chemical reaction: $H_2$ and $O_2$.  The enthalpy $h_1$ is found by taking the sum of the enthalpies of the individual reactants:</p>
+<p>This simple equation gives a powerful result.  The enthalpy of the fluid entering the combustion chamber, $h_1$, must be equal to the enthalpy of the fluid exiting the chamber after combustion is complete, $h_2$.</p>
+<p style="text-align:center;"> <b>Enthalpy of the Reactants </b> </p>
+<p>Let&rsquo;s begin by analyzing $h_1$, the enthalpy of the reactants entering the combustion chamber.  $h_1$ is found by taking the sum of the enthalpies of the individual reactants:</p>
 <div style="float: right"><b>(3.2.4)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$h_1 = h_{H_2}+h_{O_2}	  $$</div>
-<p>But from the discussion of enthalpy in <a><a href="../../equation-of-state/2.5-enthalpy-revisited/" >Section 2.5</href></a>, it is important to remember that enthalpy of a fluid is only meaningful as difference in energy between two states.  We can define the overall magnitude of enthalpy arbitrarily, as long as it is referenced to standardized baseline (see Equation <a><a href="../../equation-of-state/2.5-enthalpy-revisited/#2.5.12" >2.5.12</href></a>).  This analysis uses a reference temperature of 298.15 K and reference pressure of 101325 Pa.  In order to account for this, the enthalpy magnitudes entered into the above equation are really the difference in enthalpy between the reference state and the state in existence at the combustion chamber entrance with pressure P and temperature T:</p>
-<div style="float: right"><b>(3.2.5)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$h_1 = h_{H_2}+h_{O_2}= \left[h_{H_2}\left(T,P\right)- h_{H_2}\left(298.15,101325\right)\right] + \left[h_{O_2}\left(T,P\right)- h_{O_2}\left(298.15,101325\right)\right]  $$</div>
-<p>In <a><a href="../../equation-of-state/2.5-enthalpy-revisited/" >Section 2.5</href></a>, a great deal of effort was spent showing that the enthalpy of an ideal gas does <u>not </u> depend on pressure.  Then why does pressure show up as a term in Equation 3.2.5?  This occurs because the propellants entering the combustion chamber may be in either a liquid or gaseous state.   The enthalpy of liquid propellants requires a “real” equation of state (such as the Helmholtz correlations in Sections <a><a href="../../equation-of-state/2.2-hydrogen-model/" >2.2</href></a> and <a><a href="../../equation-of-state/2.3-oxygen-model/" >2.3</href></a>) to account for the effects of pressure and intermolecular forces.  The enthalpy of gaseous reactants can be modeled with the “ideal” correlations described in Section <a><a href="../../equation-of-state/2.4-combustion-products/" >2.4</href></a> that are independent of pressure.<br>
-Both the ideal and &ldquo;real&rdquo; enthalpy correlations used in this model are built in such a way that for the “reference elements” $H_2$ and $O_2$, enthalpy is defined to be zero at the reference temperature of 298.15 K and 101325 Pa (1 atmosphere).  This allows Equation 3.2.5 to be simplified even further by eliminating the reference terms (298.15, 101325) where enthalpy is defined to be zero:</p>
-<div style="float: right"><b>(3.2.6)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$h_1 = h_{H_2}+h_{O_2}=h_{H_2}\left(T,P\right)  + h_{O_2}\left(T,P\right)   $$</div >
-<p>Now we shift our attention to the right-hand side of Equation <a><a href="../../combustion-model/3.1-chemistry/#3.1.5" >3.1.5</href></a> and focus on the species produced as a result of combustion.   The overall enthalpy of the combustion products, $h_2$, is the summation of the enthalpies of the individual species in the resulting gaseous mixture.     We begin by analyzing $H_2O$ in manner similar to $H_2$ and $O_2$.  The enthalpy magnitude of $H_2O$ is again the difference between its enthalpy at temperature T and the reference temperature, 298.15 K.  Since we are now dealing solely with gaseous species, we can utilize the ideal gas enthalpy model and ignore any effects of pressure.  This reduces the equation to:</p>
-<div style="float: right"><b>(3.2.7)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$h_{H_2O} =h_{H_2O}\left(T\right)- h_{H_2O} \left(298.15\right)  $$</div
-<p>An important distinction to be aware of is that $H_2O$ is not one of the “reference elements”<sup>[<a><a href="../../references/#ref16r" >16</href></a>]</sup><a name="ref16c"> </a></sup> used by the ideal gas enthalpy model of <a><a href="../../equation-of-state/2.4-combustion-products/" >Section 2.4</href></a>.  This means that the magnitude of $h_{H_2O}\left(298.15\right)$ returned by Equation <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >2.4.2</href></a> is non-zero.  It is important to be aware of this convention when dealing with elements that are not &ldquo;reference elements&rdquo; whose enthalpies are defined to be zero at 298.15 K.   Therefore the $h_{H_2O}(298.15)$ term cannot be neglected as in the case of the reference elements $H_2$ and $O_2$.</p>
-<p>This is not an entirely complete description of the enthalpy of this combustion product.   The reaction between diatomic hydrogen and oxygen releases heat as these molecules recombine to form water vapor. An additional term must be added to account for the additional heat produced during the reaction.  This term is called the “heat of formation,” $h_f$.  Heat of formation for a chemical compound is calculated as follows:<sup>[<a><a href="../../references/#ref17r" >17</href></a>]</sup><a name="ref17g"> </a></sup></p>
-<div style="float: right"><b>(3.2.8)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_f = \sum c_i\,h_i $$</div
-<p>$c_i$ represents the stoichiometric coefficients of the chemical reaction needed to produce one mole of the compound of interest <u> using the standard reference elements</u> $H_2$ and $O_2$ as reactants.    The $c_i$ coefficients are positive for products and negative for reactants. As an example, consider the expression for the formation of $H_2O$ from the reference elements $H_2$ and $O2$:</p>
+<p>In <a><a href="../../equation-of-state/2.5-enthalpy-revisited/" >Section 2.5</href></a>, a great deal of effort was spent showing that the enthalpy of an ideal gas does <u>not </u> depend on pressure.  Then why does pressure show up as a variable in Equation 3.2.4?  This occurs because the propellants entering the combustion chamber may be in either a liquid or gaseous state.   The enthalpy of liquid propellants requires a “real” equation of state (such as the Helmholtz correlations in Sections <a><a href="../../equation-of-state/2.2-hydrogen-model/" >2.2</href></a> and <a><a href="../../equation-of-state/2.3-oxygen-model/" >2.3</href></a>) to account for the effects of pressure and intermolecular forces.  The enthalpy of gaseous reactants can be modeled with the “ideal” correlations described in Section <a><a href="../../equation-of-state/2.4-combustion-products/" >2.4</href></a> that are independent of pressure.</p>
+<p style="text-align:center;"> <b>Enthalpy of the Products (Ideal Gas Model)</b> </p>
+<p>Now we shift our attention to the right-hand side of Equation <a><a href="../../combustion-model/3.1-chemistry/#3.1.5" >3.1.5</href></a> and focus on the species produced as a result of combustion.  The overall enthalpy of these combustion products, $h_2$, is the summation of the enthalpies of the individual species in the resulting gaseous mixture.  For the sake of simplicity, we will will restrict our focus to only one of these compounds:  $H_2O$. Since we are now dealing solely with gaseous products, we can utilize the ideal gas enthalpy model (<a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a>) and ignore any effects of pressure.  The enthalpy magnitude $h(T)$ returned by this equation is really a summation of two different components: the heat of formation at the reference temperature ($h_f$) plus difference in enthalpy between the temperature of interest and the reference temperature ($\Delta h$):</p>
+<div style="float: right"><b>(3.2.5)</b></div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$h(T) = h_f(T_{ref})+\Delta h$$</div>
+<p>The heat of formation, $h_f$ accounts for the energy that is released (exothermic reactions) or absorbed (endothermic relations) to form the compound of interest at the desired temperature, $T$.   Heat of formation for a chemical compound is calculated as follows:<sup>[<a><a href="../../references/#ref17r" >17</href></a>]</sup><a name="ref17g"> </a></sup>
+<a name="3.2.6"> </a></p>
+<div style="float: right"><b>(3.2.6)</b></div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_f(T) = \sum c_i\,h_i(T) $$</div
+<p>$c_i$ represents the stoichiometric coefficients of the chemical reaction needed to produce one mole of the compound of interest <u> using the standard reference elements</u> $H_2$ and $O_2$ as reactants.    The $c_i$ coefficients are positive for products and negative for reactants. As an example, consider the formation of $H_2O$ from the reference elements $H_2$ and $O_2$:</p>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ \frac{1}{2}\,O_2+H_2 \implies \, H_2O  $$</div
-<p>Equation 3.2.8 can be utilized to calculate water’s heat of formation as a function of temperature.  Again, the coefficients $c_i$ are negative for reactants and positive for products.  This leaves us with the following equation:</p>
-<p><a name="3.2.9"> </a></p>
+<p>Equation 3.2.6 can be utilized to calculate water’s heat of formation as a function of temperature.  Again, the coefficients $c_i$ are negative for reactants and positive for products.  This leads to the following equation:</p>
+<p><a name="3.2.7"> </a></p>
+<div style="float: right"><b>(3.2.7)</b></div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{f,H_2O}(T) = h_{H_2O}\left(T\right)-\frac{1}{2}h_{O_2}\left(T\right)-h_{H_2}\left(T\right)$$</div>
+<p>Similar expressions can be developed for each species in the chemical model.  It should be noted that as a consequence of Equation 3.2.6 the heat of formation for the reference elements $H_2$ and $O_2$ is zero at all temperatures.</p>
+<p>We now turn our attention to the $\Delta h$ term on the right-hand side of Equation 3.2.5.  From the discussion of enthalpy in <a><a href="../../equation-of-state/2.5-enthalpy-revisited/" >Section 2.5</href></a>, it is important to remember that enthalpy of a fluid is only meaningful as a difference in energy between two states.  We can define the overall magnitude of enthalpy arbitrarily, as long as it is referenced to a standardized baseline (see Equation <a><a href="../../equation-of-state/2.5-enthalpy-revisited/#2.5.12" >2.5.12</href></a>).  The $\Delta h$ term accounts for variation from this baseline.  This is accomplished by defining a reference temeperature, $T_{ref}$, from which to make enthalpy comparisons.  The model developed here utilizes a reference temperature of 298.15 K.   This concept is described mathematically by Equation 3.2.8:</p>
+<p><a name="3.2.8"> </a></p>
+<div style="float: right"><b>(3.2.8)</b></div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ \Delta h = h(T)-h(T_{ref})$$ </div>
+<p>Plugging this expression for $\Delta h$ into Equation 3.2.5 provides an expression for the enthalpy of an individual gaseous product:</p>
 <div style="float: right"><b>(3.2.9)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{f,H_2O} = h_{H_2O}\left(T\right)-\frac{1}{2}h_{O_2}\left(T\right)-h_{H_2}\left(T\right)$$</div>
-<p>Similar expressions can be developed for each species in the chemical model.  It should be noted that as a consequence of Equation 3.2.8 the heat of formation for the reference elements $H_2$ and $O_2$ is zero at all temperatures.  Therefore the heat of formation for these reference elements will be neglected in the following analysis.</p>
-<p>Now we return to where we left off on our discussion of the first law of thermodynamics.  Referring to back to Equation 3.2.3, we were searching for $h_2$, the enthalpy of the gaseous mixture exiting the combustion chamber.  All the necessary tools are now in place.  The enthalpy $h_2$ consists of two terms.  The first term models the enthalpy of the gas as a function of temperature, $h\left(T\right)-h\left(298\right)$, as shown in Equation 3.2.7.  The second term accounts for the heat of formation, as shown in Equation 3.2.8.  This provides an expression for $h_{2,i}$ of an individual species:</p>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{2,i}(T)=h_{f,i}\left(T_{ref}\right) +h_i\left(T\right)-h_i\left(T_{ref}\right)  $$</div>
+<p>It is worth taking a moment to examine this equation in greater in detail.  The term $h_{2,i}(T)$ corresponds to the value returned by <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a> at a given temperature.  $h_{f,i}(T)$ is calculated with Equation 3.2.6, in conjunction with <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a> and the polynomial coefficients for each relevant species in the formation reaction.  The final two $h_{i}(T)$ terms in Equation  3.2.9 are also calculated with <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a>, utilizing the temperature of interest ($T$) and the reference temperature (298.15 K).  Let&rsquo;s use these expressions to tabulate the values of $h_{2,i}$ and $h_f$ for $H_2O$ at several temperatures.</p>
+</br>
+ <style type="text/css">
+.tg89  {border-collapse:collapse;border-spacing:0;margin-left:30%;  margin-right:20%;}
+.tg89 td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg89 th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg89 .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg89 .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
+</style>
+<table class="tg89">
+<thead>
+  <tr>
+    <th class="tg-uzvj">$T $</th>
+    <th class="tg-uzvj">$h(T)$ (Eqn. 2.4.2)</th>
+    <th class="tg-uzvj">$h_f(T)$ (Eqn 3.2.8)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-9wq8">298.15</td>
+    <td class="tg-9wq8">-241826</td>
+    <td class="tg-9wq8">-241826</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">400</td>
+    <td class="tg-9wq8">-238373</td>
+    <td class="tg-9wq8">-242852</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">500</td>
+    <td class="tg-9wq8">-234901</td>
+    <td class="tg-9wq8">-243839</td>
+  </tr>
+</tbody>
+</table>
+<p style="text-align:center"> <b> Table 3.2.1: </b> $h$ and $h_f$ for $H_2O$ at $T_{ref}=298.15$ [J/mol]  </p>
+<p>Now let&rsquo;s plug the data from Table 3.2.1 in to each term of equation 3.2.9 to see how <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a> calculates the enthalpy of $H_2O$ at 500 K utilizing the standard reference temperature of 298.15 K.</p>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{2,{H_2O}}(500)=h_{f,H2O}\left(298.15\right) +h_{H2O}\left(500\right)-h_{H_2O}\left(298.15\right)  $$</div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{2,{H_2O}}(500)=(-241826) +(-234901)-(-241826)  $$</div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{2,{H_2O}}(500)=(-241826) +(-234901)-(-241826)  $$</div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{2,{H_2O}}(500)=-234901 $$</div>
+<p>It is interesting to note that at the reference temperature of 298.15 K,  the heat of formation is identical to the enthalpy value returned by <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a>.  Another noteworthy point arises when examining enthalpies of the reference elements used to form a water molecule:  $O_2$ and $H_2$.</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin-left:35%;  margin-right:20%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-18eh"> </th>
+    <th class="tg-xwyw">$O_2$</th>
+    <th class="tg-xwyw">$H_2$</th>
+    <th class="tg-xwyw">$H_2O$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-xwyw">$T=298.15$</td>
+    <td class="tg-xwyw">0</td>
+    <td class="tg-xwyw">0</td>
+    <td class="tg-xwyw">-241826</td>
+  </tr>
+</tbody>
+</table>
+ <p style="text-align:center"> <b> Table 3.2.2: </b> Enthalpy at $T=T_{ref}=298.15$ [J/mol]  </p>
+<p>This table shows how the polynomial curve fit described by <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a> is built in such a way that the enthalpy of the reference elements is defined to be zero at the reference temperature of 298.15 K.  An important distinction to be aware of is that $H_2O$ is not one of the “reference elements”<sup>[<a><a href="../../references/#ref16r" >16</href></a>]</sup><a name="ref16c"> </a></sup> used by the ideal gas enthalpy model of <a><a href="../../equation-of-state/2.4-combustion-products/" >Section 2.4</href></a>.  This means that the magnitude of $h_{H_2O}\left(298.15\right)$ returned by Equation <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >2.4.2</href></a> is non-zero.  This makes physical sense, because at standard temperature and pressure, water is a liquid, rather than an ideal gas.</p>
+<p style="text-align:center;"> <b> Back to the First Law</b> </p>
+<p>Now we return to where we left off on our discussion of the first law of thermodynamics.  Referring to back to Equation 3.2.3, we were searching for $h_2$, the enthalpy of the gaseous mixture exiting the combustion chamber.  All the necessary tools are now in place.  The enthalpy $h_2$ is the sum of the enthalpies of the individual species, $h_{2,i}$.  These values are computed directly with <a><a href="../../equation-of-state/2.4-combustion-products/#2.4.2" >Equation 2.4.2</href></a>, which in expanded form is identical to equation 3.2.9. to obtain the total enthalpy of the fluid exiting the combustion chamber, this equation must be applied to each of the six species present on the right-hand side of of Equation <a><a href="../../combustion-model/3.1-chemistry/#3.1.5" >3.1.5</href></a> (the total chemical reaction).  This is represented by the following summation:</p>
 <div style="float: right"><b>(3.2.10)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_{2,i}=h_{f,i}\left(T\right) +h_i\left(T\right)-h_i\left(298.15\right)  $$</div>
-<p>To obtain the total enthalpy of the fluid exiting the combustion chamber, Equation 3.2.10 must be applied to each of the six species present on the right-hand side of of Equation <a><a href="../../combustion-model/3.1-chemistry/#3.1.5" >3.1.5</href></a> (the total chemical reaction).  This is represented by the following summation:</p>
-<div style="float: right"><b>(3.2.11)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ h_2= \sum_{i=1}^6 h_{2,i}  $$</div>
 <p>Now the expressions for $h_1$ and $h_2$ can be plugged in to the simplified version of the First Law, Equation 3.2.3, to reach the following conclusion:</p>
-<div style="float: right"><b>(3.2.12)</b></div>
+<div style="float: right"><b>(3.2.11)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ 0 = h_{H_2}\left(T,P\right)  + h_{O_2}\left(T,P\right) - \sum_{i=1}^6 h_{2,i}  $$</div>
 <p>Only one step remains!  Equation 3.2.12 gives enthalpy in terms of $\frac{J}{mol}$.  We want to know how much power this corresponds to in terms of watts.  We accomplish this by multiplying the each term in Equation 3.2.12 by its respective mass flow rate $\dot{N}_i$, in terms of $\frac{mol}{sec}$. Equation <a><a href="../../combustion-model/3.1-chemistry/#3.1.13" >3.1.13</href></a> contains an expression for $\dot{N}_i$.</p>
-<p><a name="3.2.13"> </a></p>
-<div style="float: right"><b>(3.2.13)</b></div>
+<p><a name="3.2.12"> </a></p>
+<div style="float: right"><b>(3.2.12)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ 0 = \dot{N}_{H_2}\left[h_{H_2}\left(T,P\right)\right]  + \dot{N}_{O_2}\left[h_{O_2}\left(T,P\right)\right] - \sum_{i=1}^6 h_{2,i}\,\dot{N} _i $$</div>
-<p>This is an excting result!  Analyzing Equation 3.2.13 in conjunction with Equations <a><a href="../../combustion-model/3.1-chemistry/#3.1.19" >3.1.19 - 3.1.22 </href></a> provides a closed system of five non-linear equations that are functions of the five variables a, b, c, d, and T.    This system can be solved to determine the resulting equilibrium mole fractions and flame temperature for a given combustion chamber pressure, mixture ratio, and reactant input conditions.  Read on for the solution procedure!</p>
+<p>This is an excting result!  Analyzing Equation 3.2.12 in conjunction with Equations <a><a href="../../combustion-model/3.1-chemistry/#3.1.19" >3.1.19 - 3.1.22 </href></a> provides a closed system of five non-linear equations that are functions of the five variables a, b, c, d, and T.    This system can be solved to determine the resulting equilibrium mole fractions and flame temperature for a given combustion chamber pressure, mixture ratio, and reactant input conditions.  Read on for the solution procedure!</p>
  <p style="text-align:center;">
 
 
