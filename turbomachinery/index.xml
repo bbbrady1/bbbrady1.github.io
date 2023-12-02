@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.  Turbomachinery on Cryo-Rocket.com</title>
+    <link>https://www.cryo-rocket.com/turbomachinery/</link>
+    <description>Recent content in 4.  Turbomachinery on Cryo-Rocket.com</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.cryo-rocket.com/turbomachinery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.1-low-pressure-fuel-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.1-low-pressure-fuel-system/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
+Figure 4.1.1: SSME Fuel System Schematic  [1]
+The equations of state developed in Section 2 and the combustion model developed in Section 3 provide all the necessary tools to perform a high-level analysis of the SSME&amp;rsquo;s turbomachinery. We begin with the Low Pressure Fuel Turbopump.
+Low Pressure Fuel Turbopump  Liquid hydrogen enters this pump at Station 1 from the external tank with a known pressure, known temperature, and known mass flow rate (set by the overall mixture ratio, see Equation 3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.2-high-pressure-fuel-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.2-high-pressure-fuel-system/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
+Figure 4.2.1: SSME High Pressure Fuel System [1]
+High Pressure Fuel Turbopump  We now turn our attention to the High Pressure Fuel Turbopump. Liquid hydrogen enters this device at Station 3 with a known temperature and pressure. The desired pressure on the output side of the pump (Station 4) is known, but all other output state variables are unknown.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.3-low-pressure-oxidizer-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.3-low-pressure-oxidizer-system/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
+Figure 4.3.1: SSME Oxidixer System Schematic  [1] 
+Low Pressure Oxidizer Turbopump
+We begin our analysis with the Low Pressure Oxidizer Turbopump. Liquid oxygen from the external tank enters the pump at Station 17 with a known temperature, pressure, and mass flow rate. The desired pressure at the pump exit is known, along with the pump efficiency.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.4-high-pressure-oxidizer-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.4-high-pressure-oxidizer-system/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
+Figure 4.4.1: SSME Oxidizer System Schematic [1]
+The high-pressure oxidizer system is slightly more complex than the low-pressure system. Combustion gas exits the Oxidizer Preburner at Station 31 and spins the blades of the High Pressure Oxidizer turbine. The shaft on this turbine drives two pumps: the High-Pressure Oxidizer Boost Pump and the Preburner Oxidizer Boost Pump.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/turbomachinery/4.5-large-throat-main-combustion-chamber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/turbomachinery/4.5-large-throat-main-combustion-chamber/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };   
+Figure 4.5.1: SSME Combustion System[1]
+ Large Throat Main Combustion Chamber Although not technically a &amp;ldquo;turbomachine&amp;rdquo; it is still fitting to conclude this section with a discussion of the Large Throat Main Combustion Chamber (LTMCC). The preceding sections traced the thermodynamic properties of liquid hydrogen and liquid oxygen from the external tank, through the SSME turbomachinery, all the way LTMCC inlet.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3.  Combustion Model on Cryo-Rocket.com</title>
+    <link>https://www.cryo-rocket.com/combustion-model/</link>
+    <description>Recent content in 3.  Combustion Model on Cryo-Rocket.com</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.cryo-rocket.com/combustion-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/combustion-model/3.1-chemistry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/combustion-model/3.1-chemistry/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Combustion Chemistry We are now in a position to use the thermodynamic properties calculated in the previous section to predict the chemical composition and flame temperature of the exhaust gas mixture produced in the SSME pre-burners and main combustion chamber. The model is based on a fuel-rich combustion process utilizing the following set of reactions, as described by Sozen.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/combustion-model/3.2-first-law-of-thermodynamics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/combustion-model/3.2-first-law-of-thermodynamics/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  First Law of Thermodynamics The analysis begins with a thermodynamic system (perhaps a rocket combustion chamber, turbine, or pump) as shown below in Figure 3.2.1.
+Figure 3.2.1 Fluid enters the system at Station 1 with an internal energy $u_1$, pressure $P_1$, temperature $T_1$, and density $\rho_1$. It flows through the device, exiting at Station 2 with internal energy $u_2$, pressure $P_2$, temperature $T_2$, and density $\rho_2$.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/combustion-model/3.3-solution-procedure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/combustion-model/3.3-solution-procedure/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Solution Procedure The preceding sections utilized equilibrium constants and the first law of thermodynamics to construct a set of five simultaneous non-linear equations to model combustion of hydrogen and oxygen. The full set of equations are reproduced here. For convenience, these functions are labeled $f_1$ through $f_5$:[37],[39] 
+(3.1.19) $$ f_1:\,\,\,\, 0=\left[\frac{Z_{H_2O}^2}{Z_{H_2}^2 Z_{O_2}}\right]P^{-y}-K_{P,a} $$ (3.1.20) $$ f_2:\,\,\,\, 0=\left[\frac{Z_{H}^2}{Z_{H_2}}\right]P-K_{P,b} $$ (3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.cryo-rocket.com/combustion-model/3.4-mixture-ratio-optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cryo-rocket.com/combustion-model/3.4-mixture-ratio-optimization/</guid>
+      <description>MathJax = { tex: {inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]]} };  Mixture Ratio Optimization The combustion model developed in the previous sections allows us to examine how the properties of SSME exhaust vary as a function of reactant mixture ratio. In turn, these trends provide clues that assist in selecting the optimal mixture ratio to maximize engine performance. We will begin by examining flame temperature. As shown below in Figure 3.</description>
+    </item>
+    
+  </channel>
+</rss>
