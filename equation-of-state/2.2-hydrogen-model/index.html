@@ -1803,15 +1803,15 @@ Parahydrogen: N = 9
 <a name="ref2Newton2"> </a>
 <p style="text-align:center;"> <b> Implicit Solution Scheme </b> </p>
 <p>These equations provide a means to determine the thermodynamic properties of hydrogen at a given state.  That state must be specified by a known temperature and density.  This creates a problem. It is relatively straight forward to attach a thermocouple to a hydrogen pipeline and measure the fluid’s temperature.  It is not so easy to measure the fluid’s density as it flows through that pipeline.  It is much simpler to install a pressure transducer and then specify the hydrogen’s state using a measured temperature and measured pressure.  Density would be calculated from the equation of state, rather than measured.   Unfortunately the Helmholtz model requires density as an input.  It predicts pressure as a function of temperature and density: $P=P\left(\rho, T\right)$.  It would be much more convenient to have an expression for density that is a function of pressure and temperature:  $\rho=\rho\left(P, T\right)$.</p>
-<p>An implicit Newton-Raphson <a name="ref15"> </a>  <sup> [<a><a href="../../references/#ref15r" >15</href></a>] </sup>   root finding scheme is used to solve this problem.  A known temperature, $T_i$ is input into Equations 2.2.8 and 2.2.9, along with an initial guess of the unknown hydrogen density, $\rho_i$, at the known pressure of interest, $P_i$.  This guess is used as the central point of a centered finite difference scheme to solve for $\frac{\partial \rho}{\partial P}$:</p>
+<p>An implicit Newton-Raphson <a name="ref15"> </a>  <sup> [<a><a href="../../references/#ref15r" >15</href></a>] </sup>   root finding scheme is used to solve this problem.  A known temperature, $T_i$ is input into Equations 2.2.8 and 2.2.9, along with an initial guess of the unknown hydrogen density, $\rho_i$, at the known pressure of interest, $P_i$.  This guess is used as the central point of a centered finite difference scheme to solve for $\frac{\partial P}{\partial \rho}$:</p>
 <div style="float: right"><b>(2.2.10)</b></div> 
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$\frac{\partial \rho}{\partial P} = \frac{P\left( \rho_i+\Delta \rho, T_i \right)+P \left( \rho_i-\Delta \rho, T_i   \right) } {2\Delta \rho} $$</div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$\frac{\partial P}{\partial \rho} = \frac{P\left( \rho_i+\Delta \rho, T_i \right)-P \left( \rho_i-\Delta \rho, T_i   \right) } {2\Delta \rho} $$</div>
 <p>In the above equation, $\Delta \rho$ can be any value, provided it is sufficiently small.  This model uses $\Delta \rho = \rho_i/1000$.</p>
 <p>Next, the algorithm calculates the pressure associated with the guessed density:</p>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ P_{guess} = P\left.  (\rho_i, T_i \right)$$</div>
 <p>Using this value, the routine calculates an updated density guess:</p>
 <div style="float: right"><b>(2.2.11)</b></div> 
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$\rho_{i+1} =\rho_i + \frac{\left(P_{guess}-P_i\right)} {\frac{\partial \rho}{\partial P}} $$</div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$\rho_{i+1} =\rho_i + \frac{\left(P_{guess}-P_i\right)} {\frac{\partial P}{\partial \rho}} $$</div>
 <p>This iterative process continues until the change between $\rho_{i+1}$ and $\rho_{i}$ converges to within a desired tolerance.</p>
 <p>An analogous procedure can be used to  model temperature as a function of pressure and density. This provides three ways in which to model thermodynamic properties using the Helmholtz correlation:</p>
 <div style="float: right"><b>(2.2.12)</b></div> 
