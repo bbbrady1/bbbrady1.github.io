@@ -1,0 +1,21 @@
+/* You can add custom styles here. */
+
+
+work {
+  font-size: 5em;
+  margin: .67em 0;
+  line-height: 1.2em
+  ;margin-left:25%;  margin-right:20%;
+}
+
+/* site header */
+.gdoc-header { background: #edf2f5; border-color: #404040; }
+.gdoc-header__link, .gdoc-header__link:visited { color: #ffffff; }
+
+.gdoc-nav__control .icon.arrow-back {
+  color:  #000000 
+}
+
+.gdoc-nav__control .icon.menu {
+  color:  #000000 
+}
