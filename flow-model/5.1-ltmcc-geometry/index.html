@@ -1011,11 +1011,11 @@
 <p>Now that temperature and pressure at the nozzle throat are known, we can use the ideal gas law (Equation 2.1.2) and solve for density at the throat, $\rho_{33.1}$</p>
 <div style="float: right"><b>(2.1.2)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto">$$ \rho_{33.1}=\frac{P_{33.1}}{R_s\,T_{33.1}} $$</div>
-<p>Sonic velocity at the throat is modeled by Equation 5.1.5:</p>
-<div style="float: right"><b>(5.1.5)</b></div>
+<p>Sonic velocity at the throat is modeled by Equation 5.1.6:</p>
+<div style="float: right"><b>(5.1.6)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ V_{33.1} = \sqrt{\gamma\,R_s\,T_{33.1}}  $$</div>
 <p>We can combine these equations and finally an reach expression for the required mass flow rate, $\dot m$:</p>
-<div style="float: right"><b>(5.1.6)</b></div>
+<div style="float: right"><b>(5.1.7)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ \dot m = \rho_{33.1}\,V_{33.1}\,A_{33.1}  $$</div>
 <p style="text-align:center;"><img src="../../Fig5.1.7.PNG" alt="Fig LTMCC"></p>
 <p style="text-align:center"> <b>Figure 5.1.7 </b> </p
@@ -1055,17 +1055,17 @@
 <br>
 <p style="text-align:center"> <b> Step 2:</b> Determine Chamber Volume  </p>
 <p>In Step 1 we assumed the combustion chamber would be modeled as a cylinder.  We need to determine the length of this cylinder, $L_c$, and its cross-sectional area at the injector face, $A_{33}$, in order to find its volume, $V$. According to the American Institute of Aeronautics and Astronautics (AIAA), the procedure do do this can be &ldquo;rather arbitrary.&quot;<sup>[<a><a href="../../references/#ref38r" >38</href></a>]</sup><a name="ref38f"> </a></sup>  The chamber must be sufficiently large to give the propellants time to mix and combust before accelerating through the throat.  But if the chamber is too large, there will be excessive structural mass penalties, larger cooling requirements, and higher frictional losses in the flow.  Empirical data from previous design experience is leveraged to select proper dimensions.  The following correlation is suggested for determining injector area:<sup>[<a><a href="../../references/#ref54r" >54</href></a>]</sup><a name="ref54"> </a></sup></p>
-<div style="float: right"><b>(5.1.4)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ A_{33} = \left(8\,D_{33.1}^{-0.6}+1.25\right)\,A_{34}  $$</div>
+<div style="float: right"><b>(5.1.8)</b></div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ A_{33} = \left(8\,D_{33.1}^{-0.6}+1.25\right)\,A_{33.1}  $$</div>
 <p>where $D_{33.1}$ is the diameter of the throat in cm.  Plugging our estimate for $D_{33.1}$ into this equation gives an estimated value of $A_{33}$ of approximately 0.1347 $m^2$ which corresponds to a diameter of 0.414 m.  This differs from the true diameter (0.454 m)<sup>[<a><a href="../../references/#ref52r" >52</href></a>]</sup><a name="ref52b"> </a></sup> by only 8.8%.  Not too bad for a &ldquo;rather arbitrary&rdquo; empirical correlation!</p>
 <p>Now we turn our attention to estimating the length, $L_c$, of the combustion chamber.  $L_c$ is the distance between the injector face (Station 33) and the throat (Station 33.1).    To accomplish this we define a &ldquo;characteristic length&rdquo; $L^*$ as follows:</p>
-<div style="float: right"><b>(5.1.5)</b></div>
+<div style="float: right"><b>(5.1.9)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ L^*=\frac{V_c}{A_{33.1}}  $$</div>
 <p>$V_c$ is the volume of the cylindrical combustion chamber, and $A_{33.1}$ is the throat area.  $L^*$ must be suffiently large to allow the propellants time to mix and burn before they are ejected from the combustion chamber.  Selecting an appropriate length to create the necessary &ldquo;stay time&rdquo; in the chamber requires a complex thermochemical analysis.  It is much easier to rely on previous design experience for an initial estimate.  The AIAA recommends the following values of $L^*$:<sup>[<a><a href="../../references/#ref55r" >55</href></a>]</sup><a name="ref55"> </a></sup></p>
 <p style="text-align:center;"><img src="../../Fig5.1.8.PNG" alt="Fig LTMCC"></p>
 <p style="text-align:center;"> <b>Figure 5.1.8 </b> </p>
 <p>After selecting an appropriate value of $L^{*}$ from this table, we can use Equation 5.1.5 to solve for the chamber volume, $V_c$.  The actual actual length of the combustion chamber, $L_c$, is then determined with following equation:</p>
-<div style="float: right"><b>(5.1.6)</b></div>
+<div style="float: right"><b>(5.1.10)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ L_c=\frac{V_c}{A_{33}}  $$</div>
 <p>Using these equations we can plot $L_c$ as a function of $L^*$ over the range of values suggested in Figure 5.1.8.  The actual value of $L_c$ on the SSME is 15.222 inches <sup>[<a><a href="../../references/#ref52r" >52</href></a>]</sup><a name="ref52c"> </a></sup> and has a corresponding $L^ *$ of 36 inches.  This lines up well with the data suggested above.</p>
 <p style="text-align:center;"><img src="../../Fig5.1.9.PNG" alt="Fig LTMCC"></p>
@@ -1101,7 +1101,7 @@
   </tr>
   <tr>
     <td class="tg-c3ow">  $ L_e+r_1\text{sin}\left(\theta_1\right) < x \leq L_c-r_u\text{sin}\left(\theta_1\right) $  </td>       
-    <td class="tg-c3ow"> $ \frac{r_t+r_u-r_{33}+r_1-\left(r_u+r_1\right)\text{cos}\left(\theta_1\right)}{L_c-L_e-\left(r_u+r_1\right)\text{sin}\left(\theta_1\right)}\,x+r_{33}-r_1+r_1\text{cos}\left(\theta_1\right)-\frac{r_t+r_u-r_{33}+r_1-\left(r_u+r_1\right)\text{cos}\left(\theta_1\right)}{L_c-L_e-\left(r_u+r_1\right)\text{sin}\left(\theta_1\right)}\left(L_e+r_1\text{sin}\left(\theta_1\right)\right) $ </td>
+    <td class="tg-c3ow"> $  m \cdot x + R_{33} - R_1 + R_1 \cdot \cos(\theta_1) - m \cdot (L_e + R_1 \cdot \sin(\theta_1))  $ </td>
   </tr>
   <tr>
     <td class="tg-c3ow">  $ L_c-r_u\text{sin}\left(\theta_1\right) < x \leq L_c $  </td>      
@@ -1113,6 +1113,7 @@
   </tr>
 </tbody>
 </table>
+<p style="text-align:center;"> $ m = \frac{R_T + R_U - R_{33} + R_1 - (R_U + R_1) \cos(\theta_1)}{L_c - L_e - (R_U + R_1) \sin(\theta_1)} $ </p>
 <p style="text-align:center;"> <b>Table 5.1.2 </b> </p>
 <p></sup><a name="5.1.12"> </a></p>
 <p style="text-align:center;"><img src="../../Fig5.1.12.PNG" alt="Fig LTMCC"></p>
