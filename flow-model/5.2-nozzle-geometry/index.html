@@ -991,7 +991,7 @@
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ r\left(t\right) = \left(1-t\right)^2N_y+2\left(t-t^2\right)Q_y+t^2R_e$$</div>
 <br>
 <div style="float: right"><b>(5.2.3)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$  t(x)=\frac{-2Q_x+\sqrt{4Q_x^2-4(N_x-x+15.444)(-N_x-2Q_x+E_x)}} {2(-N_x-2Q_x+E_x)}  $$</div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$  t(x)=\frac{-2Q_x+\sqrt{4Q_x^2-4(N_x-\left(x-L_c)\right)(-N_x-2Q_x+E_x)}} {2(-N_x-2Q_x+E_x)}  $$</div>
 <br>
 <div style="float: right"><b>(5.2.4)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ N_x = R_d\,\text{cos}\left( \theta_d -\pi/2\right)  $$</div>
@@ -1000,7 +1000,10 @@
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ N_y = R_d\,\text{sin}\left( \theta_d -\pi/2\right)+R_d+R_t $$</div>
 <br>
 <div style="float: right"><b>(5.2.6)</b></div>
-<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ E_x= 0.8\,\frac{R_t\left(\sqrt{\epsilon}-1\right)+R_u\,\text{sec}\left(\alpha-1\right)}{\text{tan}\left(\alpha\right)} $$</div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ E_x= 0.8\,\frac{R_t\left(\sqrt{\epsilon}-1+R_u\left(\text{sec}\left(\alpha\right)-1\right)\right)}{\text{tan}\left(\alpha\right)} $$</div>
+<br>
+<div style="float: right"><b>(5.2.6a)</b></div>
+<div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$ E_y= \sqrt{\epsilon}*R_t = R_e $$</div>
 <br>
 <div style="float: right"><b>(5.2.7)</b></div>
 <div style="margin: 0 auto; width: 80%; overflow-x:auto"> $$  Q_x = \frac{E_y-\text{tan}\left(\alpha\right)E_x-N_y+\text{tan}\left(\theta_d\right)N_x}{\text{tan}\left(\theta_d\right)-\text{tan}\left(\alpha\right)}$$</div>
